@@ -44,7 +44,7 @@ KeyDuel uses two components: a word list you type using a layout try-out tool, a
 
 ### 1. Set up the layout try-out tool
 
-Open [keyboard-layout-try-out.pages.dev](https://keyboard-layout-try-out.pages.dev/) and configure it to translate your target layout into the key positions of your current layout. This lets you type in the new layout without having learned it.
+Open [keyboard-layout-try-out.pages.dev](https://keyboard-layout-try-out.pages.dev/) and configure it to translate your target layout into the key positions of your current layout. This lets you type in the new layout without having learned it. Copy and paste the word-list of the language for which you are evaluating the new layout.
 
 ### 2. Download the scoring spreadsheet
 
