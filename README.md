@@ -310,16 +310,15 @@ For even better understanding the following information would be worthwhile to c
 - Key spacing if not standard
 - Keyboard position relative to the tester (distance, height)
 
-# Star History
-Please star this project if it helped you! Your feedback shows me how many people benefit from these resources, which motivates me making keyboard layout optimization accessible to everyone. :-)
 
-<a href="https://www.star-history.com/?repos=rpnfan%2FAnymak&type=date&legend=top-left">
+## Star History
+
+<a href="https://www.star-history.com/?repos=rpnfan%2FAnymak%2Crpnfan%2FKeyDuel&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=rpnfan/KeyDuel&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=rpnfan/KeyDuel&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=rpnfan/KeyDuel&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=rpnfan/Anymak%2Crpnfan/KeyDuel&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=rpnfan/Anymak%2Crpnfan/KeyDuel&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=rpnfan/Anymak%2Crpnfan/KeyDuel&type=date&legend=top-left" />
  </picture>
 </a>
-
 
 
