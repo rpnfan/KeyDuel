@@ -313,6 +313,8 @@ For even better understanding the following information would be worthwhile to c
 
 ## Star History
 
+Please star this project if it helped you! Your feedback shows me how many people benefit from these resources, which motivates me making keyboard layout optimization accessible to everyone. :-)
+
 <a href="https://www.star-history.com/?repos=rpnfan%2FAnymak%2Crpnfan%2FKeyDuel&type=date&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=rpnfan/Anymak%2Crpnfan/KeyDuel&type=date&theme=dark&legend=top-left" />
