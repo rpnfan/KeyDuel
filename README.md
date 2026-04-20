@@ -2,7 +2,7 @@
 
 **Test two layouts. Compare comfort. Pick your winner.**
 
-KeyDuel is a systematic approach to compare two layouts in terms of subjective typing comfort. The basic idea is to "translate" an alternative layout you consider to learn into the key positions of the layout you are currently using for touch-typing. A list of carefully selected test words allows you to get a much more meaningful and representative impression about how a layout will feel in real-world use, than using typing random sentences.
+KeyDuel is a systematic approach to compare two layouts in terms of subjective typing comfort. The basic idea is to "translate" an alternative layout you consider to learn into the key positions of the layout you are currently using for touch-typing. A list of carefully selected test words allows you to get a much more meaningful and representative impression about how a layout will feel in real-world use, than typing random sentences.
 
 <img width="2404" height="1009" alt="image" src="https://github.com/user-attachments/assets/08b95e2e-d4e6-4d16-8276-e378f0f35fc9" />
 
@@ -28,7 +28,7 @@ Two test modes are provided:
 
 ## 2. Scope and Limitations
 
-KeyDuel measures **perceived typing comfort**, the subjective feeling of typing each word, not speed or accuracy. Speed tests on typing trainers measure how well you have learned a layout, not how comfortable it is. After a few weeks on any layout you will reach acceptable speed; comfort is the more durable and more personal variable. Used honestly, KeyDuel gives you real signal about comfort differences that survive the initial adaptation period.
+KeyDuel measures **perceived typing comfort**, the subjective feeling of typing each word, not speed or accuracy. Speed tests on typing trainers measure how well you have learned a layout, not how comfortable it is. After a few weeks on any layout you will reach acceptable speed; comfort is the more durable and more personal variable. Used honestly, KeyDuel gives you a very good idea, you could see feeling, about comfort differences.
 
 Further limitations to be aware of:
 
@@ -44,7 +44,7 @@ KeyDuel uses two components: a word list you type using a layout try-out tool, a
 
 ### 1. Set up the layout try-out tool
 
-Open [keyboard-layout-try-out.pages.dev](https://keyboard-layout-try-out.pages.dev/) and configure it to translate your target layout into the key positions of your current layout. This lets you type in the new layout without having learned it. Copy and paste the word-list of the language for which you are evaluating the new layout.
+Open [keyboard-layout-try-out.pages.dev](https://keyboard-layout-try-out.pages.dev/) and configure it to translate your target layout into the key positions of your current layout. This lets you type in the new layout without having learned it. Copy and paste the word-list of the language for which you are evaluating the new layout. You find the language.txt files in the word-list folder of this repo.
 
 ### 2. Download the scoring spreadsheet
 
@@ -76,7 +76,15 @@ Continue word for word till you completed the short test with 25 words. If the r
 
 The spreadsheet calculates a normalized score between −1 and +1. A score close to zero means no meaningful difference was detected. When you evaluate more than one layout you will get a feeling how the normalized score, displayed in percent in the spreadsheet translates to larger or smaller perceived differences between the layouts.
 
-There are two ratings shown. The first is the rating without taking the weighting taken into account. This will tell you the which layout will feel better for the word list. The second "Frequency weighted score" takes into account how often a test word occurs roughly in a real world text. Both scores tell you something, but the frequency weighted is the more meaningful, because it gives you an indication how often the layout differences will play out in day-to-day typing.
+The spreadsheet provides two distinct metrics to help you make your decision. Both scores are relevant, but have a differeant practical meaning:
+
+- **Raw List Preference (Unweighted):** This tells you which layout felt better across the list of 100 words.
+
+    ⇒ Best for: Assessing pure ergonomic variety and how the layout handles different "word shapes".
+- **Frequency Weighted Score (Normalized %):** This score takes into account how often a test word occurs roughly in a real world text. This tells you if you typed a 10,000-word essay today, which layout would leave your hands feeling more relaxed.
+
+     ⇒ Best for: Making the final "Pick your winner" decision. This score gives you an indication how often the layout differences will play out in day-to-day typing.
+
 
 > **Note:** A more detailed walkthrough with screenshots is planned. The current spreadsheet already contains a worked example — a comparison of anymak:END and Graphite — which illustrates how to fill it in.
 
@@ -101,39 +109,80 @@ This is why a raw corpus frequency list — simply the N most common words — i
 
 ## 5. The Four-Tier Word Pool
 
-Every 100-word list is organised into four tiers. The tiers serve both a *linguistic classification* purpose and a *scoring weight* purpose.
+Every 100-word list is organised into four tiers. The tiers serve both a
+*linguistic classification* purpose and a *scoring weight* purpose. The
+primary design goal is that the words collectively cover the most important
+letter bigrams and trigrams of the language, weighted by how often those
+patterns occur in real-world text.
 
 ### Tier A — Very high-frequency function words (weight 1.0)
 
-Articles, prepositions, conjunctions, pronouns, and auxiliary verbs. Examples: *the, and, in, to, of, with, have, is* (English); *der, und, in, ich, ist, mit* (German); *de, en, in, het, is, zijn* (Dutch).
+Articles, prepositions, conjunctions, pronouns, and auxiliary verbs. Examples:
+*the, and, in, to, of, with, have, is* (English); *der, und, in, ich, ist, mit*
+(German); *de, en, in, het, is, zijn* (Dutch).
 
-**Why include them:** These words constitute the statistical backbone of any language. In typical prose they account for a disproportionately large share of all keystrokes. Their short length means they are typed rapidly in tight succession, stressing hand alternation rhythm heavily.
+**Why include them:** These words constitute the statistical backbone of any
+language. In typical prose they account for a disproportionately large share of
+all keystrokes. Their short length means they are typed rapidly in tight
+succession.
 
-**Why weight 1.0:** Their dominance in real text means a layout's handling of them has the greatest impact on everyday comfort.
+**Why weight 1.0:** Their dominance in real text means a layout's handling of
+them has the greatest impact on everyday comfort.
 
-### Tier B — Common content words (weight 0.6)
+### Tier B — Common content words and frequent short forms (weight 0.6)
 
-High-frequency nouns, adjectives, and common adverbs that appear across many topics: *people, time, world, life, good, right, new* (English); *Zeit, Leben, Welt, Arbeit, Leute* (German); *mensen, tijd, wereld, werk* (Dutch).
+High-frequency nouns, adjectives, adverbs, and short derived forms that appear
+across many topics and text types: *people, time, world, life, good, right, new*
+(English); *Zeit, Leben, Welt, Arbeit, Leute* (German); *mensen, tijd, wereld,
+werk* (Dutch).
 
-**Why include them:** These words carry meaning and appear across virtually any text a person writes. At 4–8 letters they exercise a broader range of finger movements and same-finger bigrams than the very short Tier A words. They reflect realistic typing without being domain-specific.
+**Why include them:** These words carry meaning and appear across virtually any
+text a person writes. At 4–8 letters they exercise a broader range of finger
+movements and bigram patterns than the very short Tier A words. They reflect
+realistic typing without being domain-specific.
 
-**Why weight 0.6:** Frequent and important, but less dominant than function words on a per-keystroke basis.
+**Why weight 0.6:** Frequent and important, but less dominant than function
+words on a per-keystroke basis.
 
-### Tier C — Verb forms and morphological variants (weight 0.3)
+### Tier C — Morphologically complex words and inflected forms (weight 0.3)
 
-Common verbs in inflected or gerund forms: *working, making, getting, thinking* (English); *machen, kommen, finden, brauchen* (German); *maken, werken, denken, gaan* (Dutch).
+Verb forms, inflected nouns, derived words, and other longer forms whose letter
+sequences introduce finger patterns not well represented by Tier A/B vocabulary:
+*working, making, getting, thinking* (English); *machen, kommen, finden,
+brauchen* (German); *maken, werken, denken, gaan* (Dutch). In agglutinative
+languages (Finnish, Turkish, Polish, Russian) this tier also includes inflected
+noun and verb forms that carry the highly frequent grammatical suffixes of those
+languages — for example Turkish case endings (*-lerde, -lara*) and present
+tense forms (*-iyor*), or Finnish verb infinitives and conjugations.
 
-**Why include them:** Inflected verb forms often produce consonant clusters and letter combinations that stress same-finger behaviour differently from root forms. A layout may handle *work* comfortably but create a collision on *working*. Including inflected and infinitive forms exposes these differences. In morphologically rich languages (Finnish, Turkish, Polish, Russian) this tier is proportionally larger because verb inflection is more extensive and more diagnostic.
+**Why include them:** Longer and morphologically complex words generate letter
+combinations and same-finger sequences that short words cannot expose. A layout
+may handle *work* comfortably but create a collision on *working*. Including
+inflected and derived forms exposes these differences. The selection is guided
+by trigram frequency data: words are chosen to cover letter patterns that are
+common in real text but absent from the shorter Tier A/B vocabulary.
 
-**Why weight 0.3:** These words are less frequent than Tier A/B, and tester rating variance at this level is comparable in magnitude to the actual per-word frequency differences. Higher weighting would add noise without adding meaningful signal.
+**Why weight 0.3:** These words are less frequent than Tier A/B in isolation,
+and tester rating variance at this level is comparable in magnitude to actual
+per-word frequency differences. 
 
-### Tier D — Lower-frequency but structurally diagnostic words (weight 0.1)
+### Tier D — Long structurally diagnostic words (weight 0.1)
 
-Longer nouns and abstract terms: *different, important, information, government, question, example* and their equivalents in each language.
+Longer nouns and abstract terms of 7 letters or more: *different, important,
+information, government, question, example* and their equivalents in each
+language.
 
-**Why include them:** Long words stress finger travel, lateral reach, and same-finger avoidance in ways that short words cannot. A layout that optimises the home row for common letters may do so at the cost of uncomfortable reach sequences in longer words. A small number of long words guards against this blind spot and adds length variety to the test.
+**Why include them:** Long words stress finger travel, lateral reach, and
+same-finger avoidance in ways that shorter words cannot. A layout that
+optimises the home row for common letters may do so at the cost of uncomfortable
+reach sequences in longer words. A small number of long words guards against
+this blind spot and adds length variety to the test. The specific words chosen
+are not necessarily the most frequent in the language; they are selected to
+introduce letter combinations not already covered by Tiers A–C.
 
-**Why weight 0.1:** These words are infrequent in everyday text. They are present for diagnostic purposes — to catch layout weaknesses that would otherwise be invisible — but must not dominate the score.
+**Why weight 0.1:** These words are infrequent in everyday text. They are
+present for diagnostic purposes — to catch layout weaknesses that would
+otherwise be invisible — but must not dominate the score.
 
 
 
@@ -190,7 +239,18 @@ The table below shows an excerpt of the English 100-word list with tier assignme
 
 ## 7. Tier Composition Across All 14 Languages
 
-The number of words per tier varies by language because linguistic structures differ. Languages with rich morphology (Finnish, Turkish, Polish, Russian) carry more Tier C words. Languages with heavy function-word usage (French, German, English) carry more Tier A words.
+The number of words per tier varies by language because linguistic structures 
+differ. Languages with rich morphology (Finnish, Turkish, Polish, Russian) carry 
+more Tier C words because inflected forms are more numerous and their suffixes 
+contribute heavily to the trigram frequency profile of those languages. Languages 
+with heavy function-word usage (French, German, English) carry more Tier A words. 
+The lists were validated against trigram frequency data for 12 of the 14 languages 
+(Russian and Norwegian excluded due to data availability). At n=100, the lists 
+cover between 69% and 88% of the top-100 most frequent internal n-grams per 
+language, rising to 97–100% word coverage at n=500 — confirming that virtually 
+every word in the list exercises a statistically significant letter pattern. Full 
+results are in the Annex.
+
 
 | Language | Tier A (1.0) | Tier B (0.6) | Tier C (0.3) | Tier D (0.1) |
 |---|:---:|:---:|:---:|:---:|
@@ -201,16 +261,17 @@ The number of words per tier varies by language because linguistic structures di
 | Spanish | 28 | 50 | 16 | 6 |
 | Italian | 20 | 58 | 16 | 6 |
 | Portuguese | 27 | 50 | 17 | 6 |
-| Polish | 14 | 62 | 18 | 6 |
-| Russian | 25 | 47 | 23 | 5 |
+| Polish | 14 | 63 | 17 | 6 |
+| Russian | 25 | 48 | 22 | 5 |
 | Norwegian | 19 | 55 | 21 | 5 |
-| Swedish | 21 | 52 | 22 | 5 |
-| Danish | 19 | 55 | 21 | 5 |
-| Finnish | 17 | 52 | 25 | 6 |
-| Turkish | 17 | 47 | 32 | 4 |
+| Swedish | 21 | 53 | 21 | 5 |
+| Danish | 19 | 57 | 19 | 5 |
+| Finnish | 17 | 53 | 24 | 6 |
+| Turkish | 17 | 48 | 31 | 4 |
 
-The variation is intentional and linguistically sound. A fixed tier distribution imposed on all languages would either distort word selection or produce lists that do not reflect actual usage patterns in those languages.
-
+The variation is intentional and linguistically sound. A fixed tier distribution
+imposed on all languages would either distort word selection or produce lists
+that do not reflect actual usage patterns in those languages.
 
 
 ## 8. The 25-Word Quick-Check Subset
@@ -315,14 +376,14 @@ Similarly, n-grams with a leading or trailing space are not relevant for our wor
 The script iterated through the top **500 n-grams** (the building blocks of the language) and measured three key metrics:
 
 * **Found Count:** The raw number of top-tier n-grams present within the 100-word list.
-* **Word Coverage %:** The percentage of words in the 100-word list that contain at least one of these high-frequency n-grams.
+* **Words Exercised %:** The percentage of words in the 100-word list that contain at least one of these high-frequency n-grams.
 * **Frequency Weight %:** The "statistical power" of the n-grams found. This sums the absolute frequencies of the n-grams and compares them to the total frequency of the entire language file.
 
 #### 4. Key Findings (German Example)
 
 The results demonstrate the "concentrated power" of the 100-word list:
 
-| N-gram Subset | Found Count | N-gram Match % | Word Coverage % | Frequency Weight % |
+| Top N-grams | Found Count | N-grams Found % | Words Exercised % | Frequency Weight % |
 | :--- | :---: | :---: | :---: | :---: |
 | **Top 100** | 82 | 82.0% | 91.0% | 39.3% |
 | **Top 200** | 142 | 71.0% | 96.0% | 51.7% |
@@ -331,10 +392,25 @@ The results demonstrate the "concentrated power" of the 100-word list:
 #### 5. Interpretation
 * **High Efficiency:** Even though the list only contains 100 words, it captures **82% of the top 100 most frequent letter patterns** in the German language.
 * **Massive Statistical Weight:** By typing just these 100 words, you are exercising patterns that account for over **69% of all typed occurrences** in the language (based on the Top 500 n-grams).
-* **Diagnostic Depth:** The "Word Coverage" reaching **99%** at $n=500$ proves that almost every single word in the KeyDuel list is exercising a high-frequency pattern, leaving almost no "dead weight" words in the test.
+* **Diagnostic Depth:** The "Words Exercised" reaching **99%** at $n=500$ proves that almost every single word in the KeyDuel list is exercising a high-frequency pattern, leaving almost no "dead weight" words in the test.
+
+See the Annex for the full analysis list of all tested languages.
 
 > **Conclusion:** The validation confirms that the KeyDuel word list is an extremely high-density proxy for the language. By typing these 100 words, you are effectively "stress-testing" the ergonomic core of the layout. The results confirm that even a small, manageable word list can provide a statistically representative impression of a layout's comfort in daily use.
 
+### 6. Word List Construction Process
+
+The word lists were built in three stages. First, high-frequency vocabulary 
+was drawn from corpus frequency data for each language, grouped into the four 
+tiers based on word class and frequency rank. Second, each list was reviewed 
+manually for linguistic soundness, checking that the tier assignments matched 
+real-world usage, removing duplicates and misclassified words, and ensuring that 
+morphologically rich languages (Finnish, Turkish, Polish, Russian) had adequate 
+representation of inflected forms in Tier C. Third, the completed lists were 
+validated against the n-gram frequency data described above, with targeted 
+corrections where coverage gaps were identified. 
+The validation confirmed that the final lists achieve high n-gram coverage 
+relative to what is achievable with a 100-word constraint.
 
 ## 12. Future developments: Psychophysical data base
 
@@ -365,8 +441,100 @@ For even better understanding the following information would be worthwhile to c
 - Key spacing if not standard
 - Keyboard position relative to the tester (distance, height)
 
+# Annex — Language N-gram Analysis Results (Aggregated)
 
-## Star History
+## Language: Danish
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 80 | 136 | 177 | 206 | 226 |
+| **N-grams Found %** | 80.0% | 68.0% | 59.0% | 51.5% | 45.2% |
+| **Words Exercised %** | 88.0% | 94.0% | 97.0% | 98.0% | 100.0% |
+| **Freq. Weight %** | 38.2% | 50.5% | 58.1% | 63.5% | 67.6% |
+
+## Language: Dutch
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 88 | 148 | 193 | 227 | 254 |
+| **N-grams Found %** | 88.0% | 74.0% | 64.3% | 56.8% | 50.8% |
+| **Words Exercised %** | 89.0% | 97.0% | 100.0% | 100.0% | 100.0% |
+| **Freq. Weight %** | 38.4% | 50.5% | 58.4% | 64.2% | 68.8% |
+
+## Language: English
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 78 | 131 | 165 | 195 | 216 |
+| **N-grams Found %** | 78.0% | 65.5% | 55.0% | 48.8% | 43.2% |
+| **Words Exercised %** | 90.0% | 97.0% | 100.0% | 100.0% | 100.0% |
+| **Freq. Weight %** | 37.0% | 48.2% | 55.9% | 61.9% | 66.7% |
+
+## Language: Finnish
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 69 | 122 | 159 | 190 | 211 |
+| **N-grams Found %** | 69.0% | 61.0% | 53.0% | 47.5% | 42.2% |
+| **Words Exercised %** | 87.0% | 93.0% | 97.0% | 97.0% | 99.0% |
+| **Freq. Weight %** | 29.7% | 42.3% | 51.1% | 57.9% | 63.4% |
+
+## Language: French
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 72 | 124 | 168 | 206 | 227 |
+| **N-grams Found %** | 72.0% | 62.0% | 56.0% | 51.5% | 45.4% |
+| **Words Exercised %** | 84.0% | 96.0% | 98.0% | 100.0% | 100.0% |
+| **Freq. Weight %** | 37.4% | 49.3% | 57.2% | 63.0% | 67.4% |
+
+## Language: German
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 82 | 142 | 193 | 215 | 239 |
+| **N-grams Found %** | 82.0% | 71.0% | 64.3% | 53.8% | 47.8% |
+| **Words Exercised %** | 91.0% | 96.0% | 98.0% | 98.0% | 99.0% |
+| **Freq. Weight %** | 39.3% | 51.7% | 59.3% | 64.8% | 69.0% |
+
+## Language: Italian
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 76 | 122 | 160 | 194 | 225 |
+| **N-grams Found %** | 76.0% | 61.0% | 53.3% | 48.5% | 45.0% |
+| **Words Exercised %** | 90.0% | 97.0% | 97.0% | 98.0% | 99.0% |
+| **Freq. Weight %** | 35.7% | 49.5% | 58.4% | 64.9% | 70.2% |
+
+## Language: Polish
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 77 | 133 | 173 | 201 | 228 |
+| **N-grams Found %** | 77.0% | 66.5% | 57.7% | 50.2% | 45.6% |
+| **Words Exercised %** | 92.0% | 95.0% | 98.0% | 98.0% | 99.0% |
+| **Freq. Weight %** | 27.9% | 38.8% | 46.3% | 52.1% | 56.8% |
+
+## Language: Spanish
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 79 | 132 | 173 | 200 | 223 |
+| **N-grams Found %** | 79.0% | 66.0% | 57.7% | 50.0% | 44.6% |
+| **Words Exercised %** | 97.0% | 99.0% | 100.0% | 100.0% | 100.0% |
+| **Freq. Weight %** | 41.3% | 53.0% | 60.7% | 66.4% | 70.9% |
+
+## Language: Swedish
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 87 | 146 | 190 | 230 | 257 |
+| **N-grams Found %** | 87.0% | 73.0% | 63.3% | 57.5% | 51.4% |
+| **Words Exercised %** | 88.0% | 92.0% | 100.0% | 100.0% | 100.0% |
+| **Freq. Weight %** | 36.9% | 48.3% | 56.1% | 62.0% | 66.4% |
+
+## Language: Turkish
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Found Count** | 72 | 130 | 170 | 198 | 225 |
+| **N-grams Found %** | 72.0% | 65.0% | 56.7% | 49.5% | 45.0% |
+| **Words Exercised %** | 80.0% | 92.0% | 95.0% | 96.0% | 97.0% |
+| **Freq. Weight %** | 28.6% | 40.1% | 48.0% | 54.2% | 59.2% |
+
+Note: I did not run the evaluation for Russian and Norwegian. In case you want to evaluate these or other languages you can use the tool ```opt``` to generate the n-gram frequency tables. You find more information about opt in the Anymak repo.
+
+
+# Star History
 
 Please star this project if it helped you! Your feedback shows me how many people benefit from these resources, which motivates me making keyboard layout optimization accessible to everyone. :-)
 
