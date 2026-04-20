@@ -28,7 +28,7 @@ Two test modes are provided:
 
 ## 2. Scope and Limitations
 
-KeyDuel measures **perceived typing comfort**, the subjective feeling of typing each word, not speed or accuracy. Speed tests on typing trainers measure how well you have learned a layout, not how comfortable it is. After a few weeks on any layout you will reach acceptable speed; comfort is the more durable and more personal variable. Used honestly, KeyDuel gives you a very good idea, you could see feeling, about comfort differences.
+KeyDuel measures **perceived typing comfort**, the subjective feeling of typing each word, not speed or accuracy. Speed tests on typing trainers measure how well you have learned a layout, not how comfortable it is. After a few weeks on any layout you will reach acceptable speed; comfort is the more durable and more personal variable. Used honestly, KeyDuel gives you a very good idea about overall comfort differences between two layouts.
 
 Further limitations to be aware of:
 
