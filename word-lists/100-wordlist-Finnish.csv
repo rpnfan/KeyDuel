@@ -31,7 +31,7 @@
 30;nainen;0,6
 31;vain;0,6
 32;yhdessä;0,6
-33;kävelyllä;0,3
+33;kävellä;0,3
 34;hetki;0,6
 35;numero;0,6
 36;syy;0,6
@@ -47,7 +47,7 @@
 46;muoto;0,6
 47;tuo;0,6
 48;kautta;0,6
-49;erittäin;0,3
+49;erittäin;0,6
 50;miksi;0,6
 51;ennen;0,6
 52;meidän;0,6
@@ -55,7 +55,7 @@
 54;hyvä;0,6
 55;päivä;0,6
 56;koti;0,6
-57;kävellä;0,3
+57;oppia;0,3
 58;uusi;0,6
 59;käsi;0,6
 60;loppu;0,6
@@ -94,8 +94,8 @@
 93;asia;0,6
 94;käyttää;0,3
 95;erilainen;0,1
-96;tärkeä;0,1
-97;tieto;0,1
+96;ymmärtäminen;0,1
+97;tärkeintä;0,1
 98;hallitus;0,1
 99;kysymys;0,1
 100;esimerkki;0,1
