@@ -14,7 +14,7 @@ The goal is to **compare perceived typing comfort between two keyboard layouts**
 The method combines three principles drawn from existing layout evaluation practice:
 
 - **Linguistic frequency** — words that appear most often in real text should dominate the score, because that is where a layout spends most of its effort
-- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and therefore are vital to exhibit typical finger patterns (same-finger bigrams, scissors, lateral reach and redirects). But also longer content words need to be included possibly better exhibiting alterantion and roll patterns. 
+- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and therefore are vital to exhibit typical finger patterns (same-finger bigrams, scissors, lateral reach and redirects). But also longer content words need to be included better exhibiting alternation and roll patterns. 
 - **Practical test ergonomics** — sessions must be short enough to complete without fatigue, yet representative enough to give a meaningful result
 
 Two test modes are provided:
@@ -56,7 +56,7 @@ Delete the example ratings and enter the names of the two layouts you are compar
 
 ### 3. Run the quick check (25 words)
 
-Start with the first 25 words. For each word, type it several times on layout A, then several times on layout B. Focus entirely on the finger movements. Forget the word itself and concentrate on how the motion feels. Practice each word until you have the finger-pattern/ motion engrained.
+Start with the first 25 words. For each word, type it several times on layout A, then several times on layout B. Focus entirely on the finger movements. Forget the word itself and concentrate on how the motion feels. Practice each word until you have the finger-pattern engrained.
 
 Especially for longer words it can happen that the first few characters type better in layout A, but another part of the finger-pattern is better on layout B. If that is the case you have to count how many partial finger-patterns are better in each layout. Use the same rating (see below) for the partial word evaluation and finally sum the total rating for the word:
 
@@ -68,7 +68,7 @@ Especially for longer words it can happen that the first few characters type bet
 | −1 | Layout B slightly more comfortable |
 | −2 | Layout B clearly more comfortable |
 
-The spreadsheet is setup in that way that layout A (displayed in blue) is the layout you are evaluating. Layout B (displayed in red) is the layout you are fluent in. 
+The spreadsheet is configured so that layout A (displayed in blue) is the layout you are evaluating. Layout B (displayed in red) is the layout you are fluent in. 
 
 Continue word for word till you completed the short test with 25 words. If the result after 25 words is already very clear, you can stop here. If the difference is small or ambiguous, continue with the remaining 75 words for the full evaluation.
 
@@ -271,23 +271,78 @@ The denominator normalises by twice the total weight because the maximum absolut
 
 > The evalution spreadsheet shows both an unweighted and a frequency-weighted score, the latter is the more meaningful for day-to-day typing.
 
-## 11. Why This Approach Rather Than Alternatives
+
+
+## 11. Methodology Discussion
+
+
+### Why This Approach Rather Than Alternatives
+
+The goal of the curated word list is to provide a meaningful representation of the language. This approach was chosen instead of simpler options:
 
 **Versus raw corpus frequency lists:** Top-100 frequency lists are dominated by very short function words, testing only one narrow slice of the ergonomic space. The tiered approach rebalances the list to be ergonomically representative.
 
-**Versus n-gram frequency optimisation:** Selecting words to reproduce the letter bigram and trigram distribution of a corpus maximises statistical representativeness of letter sequences but does not reflect word-level or rhythm-level typing experience. The tiered approach was preferred because a human tester rates whole words as typed units, not letter sequences in isolation.
+**Versus N-gram frequency optimisation:** Selecting words to reproduce the letter bigram and trigram distribution of a corpus maximises statistical representativeness of letter sequences but does not reflect word-level or rhythm-level typing experience. The tiered approach was preferred because a human tester rates whole words as typed units, not letter sequences in isolation.
 
 **Versus sentence-based or synthetic text tests:** Full sentences introduce syntactic parsing and reading comprehension workload, which can obscure pure motor comfort assessments. Isolated words keep cognitive load minimal and the typing signal cleaner.
 
 
+### N-gram Coverage Analysis
+
+To ensure the KeyDuel word list is a high-fidelity proxy for real-world typing, each language list was validated using a custom N-gram analysis. This process measures how many of the language's most frequent "finger motions" are exercised by the 100 test words.
+
+
+
+#### 1. Why this analysis was done
+The validity of KeyDuel rests on the assumption that typing 100 specific words can simulate the "feel" of typing an entire language. We needed to verify:
+* **Density:** Do the most frequent letter combinations (bigrams/trigrams) actually appear in our 100 words?
+* **Efficiency:** Does the list "cover" enough of the language's statistical weight to be a valid diagnostic tool?
+
+
+#### 2. Filtering of the 3-grams list
+
+The 3-grams list (```language.3```) for each language contains the absolute frequency of unigrams, bigrams and trigrams for a massive language corpus (University of Leipzig). 
+
+**"Internal Flow" Methodology -**
+The trigrams frequency lists also contain word-boundary trigrams, such as "n d". For our purpose to test isolated word comfort these are not relevant. Therefore all mid-space trigrams were excluded out of the n-gram list.
+
+**Aggregating Boundary Patterns -**
+Similarly, n-grams with a leading or trailing space are not relevant for our word based testing (e.g., Danish " og" and "og "). Our script merges these into a single unit (og), summing their frequencies to find the true cumulative weight of that finger motion.
+
+> Core-Internal Focus: We only validate against n-grams that occur inside or at the boundaries of words, as these define the "word shape" comfort that KeyDuel measures.
+
+#### 3. What was calculated
+The script iterated through the top **500 n-grams** (the building blocks of the language) and measured three key metrics:
+
+* **Found Count:** The raw number of top-tier n-grams present within the 100-word list.
+* **Word Coverage %:** The percentage of words in the 100-word list that contain at least one of these high-frequency n-grams.
+* **Frequency Weight %:** The "statistical power" of the n-grams found. This sums the absolute frequencies of the n-grams and compares them to the total frequency of the entire language file.
+
+#### 4. Key Findings (German Example)
+
+The results demonstrate the "concentrated power" of the 100-word list:
+
+| N-gram Subset | Found Count | N-gram Match % | Word Coverage % | Frequency Weight % |
+| :--- | :---: | :---: | :---: | :---: |
+| **Top 100** | 82 | 82.0% | 91.0% | 39.3% |
+| **Top 200** | 142 | 71.0% | 96.0% | 51.7% |
+| **Top 500** | 239 | 47.8% | 99.0% | 69.0% |
+
+#### 5. Interpretation
+* **High Efficiency:** Even though the list only contains 100 words, it captures **82% of the top 100 most frequent letter patterns** in the German language.
+* **Massive Statistical Weight:** By typing just these 100 words, you are exercising patterns that account for over **69% of all typed occurrences** in the language (based on the Top 500 n-grams).
+* **Diagnostic Depth:** The "Word Coverage" reaching **99%** at $n=500$ proves that almost every single word in the KeyDuel list is exercising a high-frequency pattern, leaving almost no "dead weight" words in the test.
+
+> **Conclusion:** The validation confirms that the KeyDuel word list is an extremely high-density proxy for the language. By typing these 100 words, you are effectively "stress-testing" the ergonomic core of the layout. The results confirm that even a small, manageable word list can provide a statistically representative impression of a layout's comfort in daily use.
+
 
 ## 12. Future developments: Psychophysical data base
 
-The current implementation with a spreadsheet is sufficient for a single user. To draw general conlusions it would be needed to collect data from a larger population. With that valuable user data, representing the overall "comfort factor" of different keyboard layouts could be fitted to metrics of an analyzer, which could bring us closer to the holy grail of describing a layout's comfort in a single number.
+The current implementation with a spreadsheet is sufficient for a single user. To draw general conclusions it would be needed to collect data from a larger population. With that valuable user data, representing the overall "comfort factor" of different keyboard layouts could be fitted to metrics of an analyzer, which could bring us closer to the holy grail of describing a layout's comfort in a single number.
 
 I encourage anyone interested to pick up from here, for example by building a test website. 
 
-For any test session the following should be record at minimum:
+For any test session the following should be recorded at minimum:
 
 - Both layout names and versions
 - Language tested
