@@ -74,7 +74,7 @@ Continue word for word till you completed the short test with 25 words. If the r
 
 ### 4. Interpret your score
 
-The spreadsheet calculates a normalized score between −1 and +1. A score close to zero means no meaningful difference was detected. When you evaluate more than one layout you will get a feeling how the normalized score, displayed in percent in the spreadsheet translates to larger or smaller perceived differences between the layouts.
+The spreadsheet calculates a normalized score between −1 and +1, displayed in percentages -100 % to 100 %. A score close to zero means no meaningful difference was detected. When you evaluate more than one layout you will get a feeling how the normalized score, displayed in percent in the spreadsheet translates to larger or smaller perceived differences between the layouts.
 
 The spreadsheet provides two distinct metrics to help you make your decision. Both scores are relevant, but have a differeant practical meaning:
 
