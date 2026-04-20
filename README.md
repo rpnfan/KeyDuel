@@ -100,7 +100,8 @@ Keyboard layout differences are not uniform across all words. Whether one layout
 - **Same-finger bigrams** — consecutive letters typed by the same finger are the largest single source of discomfort and slowness
 - **Row usage and lateral reach** — how much vertical and horizontal finger travel is required
 - **Hand load balance** — whether one hand carries a disproportionate share of a word
-
+- **Further parameters** — such as in-ward rolls, sciccors, redirects and more, see the [Keyboard Layouts Doc V3](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o) for more details.
+  
 A list dominated entirely by two-letter function words (*in, of, at*) would stress alternation but barely exercise finger travel. A list of only long technical words would stress movement but miss everyday rhythm. An effective test list must deliberately cover both dimensions.
 
 This is why a raw corpus frequency list — simply the N most common words — is insufficient. The top 100 most frequent words in any language skew heavily toward very short function words, testing only one narrow slice of the ergonomic space. The tiered structure corrects for this.
@@ -247,7 +248,7 @@ with heavy function-word usage (French, German, English) carry more Tier A words
 The lists were validated against trigram frequency data for 12 of the 14 languages 
 (Russian and Norwegian excluded due to data availability). At n=100, the lists 
 cover between 69% and 88% of the top-100 most frequent internal n-grams per 
-language, rising to 97–100% word coverage at n=500 — confirming that virtually 
+language, rising to 97–100% word coverage at n=500; confirming that virtually 
 every word in the list exercises a statistically significant letter pattern. Full 
 results are in the Annex.
 
@@ -289,19 +290,16 @@ The first 25 rows of every list form the quick-check subset. They are deliberate
 ## 9. Ordering of the Full 100-Word List
 
 ```
-Rows  1–25    Fixed quick-check subset (identical across all test instances)
+Rows  1–25    Quick-check subset, mostly Tier A words
 Rows 26–94    Tier A/B/C words interleaved, fixed seed per language
 Rows 95–100   Tier D diagnostic words (long words, placed at end)
 ```
 
-**The quick subset is fixed** to ensure that results from different testers and sessions are directly comparable. Every tester encounters exactly the same 25 words in the same order for the quick check.
+Rows 26–94 are interleaved so that the tester experiences a consistent mix of short function words and longer content words throughout the session, rather than a block of one type followed by another. Tiers are interleaved under a mathematically computed constraint: no single tier repeats more than its optimal maximum, typically 3 consecutive words for most languages, 4 for languages where Tier B is very dominant (Italian, Polish). Within each tier, words are placed in a fixed-seed randomised order, ensuring variety of specific words even though the tier pattern is regular.
 
-**Rows 26–94 are interleaved** so that the tester experiences a consistent mix of short function words and longer content words throughout the session, rather than a block of one type followed by another. Tiers are interleaved under a mathematically computed constraint: no single tier repeats more than its optimal maximum — typically 3 consecutive words for most languages, 4 for languages where Tier B is very dominant (Italian, Polish). Within each tier, words are placed in a fixed-seed randomised order, ensuring variety of specific words even though the tier pattern is regular.
-
-**Tier D words are placed at the end** because the long diagnostic words would create a disproportionately strong first impression if placed early.
+Tier D words are placed at the end because the long diagnostic words would create a disproportionately strong first impression if placed early.
 
 **The fixed seed** per language ensures that the ordering is reproducible. Different test instances for the same language always present the same word sequence, which is a deliberate design choice for this instrument: the test is always run in the same fixed order, so results across testers and sessions are directly comparable without needing to record or transmit the randomised sequence.
-
 
 
 ## 10. Scoring Formula
@@ -350,7 +348,7 @@ The goal of the curated word list is to provide a meaningful representation of t
 
 ### N-gram Coverage Analysis
 
-To ensure the KeyDuel word list is a high-fidelity proxy for real-world typing, each language list was validated using a custom N-gram analysis. This process measures how many of the language's most frequent "finger motions" are exercised by the 100 test words.
+To ensure the KeyDuel word list is a high-fidelity proxy for real-world typing, each language list was validated using a custom n-gram analysis. This process measures how many of the language's most frequent "finger motions" are exercised by the 100 test words.
 
 
 
@@ -398,19 +396,6 @@ See the Annex for the full analysis list of all tested languages.
 
 > **Conclusion:** The validation confirms that the KeyDuel word list is an extremely high-density proxy for the language. By typing these 100 words, you are effectively "stress-testing" the ergonomic core of the layout. The results confirm that even a small, manageable word list can provide a statistically representative impression of a layout's comfort in daily use.
 
-### 6. Word List Construction Process
-
-The word lists were built in three stages. First, high-frequency vocabulary 
-was drawn from corpus frequency data for each language, grouped into the four 
-tiers based on word class and frequency rank. Second, each list was reviewed 
-manually for linguistic soundness, checking that the tier assignments matched 
-real-world usage, removing duplicates and misclassified words, and ensuring that 
-morphologically rich languages (Finnish, Turkish, Polish, Russian) had adequate 
-representation of inflected forms in Tier C. Third, the completed lists were 
-validated against the n-gram frequency data described above, with targeted 
-corrections where coverage gaps were identified. 
-The validation confirmed that the final lists achieve high n-gram coverage 
-relative to what is achievable with a 100-word constraint.
 
 ## 12. Future developments: Psychophysical data base
 
