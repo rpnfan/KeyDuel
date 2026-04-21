@@ -14,7 +14,7 @@ The goal is to **compare perceived typing comfort between two keyboard layouts**
 The method combines three principles drawn from existing layout evaluation practice:
 
 - **Linguistic frequency** — words that appear most often in real text should dominate the score, because that is where a layout spends most of its effort
-- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and therefore are vital to exhibit typical finger patterns (same-finger bigrams, scissors, lateral reach and redirects). But also longer content words need to be included better exhibiting alternation and roll patterns. 
+- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and therefore are vital to exhibit typical finger patterns (same-finger bigrams, scissors, lateral reach and redirects). But also longer content words must also be included to better exhibit alternation and roll patterns.
 - **Practical test ergonomics** — sessions must be short enough to complete without fatigue, yet representative enough to give a meaningful result
 
 Two test modes are provided:
@@ -32,7 +32,7 @@ KeyDuel measures **perceived typing comfort**, the subjective feeling of typing 
 
 Further limitations to be aware of:
 
-- **Adaptation is not controlled.** A layout you have used for years will feel more natural regardless of its ergonomic properties. For a meaningful comparison, it is important to try separate the ergonomic feel of a layout from how familiar you are with it. The How-To section will give guidance how to achieve that.
+- **Adaptation is not controlled.** A layout you have used for years will feel more natural regardless of its ergonomic properties. For a meaningful comparison, it is important to try to separate the ergonomic feel of a layout from how familiar you are with it. The How-To section will give guidance how to achieve that.
 - **Individual anatomy is not accounted for.** Hand size, finger proportions, keyboard type, keycaps, your typing posture and more all affect comfort. Results from a single tester should not be generalised. But for yourself the results are fully valid.
 - **Language mix is not tested.** The lists are single-language. If you regularly type in multiple languages, no single list fully represents your typing. 
 
@@ -44,7 +44,7 @@ KeyDuel uses two components: a word list you type using a layout try-out tool, a
 
 ### 1. Set up the layout try-out tool
 
-Open [keyboard-layout-try-out.pages.dev](https://keyboard-layout-try-out.pages.dev/) and configure it to translate your target layout into the key positions of your current layout. This lets you type in the new layout without having learned it. Copy and paste the word-list of the language for which you are evaluating the new layout. You find the language.txt files in the word-list folder of this repo.
+Open [keyboard-layout-try-out.pages.dev](https://keyboard-layout-try-out.pages.dev/) and configure it to translate your target layout into the key positions of your current layout. This lets you type in the new layout without having learned it. Copy and paste the words from the plain-text word list for your language (the .txt files in the word-lists/ folder of this repo).
 
 ### 2. Download the scoring spreadsheet
 
@@ -76,7 +76,7 @@ Continue word for word till you completed the short test with 25 words. If the r
 
 The spreadsheet calculates a normalized score between −1 and +1, displayed in percentages -100 % to 100 %. A score close to zero means no meaningful difference was detected. When you evaluate more than one layout you will get a feeling how the normalized score, displayed in percent in the spreadsheet translates to larger or smaller perceived differences between the layouts.
 
-The spreadsheet provides two distinct metrics to help you make your decision. Both scores are relevant, but have a differeant practical meaning:
+The spreadsheet provides two distinct metrics to help you make your decision. Both scores are relevant, but have a different practical meaning:
 
 - **Raw List Preference (Unweighted):** This tells you which layout felt better across the list of 100 words.
 
@@ -100,7 +100,7 @@ Keyboard layout differences are not uniform across all words. Whether one layout
 - **Same-finger bigrams** — consecutive letters typed by the same finger are the largest single source of discomfort and slowness
 - **Row usage and lateral reach** — how much vertical and horizontal finger travel is required
 - **Hand load balance** — whether one hand carries a disproportionate share of a word
-- **Further parameters** — such as in-ward rolls, sciccors, redirects and more, see the [Keyboard Layouts Doc V3](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o) for more details.
+- **Further parameters** — such as in-ward rolls, scissors, redirects and more, see the [Keyboard Layouts Doc V3](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o) for more details.
   
 A list dominated entirely by two-letter function words (*in, of, at*) would stress alternation but barely exercise finger travel. A list of only long technical words would stress movement but miss everyday rhythm. An effective test list must deliberately cover both dimensions.
 
@@ -290,7 +290,7 @@ The first 25 rows of every list form the quick-check subset. They are deliberate
 ## 9. Ordering of the Full 100-Word List
 
 ```
-Rows  1–25    Quick-check subset, mostly Tier A words
+Rows  1–25    Rows 1–25: Quick-check subset (mixed Tier A/B/C)
 Rows 26–94    Tier A/B/C words interleaved, fixed seed per language
 Rows 95–100   Tier D diagnostic words (long words, placed at end)
 ```
@@ -308,11 +308,11 @@ Each word receives a rating from the tester on a five-point scale:
 
 | Rating | Meaning |
 |:---:|---|
-| +2 | Original layout clearly more comfortable |
-| +1 | Original layout slightly more comfortable |
+| +2 | New layout clearly more comfortable |
+| +1 | New layout slightly more comfortable |
 | 0 | No perceptible difference |
-| −1 | New layout slightly more comfortable |
-| −2 | New layout clearly more comfortable |
+| −1 | Original layout slightly more comfortable |
+| −2 | Original layout clearly more comfortable |
 
 The normalized score is:
 
@@ -320,15 +320,15 @@ $$\text{Normalized score} = \frac{\displaystyle\sum_{i=1}^{100} \left(\text{rati
 
 Result range **[−1, +1]**:
 
-- **+1.0** — original layout clearly preferred on every word
+- **+1.0** — new layout clearly preferred on every word
 - **0.0** — no net preference
-- **−1.0** — new layout clearly preferred on every word
+- **−1.0** — original layout clearly preferred on every word
 
 The denominator normalises by twice the total weight because the maximum absolute rating is 2. Dividing by 2 × Σweight scales the result to [−1, +1] regardless of tier distribution.
 
 **Why grouped weights are sufficient:** The dominant source of variance in subjective comfort ratings is the tester's own perception from trial to trial. Four tiers capture the signal that matters — function words dominate real typing, rare words do not — while keeping the method robust, transparent, and reproducible.
 
-> The evalution spreadsheet shows both an unweighted and a frequency-weighted score, the latter is the more meaningful for day-to-day typing.
+> The evaluation spreadsheet shows both an unweighted and a frequency-weighted score, the latter is the more meaningful for day-to-day typing.
 
 
 
@@ -371,30 +371,71 @@ Similarly, n-grams with a leading or trailing space are not relevant for our wor
 > Core-Internal Focus: We only validate against n-grams that occur inside or at the boundaries of words, as these define the "word shape" comfort that KeyDuel measures.
 
 #### 3. What was calculated
-The script iterated through the top **500 n-grams** (the building blocks of the language) and measured three key metrics:
 
-* **Found Count:** The raw number of top-tier n-grams present within the 100-word list.
-* **Words Exercised %:** The percentage of words in the 100-word list that contain at least one of these high-frequency n-grams.
-* **Frequency Weight %:** The "statistical power" of the n-grams found. This sums the absolute frequencies of the n-grams and compares them to the total frequency of the entire language file.
+The script analysed the top **500 n-grams** and measured four metrics for 
+each threshold (n=100, 200, 300, 400, 500):
+
+* **N-grams Found:** The number of top-N patterns that appear in at least 
+  one word of the 100-word list.
+* **N-grams Found %:** N-grams Found as a percentage of N (how much of the 
+  top-N set is represented).
+* **Words Exercised %:** The percentage of the 100 words that contain at 
+  least one top-N pattern. Near 100% means almost no "dead weight" words.
+* **Corpus Coverage %:** The fraction of *all* language pattern occurrences
+  accounted for by the n-grams actually found in the word list. This differs from Potential Core Weight, which represents the theoretical maximum if all top-N patterns were present. The Corpus Coverage is the most meaningful metric: it answers "if someone typed real text in this language all day, what share of their finger motions would be exercised by the KeyDuel list?"
 
 #### 4. Key Findings (German Example)
 
 The results demonstrate the "concentrated power" of the 100-word list:
 
-| Top N-grams | Found Count | N-grams Found % | Words Exercised % | Frequency Weight % |
-| :--- | :---: | :---: | :---: | :---: |
-| **Top 100** | 82 | 82.0% | 91.0% | 39.3% |
-| **Top 200** | 142 | 71.0% | 96.0% | 51.7% |
-| **Top 500** | 239 | 47.8% | 99.0% | 69.0% |
+| Top N-grams | Found Count | N-grams Found % | Words Exercised % | Corpus Coverage % |Potential Core Weight | List Efficiency |
+| :--- | :---: | :---: | :---: | :---: |:---: | :---: |
+| **Top 100** | 82 | 82.0% | 91.0% | 34.2% | 39.3% | 87.1% |
+| **Top 200** | 142 | 71.0% | 96.0% | 41.6% | 51.7% | 80.6% |
+| **Top 500** | 239 | 47.8% | 99.0% | 47.8% | 69.0% | 69.2% |
 
 #### 5. Interpretation
-* **High Efficiency:** Even though the list only contains 100 words, it captures **82% of the top 100 most frequent letter patterns** in the German language.
-* **Massive Statistical Weight:** By typing just these 100 words, you are exercising patterns that account for over **69% of all typed occurrences** in the language (based on the Top 500 n-grams).
-* **Diagnostic Depth:** The "Words Exercised" reaching **99%** at $n=500$ proves that almost every single word in the KeyDuel list is exercising a high-frequency pattern, leaving almost no "dead weight" words in the test.
 
-See the Annex for the full analysis list of all tested languages.
+* **High Pattern Match:** The list captures **82% of the top 100 most frequent 
+  letter patterns** in German, meaning the words were chosen to cover the 
+  statistically dominant finger motions.
+* **Real-World Relevance:** The Corpus Coverage of 47.8% at n=500 means that by typing these 100 words, you exercise patterns accounting for nearly half of all pattern occurrences in real German text — confirming the list is a representative proxy for everyday typing.
+* **Diagnostic Depth:** Words Exercised reaching **99%** at n=500 means almost 
+  every word in the list exercises a high-frequency pattern. There is essentially 
+  no dead weight in the test.
+* **List Efficiency:** The ratio of Corpus Coverage to the 
+  theoretical maximum (Potential Core Weight) quantifies how well the 100 words 
+  were selected. A high efficiency means the words collectively cover the 
+  available patterns well, not just the most obvious ones.
 
+See the Annex A for the full analysis list of all tested languages.
 > **Conclusion:** The validation confirms that the KeyDuel word list is an extremely high-density proxy for the language. By typing these 100 words, you are effectively "stress-testing" the ergonomic core of the layout. The results confirm that even a small, manageable word list can provide a statistically representative impression of a layout's comfort in daily use.
+
+### Quick-Check Subset Validation (25, 50, 75 compared to 100 words)
+
+A second analysis validated that the 25-word quick-check subset is a genuine 
+predictor of the full 100-word result, not just an arbitrary first slice.
+
+Using the same n-gram methodology, the script measured coverage at each 
+subset size against the top N n-grams of the language. The following example shows the results for the top 500 n-grams for German.
+
+#### German
+
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 80 | 148 | 185 | 239 |
+| **N-grams Found %** | 16.0% | 29.6% | 37.0% | 47.8% |
+| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
+| **Corpus Coverage %** | 25.5% | 35.9% | 41.0% | 47.8% |
+
+The results confirm 
+that the 25-word subset already exercises the majority of high-frequency 
+patterns — providing a meaningful early signal — while the full 100 words 
+add the remaining coverage needed for a reliable final score. But even using 50 words improves the Corpus Coverage by more than 10%, while the next 25 words (75 total) just improve the Corpus Coverage by about 5%. With the full set of 100 words improving about 7%, covering almost the half full corpus.
+
+This diminishing return is expected: language corpora follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf's_law), where the most frequent patterns are dramatically more common than the rest, so the first 25 words capture a disproportionately large share.
+
+Full results for each language at n=100, n=500 and n=2000 are in Annex B.
 
 
 ## 12. Future developments: Psychophysical data base
@@ -426,97 +467,394 @@ For even better understanding the following information would be worthwhile to c
 - Key spacing if not standard
 - Keyboard position relative to the tester (distance, height)
 
-# Annex — Language N-gram Analysis Results (Aggregated)
 
-## Language: Danish
+# Annex A: Language N-gram Analysis Results
+
+### Language: Danish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 80 | 136 | 177 | 206 | 226 |
+| **N-grams Found** | 80 | 136 | 177 | 206 | 226 |
 | **N-grams Found %** | 80.0% | 68.0% | 59.0% | 51.5% | 45.2% |
 | **Words Exercised %** | 88.0% | 94.0% | 97.0% | 98.0% | 100.0% |
-| **Freq. Weight %** | 38.2% | 50.5% | 58.1% | 63.5% | 67.6% |
+| **Potential Core Weight** | 38.2% | 50.5% | 58.1% | 63.5% | 67.6% |
+| **Corpus Coverage** | 34.0% | 40.9% | 44.1% | 45.7% | 46.5% |
+| **List Efficiency** | 88.9% | 81.1% | 75.9% | 72.0% | 68.9% |
 
-## Language: Dutch
+### Language: Dutch
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 88 | 148 | 193 | 227 | 254 |
+| **N-grams Found** | 88 | 148 | 193 | 227 | 254 |
 | **N-grams Found %** | 88.0% | 74.0% | 64.3% | 56.8% | 50.8% |
 | **Words Exercised %** | 89.0% | 97.0% | 100.0% | 100.0% | 100.0% |
-| **Freq. Weight %** | 38.4% | 50.5% | 58.4% | 64.2% | 68.8% |
+| **Potential Core Weight** | 38.4% | 50.5% | 58.4% | 64.2% | 68.8% |
+| **Corpus Coverage** | 35.3% | 42.8% | 46.3% | 48.3% | 49.5% |
+| **List Efficiency** | 92.0% | 84.7% | 79.4% | 75.2% | 72.0% |
 
-## Language: English
+### Language: English
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 78 | 131 | 165 | 195 | 216 |
+| **N-grams Found** | 78 | 131 | 165 | 195 | 216 |
 | **N-grams Found %** | 78.0% | 65.5% | 55.0% | 48.8% | 43.2% |
 | **Words Exercised %** | 90.0% | 97.0% | 100.0% | 100.0% | 100.0% |
-| **Freq. Weight %** | 37.0% | 48.2% | 55.9% | 61.9% | 66.7% |
+| **Potential Core Weight** | 37.0% | 48.2% | 55.9% | 61.9% | 66.7% |
+| **Corpus Coverage** | 32.5% | 38.6% | 41.2% | 43.0% | 44.0% |
+| **List Efficiency** | 87.8% | 80.1% | 73.7% | 69.5% | 66.0% |
 
-## Language: Finnish
+### Language: Finnish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 69 | 122 | 159 | 190 | 211 |
+| **N-grams Found** | 69 | 122 | 159 | 190 | 211 |
 | **N-grams Found %** | 69.0% | 61.0% | 53.0% | 47.5% | 42.2% |
 | **Words Exercised %** | 87.0% | 93.0% | 97.0% | 97.0% | 99.0% |
-| **Freq. Weight %** | 29.7% | 42.3% | 51.1% | 57.9% | 63.4% |
+| **Potential Core Weight** | 29.7% | 42.3% | 51.1% | 57.9% | 63.4% |
+| **Corpus Coverage** | 22.6% | 29.4% | 32.7% | 34.8% | 36.0% |
+| **List Efficiency** | 76.1% | 69.5% | 64.0% | 60.1% | 56.7% |
 
-## Language: French
+### Language: French
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 72 | 124 | 168 | 206 | 227 |
+| **N-grams Found** | 72 | 124 | 168 | 206 | 227 |
 | **N-grams Found %** | 72.0% | 62.0% | 56.0% | 51.5% | 45.4% |
 | **Words Exercised %** | 84.0% | 96.0% | 98.0% | 100.0% | 100.0% |
-| **Freq. Weight %** | 37.4% | 49.3% | 57.2% | 63.0% | 67.4% |
+| **Potential Core Weight** | 37.4% | 49.3% | 57.2% | 63.0% | 67.4% |
+| **Corpus Coverage** | 29.7% | 36.1% | 39.6% | 41.8% | 42.7% |
+| **List Efficiency** | 79.6% | 73.1% | 69.2% | 66.4% | 63.4% |
 
-## Language: German
+### Language: German
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 82 | 142 | 193 | 215 | 239 |
+| **N-grams Found** | 82 | 142 | 193 | 215 | 239 |
 | **N-grams Found %** | 82.0% | 71.0% | 64.3% | 53.8% | 47.8% |
 | **Words Exercised %** | 91.0% | 96.0% | 98.0% | 98.0% | 99.0% |
-| **Freq. Weight %** | 39.3% | 51.7% | 59.3% | 64.8% | 69.0% |
+| **Potential Core Weight** | 39.3% | 51.7% | 59.3% | 64.8% | 69.0% |
+| **Corpus Coverage** | 34.2% | 41.6% | 45.5% | 46.7% | 47.8% |
+| **List Efficiency** | 87.1% | 80.6% | 76.8% | 72.2% | 69.2% |
 
-## Language: Italian
+### Language: Italian
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 76 | 122 | 160 | 194 | 225 |
+| **N-grams Found** | 76 | 122 | 160 | 194 | 225 |
 | **N-grams Found %** | 76.0% | 61.0% | 53.3% | 48.5% | 45.0% |
 | **Words Exercised %** | 90.0% | 97.0% | 97.0% | 98.0% | 99.0% |
-| **Freq. Weight %** | 35.7% | 49.5% | 58.4% | 64.9% | 70.2% |
+| **Potential Core Weight** | 35.7% | 49.5% | 58.4% | 64.9% | 70.2% |
+| **Corpus Coverage** | 29.4% | 35.9% | 39.4% | 41.7% | 43.3% |
+| **List Efficiency** | 82.4% | 72.7% | 67.5% | 64.2% | 61.6% |
 
-## Language: Polish
+### Language: Polish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 77 | 133 | 173 | 201 | 228 |
+| **N-grams Found** | 77 | 133 | 173 | 201 | 228 |
 | **N-grams Found %** | 77.0% | 66.5% | 57.7% | 50.2% | 45.6% |
 | **Words Exercised %** | 92.0% | 95.0% | 98.0% | 98.0% | 99.0% |
-| **Freq. Weight %** | 27.9% | 38.8% | 46.3% | 52.1% | 56.8% |
+| **Potential Core Weight** | 27.9% | 38.8% | 46.3% | 52.1% | 56.8% |
+| **Corpus Coverage** | 23.2% | 29.3% | 32.4% | 34.0% | 35.3% |
+| **List Efficiency** | 83.3% | 75.5% | 69.9% | 65.2% | 62.1% |
 
-## Language: Spanish
+### Language: Spanish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 79 | 132 | 173 | 200 | 223 |
+| **N-grams Found** | 79 | 132 | 173 | 200 | 223 |
 | **N-grams Found %** | 79.0% | 66.0% | 57.7% | 50.0% | 44.6% |
 | **Words Exercised %** | 97.0% | 99.0% | 100.0% | 100.0% | 100.0% |
-| **Freq. Weight %** | 41.3% | 53.0% | 60.7% | 66.4% | 70.9% |
+| **Potential Core Weight** | 41.3% | 53.0% | 60.7% | 66.4% | 70.9% |
+| **Corpus Coverage** | 36.9% | 43.1% | 46.2% | 47.8% | 48.9% |
+| **List Efficiency** | 89.2% | 81.3% | 76.2% | 72.0% | 68.9% |
 
-## Language: Swedish
+### Language: Swedish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 87 | 146 | 190 | 230 | 257 |
+| **N-grams Found** | 87 | 146 | 190 | 230 | 257 |
 | **N-grams Found %** | 87.0% | 73.0% | 63.3% | 57.5% | 51.4% |
 | **Words Exercised %** | 88.0% | 92.0% | 100.0% | 100.0% | 100.0% |
-| **Freq. Weight %** | 36.9% | 48.3% | 56.1% | 62.0% | 66.4% |
+| **Potential Core Weight** | 36.9% | 48.3% | 56.1% | 62.0% | 66.4% |
+| **Corpus Coverage** | 33.8% | 40.7% | 44.2% | 46.6% | 47.8% |
+| **List Efficiency** | 91.6% | 84.4% | 78.9% | 75.1% | 71.9% |
 
-## Language: Turkish
+### Language: Turkish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Found Count** | 72 | 130 | 170 | 198 | 225 |
+| **N-grams Found** | 72 | 130 | 170 | 198 | 225 |
 | **N-grams Found %** | 72.0% | 65.0% | 56.7% | 49.5% | 45.0% |
 | **Words Exercised %** | 80.0% | 92.0% | 95.0% | 96.0% | 97.0% |
-| **Freq. Weight %** | 28.6% | 40.1% | 48.0% | 54.2% | 59.2% |
+| **Potential Core Weight** | 28.6% | 40.1% | 48.0% | 54.2% | 59.2% |
+| **Corpus Coverage** | 22.0% | 28.8% | 31.9% | 33.7% | 35.0% |
+| **List Efficiency** | 77.1% | 71.7% | 66.5% | 62.1% | 59.1% |
 
-Note: I did not run the evaluation for Russian and Norwegian. In case you want to evaluate these or other languages you can use the tool ```opt``` to generate the n-gram frequency tables. You find more information about opt in the Anymak repo.
+
+# Annex B: 25, 50 and 75 Word Subset Analysis
+
+## Language 100 N-gram Analysis (Subset Comparison)
+
+### Language: Danish
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 41 | 67 | 76 | 80 |
+| **N-grams Found %** | 41.0% | 67.0% | 76.0% | 80.0% |
+| **Words Exercised %** | 92.0% | 92.0% | 90.7% | 88.0% |
+| **Corpus Coverage %** | 23.0% | 30.1% | 32.8% | 34.0% |
+
+### Language: Dutch
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 49 | 70 | 78 | 88 |
+| **N-grams Found %** | 49.0% | 70.0% | 78.0% | 88.0% |
+| **Words Exercised %** | 92.0% | 88.0% | 85.3% | 89.0% |
+| **Corpus Coverage %** | 22.7% | 29.3% | 32.5% | 35.3% |
+
+### Language: English
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 36 | 57 | 66 | 78 |
+| **N-grams Found %** | 36.0% | 57.0% | 66.0% | 78.0% |
+| **Words Exercised %** | 84.0% | 90.0% | 89.3% | 90.0% |
+| **Corpus Coverage %** | 20.5% | 27.0% | 29.3% | 32.5% |
+
+### Language: Finnish
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 34 | 51 | 59 | 69 |
+| **N-grams Found %** | 34.0% | 51.0% | 59.0% | 69.0% |
+| **Words Exercised %** | 88.0% | 90.0% | 85.3% | 87.0% |
+| **Corpus Coverage %** | 11.4% | 17.3% | 19.5% | 22.6% |
+
+### Language: French
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 30 | 54 | 62 | 72 |
+| **N-grams Found %** | 30.0% | 54.0% | 62.0% | 72.0% |
+| **Words Exercised %** | 80.0% | 84.0% | 85.3% | 84.0% |
+| **Corpus Coverage %** | 13.3% | 22.3% | 24.9% | 29.7% |
+
+### Language: German
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 42 | 61 | 70 | 82 |
+| **N-grams Found %** | 42.0% | 61.0% | 70.0% | 82.0% |
+| **Words Exercised %** | 96.0% | 90.0% | 88.0% | 91.0% |
+| **Corpus Coverage %** | 22.0% | 28.2% | 30.9% | 34.2% |
+
+### Language: Italian
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 35 | 58 | 70 | 76 |
+| **N-grams Found %** | 35.0% | 58.0% | 70.0% | 76.0% |
+| **Words Exercised %** | 88.0% | 88.0% | 90.7% | 90.0% |
+| **Corpus Coverage %** | 15.5% | 24.1% | 27.4% | 29.4% |
+
+### Language: Polish
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 34 | 61 | 68 | 77 |
+| **N-grams Found %** | 34.0% | 61.0% | 68.0% | 77.0% |
+| **Words Exercised %** | 88.0% | 92.0% | 90.7% | 92.0% |
+| **Corpus Coverage %** | 12.0% | 19.6% | 20.9% | 23.2% |
+
+### Language: Spanish
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 40 | 57 | 68 | 79 |
+| **N-grams Found %** | 40.0% | 57.0% | 68.0% | 79.0% |
+| **Words Exercised %** | 92.0% | 94.0% | 96.0% | 97.0% |
+| **Corpus Coverage %** | 25.4% | 30.2% | 33.1% | 36.9% |
+
+### Language: Swedish
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 43 | 65 | 80 | 87 |
+| **N-grams Found %** | 43.0% | 65.0% | 80.0% | 87.0% |
+| **Words Exercised %** | 84.0% | 84.0% | 88.0% | 88.0% |
+| **Corpus Coverage %** | 22.7% | 28.0% | 31.8% | 33.8% |
+
+### Language: Turkish
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 32 | 53 | 62 | 72 |
+| **N-grams Found %** | 32.0% | 53.0% | 62.0% | 72.0% |
+| **Words Exercised %** | 84.0% | 82.0% | 77.3% | 80.0% |
+| **Corpus Coverage %** | 12.5% | 17.8% | 19.7% | 22.0% |
+
+
+## Language 500 N-gram Analysis (Subset Comparison)
+
+### Language: Danish
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 57 | 129 | 178 | 226 |
+| **N-grams Found %** | 11.4% | 25.8% | 35.6% | 45.2% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 24.3% | 35.7% | 41.9% | 46.5% |
+
+### Language: Dutch
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 84 | 154 | 204 | 254 |
+| **N-grams Found %** | 16.8% | 30.8% | 40.8% | 50.8% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 25.9% | 37.1% | 43.6% | 49.5% |
+
+### Language: English
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 75 | 132 | 172 | 216 |
+| **N-grams Found %** | 15.0% | 26.4% | 34.4% | 43.2% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 23.9% | 33.6% | 38.6% | 44.0% |
+
+### Language: Finnish
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 61 | 121 | 164 | 211 |
+| **N-grams Found %** | 12.2% | 24.2% | 32.8% | 42.2% |
+| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
+| **Corpus Coverage %** | 14.2% | 24.2% | 29.5% | 36.0% |
+
+### Language: French
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 77 | 137 | 171 | 227 |
+| **N-grams Found %** | 15.4% | 27.4% | 34.2% | 45.4% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 17.8% | 29.7% | 34.3% | 42.7% |
+
+### Language: German
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 80 | 148 | 185 | 239 |
+| **N-grams Found %** | 16.0% | 29.6% | 37.0% | 47.8% |
+| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
+| **Corpus Coverage %** | 25.5% | 35.9% | 41.0% | 47.8% |
+
+### Language: Italian
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 62 | 130 | 177 | 225 |
+| **N-grams Found %** | 12.4% | 26.0% | 35.4% | 45.0% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 99.0% |
+| **Corpus Coverage %** | 18.5% | 30.7% | 37.4% | 43.3% |
+
+### Language: Polish
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 60 | 137 | 184 | 228 |
+| **N-grams Found %** | 12.0% | 27.4% | 36.8% | 45.6% |
+| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
+| **Corpus Coverage %** | 14.1% | 25.9% | 30.3% | 35.3% |
+
+### Language: Spanish
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 77 | 142 | 175 | 223 |
+| **N-grams Found %** | 15.4% | 28.4% | 35.0% | 44.6% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 28.7% | 37.6% | 42.1% | 48.9% |
+
+### Language: Swedish
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 63 | 151 | 207 | 257 |
+| **N-grams Found %** | 12.6% | 30.2% | 41.4% | 51.4% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 24.4% | 35.4% | 42.1% | 47.8% |
+
+### Language: Turkish
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 58 | 126 | 171 | 225 |
+| **N-grams Found %** | 11.6% | 25.2% | 34.2% | 45.0% |
+| **Words Exercised %** | 96.0% | 98.0% | 96.0% | 97.0% |
+| **Corpus Coverage %** | 15.0% | 24.3% | 28.9% | 35.0% |
+
+## Language 2000 N-gram Analysis (Subset Comparison)
+
+### Language: Danish
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 68 | 154 | 225 | 304 |
+| **N-grams Found %** | 3.4% | 7.7% | 11.2% | 15.2% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 24.6% | 36.2% | 42.8% | 48.0% |
+
+### Language: Dutch
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 92 | 190 | 261 | 341 |
+| **N-grams Found %** | 4.6% | 9.5% | 13.1% | 17.1% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 26.1% | 38.1% | 45.0% | 51.8% |
+
+### Language: English
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 107 | 182 | 239 | 322 |
+| **N-grams Found %** | 5.3% | 9.1% | 11.9% | 16.1% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 24.6% | 34.8% | 40.3% | 46.8% |
+
+### Language: Finnish
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 81 | 192 | 271 | 359 |
+| **N-grams Found %** | 4.0% | 9.6% | 13.6% | 17.9% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 14.7% | 26.2% | 32.6% | 40.1% |
+
+### Language: French
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 87 | 177 | 234 | 323 |
+| **N-grams Found %** | 4.3% | 8.8% | 11.7% | 16.2% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 18.1% | 30.7% | 35.9% | 45.1% |
+
+### Language: German
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 90 | 183 | 241 | 320 |
+| **N-grams Found %** | 4.5% | 9.2% | 12.0% | 16.0% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 25.8% | 36.5% | 42.1% | 49.6% |
+
+### Language: Italian
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 72 | 186 | 262 | 350 |
+| **N-grams Found %** | 3.6% | 9.3% | 13.1% | 17.5% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 18.7% | 32.0% | 39.3% | 46.2% |
+
+### Language: Polish
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 72 | 197 | 285 | 390 |
+| **N-grams Found %** | 3.6% | 9.8% | 14.2% | 19.5% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 14.4% | 27.3% | 32.7% | 39.1% |
+
+### Language: Spanish
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 85 | 188 | 260 | 346 |
+| **N-grams Found %** | 4.2% | 9.4% | 13.0% | 17.3% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 28.9% | 38.7% | 43.8% | 51.4% |
+
+### Language: Swedish
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 71 | 197 | 271 | 353 |
+| **N-grams Found %** | 3.5% | 9.8% | 13.6% | 17.6% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 24.5% | 36.4% | 43.6% | 49.8% |
+
+### Language: Turkish
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 79 | 199 | 293 | 407 |
+| **N-grams Found %** | 4.0% | 10.0% | 14.6% | 20.3% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 15.6% | 26.1% | 32.0% | 39.4% |
+
+
 
 
 # Star History
@@ -530,5 +868,4 @@ Please star this project if it helped you! Your feedback shows me how many peopl
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=rpnfan/Anymak%2Crpnfan/KeyDuel&type=date&legend=top-left" />
  </picture>
 </a>
-
 
