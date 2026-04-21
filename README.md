@@ -88,35 +88,66 @@ The spreadsheet provides two distinct metrics to help you make your decision. Bo
 
 > **Note:** A more detailed walkthrough with screenshots is planned. The current spreadsheet already contains a worked example — a comparison of anymak:END and Graphite — which illustrates how to fill it in.
 
+## 4. Why Word Selection Matters
 
+A keyboard layout is essentially a map of finger-travel pathways. Whether one layout is more comfortable than another depends on how efficiently it supports common finger patterns and how it handles specific ergonomic "pain points." However, these pain points don't appear equally in all types of text.
 
-## 4. Why Word Selection Matters: The "Stress-Test" Approach
+Keyboard layout differences do not apply uniformly across words. They emerge through **specific typing patterns**, which are shaped by:
 
-A keyboard layout is essentially a map of finger-travel pathways. Whether one layout is more comfortable than another depends on how easy typical finger-patterns are and how it handles specific ergonomic "pain points." However, these pain points don't appear equally in all types of text. Keyboard layout differences are not uniform across all words. Whether one layout outperforms another on a given word depends on:
+- **Finger assignment** (strong vs weak fingers)  
+- **Hand alternation vs same-hand sequences**  
+- **Same-finger bigrams (SFBs)**  
+- **Row changes and lateral reach**  
+- **Hand load distribution**  
+- **Higher-order motions** (rolls, redirects, scissors, etc.)
 
-- **Which keys are used** and whether they fall on strong or weak fingers
-- **Hand alternation** — layouts typically optimise for alternating keystrokes between hands
-- **Same-finger bigrams** — consecutive letters typed by the same finger are the largest single source of discomfort and slowness
-- **Row usage and lateral reach** — how much vertical and horizontal finger travel is required
-- **Hand load balance** — whether one hand carries a disproportionate share of a word
-- **Further parameters** — such as in-ward rolls, scissors, redirects and more, see the [Keyboard Layouts Doc V3](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o) for more details.
+These factors are not properties of individual keys, but of **letter sequences**.  As a result, evaluating a layout is fundamentally a coverage problem: a test is only meaningful if it exercises a representative set of these patterns.
 
+### From factors to patterns
 
-### From Frequency to Ergonomic Coverage
-To create a meaningful comparison, the wordlist must be compiled as a deliberate stress test. A raw corpus frequency list is a poor diagnostic tool because it is statistically lopsided. In almost every language, the 100 most frequent words are overwhelmingly short function words. 
+Each ergonomic factor manifests as a pattern that must be exercised:
 
-**The problem:** If you only type the Top 100 words, you are only testing a narrow slice of the possible finger patterns. You are essentially testing the layout in "easy mode".
+- Same-finger usage → words containing common SFBs  
+- Hand alternation → alternating bigram chains  
+- Finger strength → letters mapped to weaker fingers appearing in realistic contexts  
+- Row and reach → vertical and lateral movement within words  
+- Hand balance → both left- and right-heavy sequences
 
-**The solution:** A tiered wordlist structure bridges this gap. It keeps the high-frequency "rhythm" of the language (Tier A) but intentionally injects mid-length and complex word shapes (Tiers C & D) to ensure the layout’s weaknesses in travel, SFBs, and lateral reach are fully exposed.
+A word list that does not include these patterns cannot reveal how a layout behaves under them.
 
+### From Frequency to Coverage
+
+A frequency list answers: “What do users type most often?”\
+An ergonomic test must answer: “What movement patterns does this layout need to handle?”
+
+These are not the same.
+
+A word list must therefore be constructed to **cover the space of typing patterns**, not just reflect raw frequency. In almost every language, the 100 most frequent words are overwhelmingly short function words.
+
+**The problem:** If you only type the Top 100 words, you are only testing a narrow slice of the possible finger patterns. You are essentially testing the layout in "easy mode".  A purely frequency-based list captures *what is common*, but not *what is ergonomically diverse*.
+
+**The solution: Designing for pattern coverage** 
+
+A well-constructed test list should be treated like a test suite, where the goal is to cover the full space of relevant typing behaviors.
+
+This implies:
+
+- Coverage over raw frequency — include patterns even if they are less common
+- Deliberate inclusion — ensure each major pattern type is exercised
+- Balanced sampling — avoid dominance of any single pattern class
+
+In practice, this leads to a tiered structure (introduced here and defined in detail in the next section):
+- Tier A (high frequency): short, common words; captures rhythm and alternation
+- Tier B (mid frequency): medium-length words; introduces mixed patterns and moderate movement
+- Tier C and Tier D (pattern stress): longer or structurally complex words; exposes more SFBs, redirects, and lateral reach
+
+Each tier serves a distinct role in increasing overall pattern coverage, similar to how unit, integration, and stress tests target different failure modes in software. The result is a test set that not only reflects real-world usage, but also systematically exposes the strengths and weaknesses of a layout across the full range of typing behaviors.
 
 ## 5. The Four-Tier Word Pool
 
 Every 100-word list is organised into four tiers. The tiers serve both a
 *linguistic classification* purpose and a *scoring weight* purpose. The
-primary design goal is that the words collectively cover the most important
-letter bigrams and trigrams of the language, weighted by how often those
-patterns occur in real-world text.
+primary design goal is that the words collectively cover the most important letter bigrams and trigrams of the language, as proxies for the underlying typing patterns, weighted by how often those patterns occur in real-world text.
 
 ### Tier A — Very high-frequency function words (weight 1.0)
 
@@ -147,7 +178,7 @@ realistic typing without being domain-specific.
 **Why weight 0.6:** Frequent and important, but less dominant than function
 words on a per-keystroke basis.
 
-### Tier C — Morphologically complex words and inflected forms (weight 0.3)
+### Tier C — Morphologically complex words, inflected, derived, and longer verb forms (weight 0.3)
 
 Verb forms, inflected nouns, derived words, and other longer forms whose letter
 sequences introduce finger patterns not well represented by Tier A/B vocabulary:
@@ -166,8 +197,7 @@ by trigram frequency data: words are chosen to cover letter patterns that are
 common in real text but absent from the shorter Tier A/B vocabulary.
 
 **Why weight 0.3:** These words are less frequent than Tier A/B in isolation,
-and tester rating variance at this level is comparable in magnitude to actual
-per-word frequency differences. 
+and subjective rating variance at this level is comparable to the underlying frequency differences.
 
 ### Tier D — Long structurally diagnostic words (weight 0.1)
 
