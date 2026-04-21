@@ -14,7 +14,7 @@ The goal is to **compare perceived typing comfort between two keyboard layouts**
 The method combines three principles drawn from existing layout evaluation practice:
 
 - **Linguistic frequency** — words that appear most often in real text should dominate the score, because that is where a layout spends most of its effort
-- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and therefore are vital to exhibit typical finger patterns (same-finger bigrams, scissors, lateral reach and redirects). But also longer content words must also be included to better exhibit alternation and roll patterns.
+- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and therefore are vital to exhibit typical finger patterns (same-finger bigrams, scissors, lateral reach and redirects). But longer content words must also be included to better exhibit alternation and roll patterns.
 - **Practical test ergonomics** — sessions must be short enough to complete without fatigue, yet representative enough to give a meaningful result
 
 Two test modes are provided:
@@ -33,7 +33,7 @@ KeyDuel measures **perceived typing comfort**, the subjective feeling of typing 
 Further limitations to be aware of:
 
 - **Adaptation is not controlled.** A layout you have used for years will feel more natural regardless of its ergonomic properties. For a meaningful comparison, it is important to try to separate the ergonomic feel of a layout from how familiar you are with it. The How-To section will give guidance how to achieve that.
-- **Individual anatomy is not accounted for.** Hand size, finger proportions, keyboard type, keycaps, your typing posture and more all affect comfort. Results from a single tester should not be generalised. But for yourself the results are fully valid.
+- **Individual anatomy is relevant.** Hand size, finger proportions, keyboard type, keycaps, your typing posture and more all affect comfort. Results from a single tester should not be generalised. But for yourself the results are fully valid and even better than a generalized approach can achieve.
 - **Language mix is not tested.** The lists are single-language. If you regularly type in multiple languages, no single list fully represents your typing. 
 
 
@@ -90,10 +90,9 @@ The spreadsheet provides two distinct metrics to help you make your decision. Bo
 
 
 
+## 4. Why Word Selection Matters: The "Stress-Test" Approach
 
-## 4. Why Word Selection Matters
-
-Keyboard layout differences are not uniform across all words. Whether one layout outperforms another on a given word depends on:
+A keyboard layout is essentially a map of finger-travel pathways. Whether one layout is more comfortable than another depends on how easy typical finger-patterns are and how it handles specific ergonomic "pain points." However, these pain points don't appear equally in all types of text. Keyboard layout differences are not uniform across all words. Whether one layout outperforms another on a given word depends on:
 
 - **Which keys are used** and whether they fall on strong or weak fingers
 - **Hand alternation** — layouts typically optimise for alternating keystrokes between hands
@@ -101,11 +100,14 @@ Keyboard layout differences are not uniform across all words. Whether one layout
 - **Row usage and lateral reach** — how much vertical and horizontal finger travel is required
 - **Hand load balance** — whether one hand carries a disproportionate share of a word
 - **Further parameters** — such as in-ward rolls, scissors, redirects and more, see the [Keyboard Layouts Doc V3](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o) for more details.
-  
-A list dominated entirely by two-letter function words (*in, of, at*) would stress alternation but barely exercise finger travel. A list of only long technical words would stress movement but miss everyday rhythm. An effective test list must deliberately cover both dimensions.
 
-This is why a raw corpus frequency list — simply the N most common words — is insufficient. The top 100 most frequent words in any language skew heavily toward very short function words, testing only one narrow slice of the ergonomic space. The tiered structure corrects for this.
 
+### From Frequency to Ergonomic Coverage
+To create a meaningful comparison, the wordlist must be compiled as a deliberate stress test. A raw corpus frequency list is a poor diagnostic tool because it is statistically lopsided. In almost every language, the 100 most frequent words are overwhelmingly short function words. 
+
+**The problem:** If you only type the Top 100 words, you are only testing a narrow slice of the possible finger patterns. You are essentially testing the layout in "easy mode".
+
+**The solution:** A tiered wordlist structure bridges this gap. It keeps the high-frequency "rhythm" of the language (Tier A) but intentionally injects mid-length and complex word shapes (Tiers C & D) to ensure the layout’s weaknesses in travel, SFBs, and lateral reach are fully exposed.
 
 
 ## 5. The Four-Tier Word Pool
