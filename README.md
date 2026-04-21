@@ -291,15 +291,15 @@ The first 25 rows of every list form the quick-check subset. They are deliberate
 
 ```
 Rows  1–25    Rows 1–25: Quick-check subset (mixed Tier A/B/C)
-Rows 26–94    Tier A/B/C words interleaved, fixed seed per language
+Rows 26–94    Tier A/B/C words interleaved
 Rows 95–100   Tier D diagnostic words (long words, placed at end)
 ```
 
-Rows 26–94 are interleaved so that the tester experiences a consistent mix of short function words and longer content words throughout the session, rather than a block of one type followed by another. Tiers are interleaved under a mathematically computed constraint: no single tier repeats more than its optimal maximum, typically 3 consecutive words for most languages, 4 for languages where Tier B is very dominant (Italian, Polish). Within each tier, words are placed in a fixed-seed randomised order, ensuring variety of specific words even though the tier pattern is regular.
+Rows 26–94 are interleaved so that the tester experiences a consistent mix of short function words and longer content words throughout the session, rather than a block of one type followed by another. Tiers are interleaved under a mathematically computed constraint: no single tier repeats more than its optimal maximum, typically 3 consecutive words for most languages, 4 for languages where Tier B is very dominant (Italian, Polish). Within each tier, words are placed in a randomised order, ensuring variety of specific words even though the tier pattern is regular.
 
 Tier D words are placed at the end because the long diagnostic words would create a disproportionately strong first impression if placed early.
 
-**The fixed seed** per language ensures that the ordering is reproducible. Different test instances for the same language always present the same word sequence, which is a deliberate design choice for this instrument: the test is always run in the same fixed order, so results across testers and sessions are directly comparable without needing to record or transmit the randomised sequence.
+Different test instances for the same language always present the same word sequence, which is a deliberate design choice for this instrument: the test is always run in the same fixed order, so results across testers and sessions are directly comparable without needing to record or transmit the randomised sequence.
 
 
 ## 10. Scoring Formula
