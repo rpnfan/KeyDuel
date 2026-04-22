@@ -178,11 +178,11 @@ realistic typing without being domain-specific.
 **Why weight 0.6:** Frequent and important, but less dominant than function
 words on a per-keystroke basis.
 
-### Tier C — Morphologically complex words, inflected, derived, and longer verb forms (weight 0.3)
+### Tier C — Morphologically complex and lower frequency words (weight 0.3)
 
 Verb forms, inflected nouns, derived words, and other longer forms whose letter
 sequences introduce finger patterns not well represented by Tier A/B vocabulary:
-*working, making, getting, thinking* (English); *machen, kommen, finden,
+*tell, keep, early, needed* (English); *machen, kommen, finden,
 brauchen* (German); *maken, werken, denken, gaan* (Dutch). In agglutinative
 languages (Finnish, Turkish, Polish, Russian) this tier also includes inflected
 noun and verb forms that carry the highly frequent grammatical suffixes of those
@@ -201,8 +201,8 @@ and subjective rating variance at this level is comparable to the underlying fre
 
 ### Tier D — Long structurally diagnostic words (weight 0.1)
 
-Longer nouns and abstract terms of 7 letters or more: *different, important,
-information, government, question, example* and their equivalents in each
+Longer nouns and abstract terms of 7 letters or more, for example for English: *different, important,
+information, government, question, example* and if appropriate their equivalents in each
 language.
 
 **Why include them:** Long words stress finger travel, lateral reach, and
@@ -239,21 +239,21 @@ The table below shows an excerpt of the English 100-word list with tier assignme
 | 12 | time | 0.6 | |
 | 13 | good | 0.6 | |
 | 14 | world | 0.6 | |
-| 15 | because | 0.3 | |
-| 16 | working | 0.3 | |
+| 15 | because | 0.6 | |
+| 16 | working | 0.6 | |
 | 17 | when | 0.6 | |
 | 18 | some | 0.6 | |
 | 19 | just | 0.6 | |
 | 20 | life | 0.6 | |
-| 21 | making | 0.3 | |
+| 21 | making | 0.6 | |
 | 22 | new | 0.6 | |
 | 23 | right | 0.6 | |
 | 24 | can | 0.6 | |
-| 25 | getting | 0.3 | ← end of quick-check subset |
+| 25 | getting | 0.6 | ← end of quick-check subset |
 | … | *rows 26–49: Tier A/B/C interleaved* | | |
 | 50 | at | 1.0 | |
 | 51 | more | 0.6 | |
-| 52 | having | 0.3 | |
+| 52 | having | 0.6 | |
 | … | *rows 53–74: Tier A/B/C interleaved* | | |
 | 75 | well | 0.6 | |
 | 76 | keep | 0.3 | |
@@ -266,7 +266,7 @@ The table below shows an excerpt of the English 100-word list with tier assignme
 | 99 | question | 0.1 | |
 | 100 | example | 0.1 | |
 
-*Rows 1–25: fixed quick-check subset. Within the subset, Tier C words appear at positions 15, 16, 21, 25 to ensure length variety from the start. Rows 26–94: Tier A/B/C words interleaved. Rows 95–100: Tier D diagnostic words.*
+*Rows 1–25: fixed quick-check subset Tier A/B. Rows 26–94: Tier A/B/C words interleaved. Rows 95–100: Tier D diagnostic words.*
 
 
 
@@ -278,17 +278,17 @@ more Tier C words because inflected forms are more numerous and their suffixes
 contribute heavily to the trigram frequency profile of those languages. Languages 
 with heavy function-word usage (French, German, English) carry more Tier A words. 
 The lists were validated against trigram frequency data for 12 of the 14 languages 
-(Russian and Norwegian excluded due to data availability). At n=100, the lists 
-cover between 69% and 88% of the top-100 most frequent internal n-grams per 
-language, rising to 97–100% word coverage at n=500; confirming that virtually 
+(Russian and Norwegian excluded due to data availability). The word lists 
+cover between 73% and 91% of the top-100 most frequent internal n-grams per 
+language; confirming that virtually 
 every word in the list exercises a statistically significant letter pattern. Full 
 results are in the Annex.
 
 
 | Language | Tier A (1.0) | Tier B (0.6) | Tier C (0.3) | Tier D (0.1) |
 |---|:---:|:---:|:---:|:---:|
-| English | 28 | 39 | 27 | 6 |
-| German | 37 | 37 | 21 | 5 |
+| English | 28 | 56 | 10 | 6 |
+| German | 40 | 39 | 16 | 5 |
 | Dutch | 27 | 54 | 13 | 6 |
 | French | 35 | 42 | 17 | 6 |
 | Spanish | 28 | 50 | 16 | 6 |
@@ -312,8 +312,6 @@ that do not reflect actual usage patterns in those languages.
 The first 25 rows of every list form the quick-check subset. They are deliberately composed to be predictive of the full test result.
 
 **Composition:** approximately 60–70% Tier A/B words and 30–40% Tier C words. The subset must independently stress both the alternation/rhythm dimension (via short function words) and the finger-travel dimension (via longer content words and verb forms).
-
-**Ordering:** the 25 words are presented in mixed order — not sorted by frequency or length. Longer words are distributed across positions 12–25 rather than clustered at the end. This ensures the quick run exercises layout stress points from early on, making it genuinely predictive.
 
 **Purpose:** a tester who finds no meaningful difference after 25 words can stop. A tester who finds a clear preference has an early signal to confirm with the full test. The quick-check result is a *filter*, not a standalone measurement.
 
@@ -422,17 +420,17 @@ The results demonstrate the "concentrated power" of the 100-word list:
 
 | Top N-grams | Found Count | N-grams Found % | Words Exercised % | Corpus Coverage % |Potential Core Weight | List Efficiency |
 | :--- | :---: | :---: | :---: | :---: |:---: | :---: |
-| **Top 100** | 82 | 82.0% | 91.0% | 34.2% | 39.3% | 87.1% |
-| **Top 200** | 142 | 71.0% | 96.0% | 41.6% | 51.7% | 80.6% |
-| **Top 500** | 239 | 47.8% | 99.0% | 47.8% | 69.0% | 69.2% |
+| **Top 100** | 91 | 91.0% | 99.0% | 38.2% | 40.9% | 93.3% |
+| **Top 200** | 155 | 77.5% | 100.0% | 46.3% | 53.5% | 86.4% |
+| **Top 500** | 267 | 53.4% | 100.0% | 53.5% | 71.2% | 75.1% |
 
 #### 5. Interpretation
 
-* **High Pattern Match:** The list captures **82% of the top 100 most frequent 
+* **High Pattern Match:** The list captures **91% of the top 100 most frequent 
   letter patterns** in German, meaning the words were chosen to cover the 
   statistically dominant finger motions.
-* **Real-World Relevance:** The Corpus Coverage of 47.8% at n=500 means that by typing these 100 words, you exercise patterns accounting for nearly half of all pattern occurrences in real German text — confirming the list is a representative proxy for everyday typing.
-* **Diagnostic Depth:** Words Exercised reaching **99%** at n=500 means almost 
+* **Real-World Relevance:** The Corpus Coverage of 53.5% at n=500 means that by typing these 100 words, you exercise patterns accounting for more than half of all pattern occurrences in real German text — confirming the list is a representative proxy for everyday typing.
+* **Diagnostic Depth:** Words Exercised reaching **100%** at n=500 means  
   every word in the list exercises a high-frequency pattern. There is essentially 
   no dead weight in the test.
 * **List Efficiency:** The ratio of Corpus Coverage to the 
@@ -455,15 +453,15 @@ subset size against the top N n-grams of the language. The following example sho
 
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 80 | 148 | 185 | 239 |
-| **N-grams Found %** | 16.0% | 29.6% | 37.0% | 47.8% |
-| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
-| **Corpus Coverage %** | 25.5% | 35.9% | 41.0% | 47.8% |
+| **Found N-grams (of 500)** | 103 | 175 | 212 | 267 |
+| **N-grams Found %** | 20.6% | 35.0% | 42.4% | 53.4% |
+| **Words Exercised %** | 100% | 100% | 100% | 100% |
+| **Corpus Coverage %** | 30.3% | 41.6% | 46.7% | 53.5% |
 
 The results confirm 
 that the 25-word subset already exercises the majority of high-frequency 
 patterns — providing a meaningful early signal — while the full 100 words 
-add the remaining coverage needed for a reliable final score. But even using 50 words improves the Corpus Coverage by more than 10%, while the next 25 words (75 total) just improve the Corpus Coverage by about 5%. With the full set of 100 words improving about 7%, covering almost the half full corpus.
+add the remaining coverage needed for a reliable final score. But even using 50 words improves the Corpus Coverage by more than 11%, while the next 25 words (75 total) just improve the Corpus Coverage by about 5%. With the full set of 100 words improving about 7%, covering already more than the half complete corpus.
 
 This diminishing return is expected: language corpora follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf's_law), where the most frequent patterns are dramatically more common than the rest, so the first 25 words capture a disproportionately large share.
 
