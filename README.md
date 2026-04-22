@@ -500,390 +500,399 @@ For even better understanding the following information would be worthwhile to c
 
 # Annex A: Language N-gram Analysis Results
 
+
 ### Language: Danish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 80 | 136 | 177 | 206 | 226 |
-| **N-grams Found %** | 80.0% | 68.0% | 59.0% | 51.5% | 45.2% |
-| **Words Exercised %** | 88.0% | 94.0% | 97.0% | 98.0% | 100.0% |
-| **Potential Core Weight** | 38.2% | 50.5% | 58.1% | 63.5% | 67.6% |
-| **Corpus Coverage** | 34.0% | 40.9% | 44.1% | 45.7% | 46.5% |
-| **List Efficiency** | 88.9% | 81.1% | 75.9% | 72.0% | 68.9% |
+| **N-grams Found** | 86 | 145 | 189 | 225 | 244 |
+| **N-grams Found %** | 86.0% | 72.5% | 63.0% | 56.2% | 48.8% |
+| **Words Exercised %** | 97.0% | 99.0% | 99.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 40.2% | 53.1% | 61.0% | 66.5% | 70.6% |
+| **Corpus Coverage** | 37.0% | 44.6% | 48.2% | 50.2% | 51.0% |
+| **List Efficiency** | 92.0% | 84.0% | 79.0% | 75.5% | 72.2% |
 
 ### Language: Dutch
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 88 | 148 | 193 | 227 | 254 |
-| **N-grams Found %** | 88.0% | 74.0% | 64.3% | 56.8% | 50.8% |
+| **N-grams Found** | 89 | 150 | 199 | 230 | 261 |
+| **N-grams Found %** | 89.0% | 75.0% | 66.3% | 57.5% | 52.2% |
 | **Words Exercised %** | 89.0% | 97.0% | 100.0% | 100.0% | 100.0% |
-| **Potential Core Weight** | 38.4% | 50.5% | 58.4% | 64.2% | 68.8% |
-| **Corpus Coverage** | 35.3% | 42.8% | 46.3% | 48.3% | 49.5% |
-| **List Efficiency** | 92.0% | 84.7% | 79.4% | 75.2% | 72.0% |
+| **Potential Core Weight** | 39.6% | 52.1% | 60.1% | 66.0% | 70.6% |
+| **Corpus Coverage** | 37.0% | 44.9% | 48.8% | 50.6% | 52.1% |
+| **List Efficiency** | 93.5% | 86.2% | 81.2% | 76.7% | 73.7% |
 
 ### Language: English
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 78 | 131 | 165 | 195 | 216 |
-| **N-grams Found %** | 78.0% | 65.5% | 55.0% | 48.8% | 43.2% |
-| **Words Exercised %** | 90.0% | 97.0% | 100.0% | 100.0% | 100.0% |
-| **Potential Core Weight** | 37.0% | 48.2% | 55.9% | 61.9% | 66.7% |
-| **Corpus Coverage** | 32.5% | 38.6% | 41.2% | 43.0% | 44.0% |
-| **List Efficiency** | 87.8% | 80.1% | 73.7% | 69.5% | 66.0% |
+| **N-grams Found** | 85 | 141 | 179 | 209 | 233 |
+| **N-grams Found %** | 85.0% | 70.5% | 59.7% | 52.2% | 46.6% |
+| **Words Exercised %** | 98.0% | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 39.1% | 51.0% | 59.0% | 65.1% | 70.0% |
+| **Corpus Coverage** | 35.6% | 42.4% | 45.4% | 47.3% | 48.5% |
+| **List Efficiency** | 91.1% | 83.1% | 77.0% | 72.6% | 69.3% |
 
 ### Language: Finnish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 69 | 122 | 159 | 190 | 211 |
-| **N-grams Found %** | 69.0% | 61.0% | 53.0% | 47.5% | 42.2% |
-| **Words Exercised %** | 87.0% | 93.0% | 97.0% | 97.0% | 99.0% |
-| **Potential Core Weight** | 29.7% | 42.3% | 51.1% | 57.9% | 63.4% |
-| **Corpus Coverage** | 22.6% | 29.4% | 32.7% | 34.8% | 36.0% |
-| **List Efficiency** | 76.1% | 69.5% | 64.0% | 60.1% | 56.7% |
+| **N-grams Found** | 73 | 128 | 168 | 198 | 224 |
+| **N-grams Found %** | 73.0% | 64.0% | 56.0% | 49.5% | 44.8% |
+| **Words Exercised %** | 92.0% | 96.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 31.2% | 44.2% | 53.2% | 60.1% | 65.7% |
+| **Corpus Coverage** | 24.8% | 32.0% | 35.7% | 37.7% | 39.2% |
+| **List Efficiency** | 79.5% | 72.4% | 67.0% | 62.7% | 59.7% |
 
 ### Language: French
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 72 | 124 | 168 | 206 | 227 |
-| **N-grams Found %** | 72.0% | 62.0% | 56.0% | 51.5% | 45.4% |
-| **Words Exercised %** | 84.0% | 96.0% | 98.0% | 100.0% | 100.0% |
-| **Potential Core Weight** | 37.4% | 49.3% | 57.2% | 63.0% | 67.4% |
-| **Corpus Coverage** | 29.7% | 36.1% | 39.6% | 41.8% | 42.7% |
-| **List Efficiency** | 79.6% | 73.1% | 69.2% | 66.4% | 63.4% |
+| **N-grams Found** | 72 | 129 | 181 | 218 | 247 |
+| **N-grams Found %** | 72.0% | 64.5% | 60.3% | 54.5% | 49.4% |
+| **Words Exercised %** | 91.0% | 97.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 39.7% | 51.9% | 59.9% | 65.6% | 70.0% |
+| **Corpus Coverage** | 32.0% | 39.2% | 43.4% | 45.5% | 46.8% |
+| **List Efficiency** | 80.5% | 75.4% | 72.4% | 69.4% | 66.9% |
 
 ### Language: German
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 82 | 142 | 193 | 215 | 239 |
-| **N-grams Found %** | 82.0% | 71.0% | 64.3% | 53.8% | 47.8% |
-| **Words Exercised %** | 91.0% | 96.0% | 98.0% | 98.0% | 99.0% |
-| **Potential Core Weight** | 39.3% | 51.7% | 59.3% | 64.8% | 69.0% |
-| **Corpus Coverage** | 34.2% | 41.6% | 45.5% | 46.7% | 47.8% |
-| **List Efficiency** | 87.1% | 80.6% | 76.8% | 72.2% | 69.2% |
+| **N-grams Found** | 91 | 155 | 212 | 240 | 267 |
+| **N-grams Found %** | 91.0% | 77.5% | 70.7% | 60.0% | 53.4% |
+| **Words Exercised %** | 99.0% | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 40.9% | 53.5% | 61.3% | 66.9% | 71.2% |
+| **Corpus Coverage** | 38.2% | 46.3% | 50.7% | 52.3% | 53.5% |
+| **List Efficiency** | 93.3% | 86.4% | 82.7% | 78.2% | 75.1% |
 
 ### Language: Italian
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 76 | 122 | 160 | 194 | 225 |
-| **N-grams Found %** | 76.0% | 61.0% | 53.3% | 48.5% | 45.0% |
-| **Words Exercised %** | 90.0% | 97.0% | 97.0% | 98.0% | 99.0% |
-| **Potential Core Weight** | 35.7% | 49.5% | 58.4% | 64.9% | 70.2% |
-| **Corpus Coverage** | 29.4% | 35.9% | 39.4% | 41.7% | 43.3% |
-| **List Efficiency** | 82.4% | 72.7% | 67.5% | 64.2% | 61.6% |
+| **N-grams Found** | 78 | 128 | 169 | 203 | 234 |
+| **N-grams Found %** | 78.0% | 64.0% | 56.3% | 50.7% | 46.8% |
+| **Words Exercised %** | 96.0% | 99.0% | 99.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 38.5% | 52.4% | 61.1% | 67.5% | 72.6% |
+| **Corpus Coverage** | 32.5% | 39.6% | 43.1% | 45.3% | 46.9% |
+| **List Efficiency** | 84.5% | 75.5% | 70.6% | 67.2% | 64.6% |
 
 ### Language: Polish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 77 | 133 | 173 | 201 | 228 |
-| **N-grams Found %** | 77.0% | 66.5% | 57.7% | 50.2% | 45.6% |
-| **Words Exercised %** | 92.0% | 95.0% | 98.0% | 98.0% | 99.0% |
-| **Potential Core Weight** | 27.9% | 38.8% | 46.3% | 52.1% | 56.8% |
-| **Corpus Coverage** | 23.2% | 29.3% | 32.4% | 34.0% | 35.3% |
-| **List Efficiency** | 83.3% | 75.5% | 69.9% | 65.2% | 62.1% |
+| **N-grams Found** | 81 | 139 | 184 | 216 | 247 |
+| **N-grams Found %** | 81.0% | 69.5% | 61.3% | 54.0% | 49.4% |
+| **Words Exercised %** | 98.0% | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 29.5% | 40.7% | 48.5% | 54.4% | 59.2% |
+| **Corpus Coverage** | 25.2% | 31.6% | 35.2% | 37.1% | 38.6% |
+| **List Efficiency** | 85.5% | 77.7% | 72.6% | 68.2% | 65.2% |
 
 ### Language: Spanish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 79 | 132 | 173 | 200 | 223 |
-| **N-grams Found %** | 79.0% | 66.0% | 57.7% | 50.0% | 44.6% |
-| **Words Exercised %** | 97.0% | 99.0% | 100.0% | 100.0% | 100.0% |
-| **Potential Core Weight** | 41.3% | 53.0% | 60.7% | 66.4% | 70.9% |
-| **Corpus Coverage** | 36.9% | 43.1% | 46.2% | 47.8% | 48.9% |
-| **List Efficiency** | 89.2% | 81.3% | 76.2% | 72.0% | 68.9% |
+| **N-grams Found** | 81 | 138 | 182 | 211 | 234 |
+| **N-grams Found %** | 81.0% | 69.0% | 60.7% | 52.8% | 46.8% |
+| **Words Exercised %** | 99.0% | 99.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 43.3% | 55.2% | 62.9% | 68.6% | 73.1% |
+| **Corpus Coverage** | 39.3% | 46.2% | 49.6% | 51.2% | 52.3% |
+| **List Efficiency** | 90.7% | 83.7% | 78.8% | 74.7% | 71.5% |
 
 ### Language: Swedish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 87 | 146 | 190 | 230 | 257 |
-| **N-grams Found %** | 87.0% | 73.0% | 63.3% | 57.5% | 51.4% |
-| **Words Exercised %** | 88.0% | 92.0% | 100.0% | 100.0% | 100.0% |
-| **Potential Core Weight** | 36.9% | 48.3% | 56.1% | 62.0% | 66.4% |
-| **Corpus Coverage** | 33.8% | 40.7% | 44.2% | 46.6% | 47.8% |
-| **List Efficiency** | 91.6% | 84.4% | 78.9% | 75.1% | 71.9% |
+| **N-grams Found** | 88 | 150 | 201 | 241 | 276 |
+| **N-grams Found %** | 88.0% | 75.0% | 67.0% | 60.2% | 55.2% |
+| **Words Exercised %** | 90.0% | 98.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 38.0% | 49.9% | 57.9% | 63.9% | 68.4% |
+| **Corpus Coverage** | 35.1% | 42.7% | 46.9% | 49.2% | 50.8% |
+| **List Efficiency** | 92.3% | 85.6% | 80.9% | 77.0% | 74.3% |
 
 ### Language: Turkish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **N-grams Found** | 72 | 130 | 170 | 198 | 225 |
-| **N-grams Found %** | 72.0% | 65.0% | 56.7% | 49.5% | 45.0% |
-| **Words Exercised %** | 80.0% | 92.0% | 95.0% | 96.0% | 97.0% |
-| **Potential Core Weight** | 28.6% | 40.1% | 48.0% | 54.2% | 59.2% |
-| **Corpus Coverage** | 22.0% | 28.8% | 31.9% | 33.7% | 35.0% |
-| **List Efficiency** | 77.1% | 71.7% | 66.5% | 62.1% | 59.1% |
+| **N-grams Found** | 73 | 141 | 183 | 216 | 241 |
+| **N-grams Found %** | 73.0% | 70.5% | 61.0% | 54.0% | 48.2% |
+| **Words Exercised %** | 95.0% | 99.0% | 99.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 29.5% | 41.6% | 49.7% | 56.1% | 61.2% |
+| **Corpus Coverage** | 23.1% | 31.3% | 34.8% | 36.8% | 38.1% |
+| **List Efficiency** | 78.3% | 75.3% | 69.9% | 65.7% | 62.3% |
+
 
 
 # Annex B: 25, 50 and 75 Word Subset Analysis
 
 ## Language 100 N-gram Analysis (Subset Comparison)
 
+
 ### Language: Danish
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 41 | 67 | 76 | 80 |
-| **N-grams Found %** | 41.0% | 67.0% | 76.0% | 80.0% |
-| **Words Exercised %** | 92.0% | 92.0% | 90.7% | 88.0% |
-| **Corpus Coverage %** | 23.0% | 30.1% | 32.8% | 34.0% |
+| **Found N-grams (of 100)** | 49 | 74 | 82 | 86 |
+| **N-grams Found %** | 49.0% | 74.0% | 82.0% | 86.0% |
+| **Words Exercised %** | 100.0% | 100.0% | 98.7% | 97.0% |
+| **Corpus Coverage %** | 26.0% | 33.2% | 35.8% | 37.0% |
 
 ### Language: Dutch
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 49 | 70 | 78 | 88 |
-| **N-grams Found %** | 49.0% | 70.0% | 78.0% | 88.0% |
+| **Found N-grams (of 100)** | 50 | 71 | 79 | 89 |
+| **N-grams Found %** | 50.0% | 71.0% | 79.0% | 89.0% |
 | **Words Exercised %** | 92.0% | 88.0% | 85.3% | 89.0% |
-| **Corpus Coverage %** | 22.7% | 29.3% | 32.5% | 35.3% |
+| **Corpus Coverage %** | 24.0% | 30.9% | 34.1% | 37.0% |
 
 ### Language: English
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 36 | 57 | 66 | 78 |
-| **N-grams Found %** | 36.0% | 57.0% | 66.0% | 78.0% |
-| **Words Exercised %** | 84.0% | 90.0% | 89.3% | 90.0% |
-| **Corpus Coverage %** | 20.5% | 27.0% | 29.3% | 32.5% |
+| **Found N-grams (of 100)** | 44 | 65 | 74 | 85 |
+| **N-grams Found %** | 44.0% | 65.0% | 74.0% | 85.0% |
+| **Words Exercised %** | 96.0% | 96.0% | 97.3% | 98.0% |
+| **Corpus Coverage %** | 23.1% | 30.1% | 32.5% | 35.6% |
 
 ### Language: Finnish
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 34 | 51 | 59 | 69 |
-| **N-grams Found %** | 34.0% | 51.0% | 59.0% | 69.0% |
-| **Words Exercised %** | 88.0% | 90.0% | 85.3% | 87.0% |
-| **Corpus Coverage %** | 11.4% | 17.3% | 19.5% | 22.6% |
+| **Found N-grams (of 100)** | 37 | 55 | 64 | 73 |
+| **N-grams Found %** | 37.0% | 55.0% | 64.0% | 73.0% |
+| **Words Exercised %** | 96.0% | 96.0% | 92.0% | 92.0% |
+| **Corpus Coverage %** | 12.9% | 19.3% | 21.8% | 24.8% |
 
 ### Language: French
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 30 | 54 | 62 | 72 |
-| **N-grams Found %** | 30.0% | 54.0% | 62.0% | 72.0% |
-| **Words Exercised %** | 80.0% | 84.0% | 85.3% | 84.0% |
-| **Corpus Coverage %** | 13.3% | 22.3% | 24.9% | 29.7% |
+| **Found N-grams (of 100)** | 32 | 54 | 62 | 72 |
+| **N-grams Found %** | 32.0% | 54.0% | 62.0% | 72.0% |
+| **Words Exercised %** | 92.0% | 94.0% | 93.3% | 91.0% |
+| **Corpus Coverage %** | 14.9% | 24.2% | 27.1% | 32.0% |
 
 ### Language: German
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 42 | 61 | 70 | 82 |
-| **N-grams Found %** | 42.0% | 61.0% | 70.0% | 82.0% |
-| **Words Exercised %** | 96.0% | 90.0% | 88.0% | 91.0% |
-| **Corpus Coverage %** | 22.0% | 28.2% | 30.9% | 34.2% |
+| **Found N-grams (of 100)** | 49 | 70 | 79 | 91 |
+| **N-grams Found %** | 49.0% | 70.0% | 79.0% | 91.0% |
+| **Words Exercised %** | 100.0% | 100.0% | 98.7% | 99.0% |
+| **Corpus Coverage %** | 25.4% | 32.1% | 34.8% | 38.2% |
 
 ### Language: Italian
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 35 | 58 | 70 | 76 |
-| **N-grams Found %** | 35.0% | 58.0% | 70.0% | 76.0% |
-| **Words Exercised %** | 88.0% | 88.0% | 90.7% | 90.0% |
-| **Corpus Coverage %** | 15.5% | 24.1% | 27.4% | 29.4% |
+| **Found N-grams (of 100)** | 38 | 61 | 72 | 78 |
+| **N-grams Found %** | 38.0% | 61.0% | 72.0% | 78.0% |
+| **Words Exercised %** | 96.0% | 96.0% | 97.3% | 96.0% |
+| **Corpus Coverage %** | 17.4% | 27.0% | 30.5% | 32.5% |
 
 ### Language: Polish
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 34 | 61 | 68 | 77 |
-| **N-grams Found %** | 34.0% | 61.0% | 68.0% | 77.0% |
-| **Words Exercised %** | 88.0% | 92.0% | 90.7% | 92.0% |
-| **Corpus Coverage %** | 12.0% | 19.6% | 20.9% | 23.2% |
+| **Found N-grams (of 100)** | 38 | 64 | 72 | 81 |
+| **N-grams Found %** | 38.0% | 64.0% | 72.0% | 81.0% |
+| **Words Exercised %** | 96.0% | 98.0% | 97.3% | 98.0% |
+| **Corpus Coverage %** | 13.5% | 21.2% | 22.8% | 25.2% |
 
 ### Language: Spanish
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 40 | 57 | 68 | 79 |
-| **N-grams Found %** | 40.0% | 57.0% | 68.0% | 79.0% |
-| **Words Exercised %** | 92.0% | 94.0% | 96.0% | 97.0% |
-| **Corpus Coverage %** | 25.4% | 30.2% | 33.1% | 36.9% |
+| **Found N-grams (of 100)** | 43 | 60 | 70 | 81 |
+| **N-grams Found %** | 43.0% | 60.0% | 70.0% | 81.0% |
+| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
+| **Corpus Coverage %** | 27.6% | 32.4% | 35.4% | 39.3% |
 
 ### Language: Swedish
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 43 | 65 | 80 | 87 |
-| **N-grams Found %** | 43.0% | 65.0% | 80.0% | 87.0% |
-| **Words Exercised %** | 84.0% | 84.0% | 88.0% | 88.0% |
-| **Corpus Coverage %** | 22.7% | 28.0% | 31.8% | 33.8% |
+| **Found N-grams (of 100)** | 45 | 67 | 81 | 88 |
+| **N-grams Found %** | 45.0% | 67.0% | 81.0% | 88.0% |
+| **Words Exercised %** | 88.0% | 86.0% | 89.3% | 90.0% |
+| **Corpus Coverage %** | 23.8% | 29.3% | 33.0% | 35.1% |
 
 ### Language: Turkish
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 100)** | 32 | 53 | 62 | 72 |
-| **N-grams Found %** | 32.0% | 53.0% | 62.0% | 72.0% |
-| **Words Exercised %** | 84.0% | 82.0% | 77.3% | 80.0% |
-| **Corpus Coverage %** | 12.5% | 17.8% | 19.7% | 22.0% |
+| **Found N-grams (of 100)** | 35 | 56 | 65 | 73 |
+| **N-grams Found %** | 35.0% | 56.0% | 65.0% | 73.0% |
+| **Words Exercised %** | 92.0% | 94.0% | 93.3% | 95.0% |
+| **Corpus Coverage %** | 13.5% | 19.0% | 21.0% | 23.1% |
+
 
 
 ## Language 500 N-gram Analysis (Subset Comparison)
 
+
+
 ### Language: Danish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 57 | 129 | 178 | 226 |
-| **N-grams Found %** | 11.4% | 25.8% | 35.6% | 45.2% |
+| **Found N-grams (of 500)** | 76 | 148 | 197 | 244 |
+| **N-grams Found %** | 15.2% | 29.6% | 39.4% | 48.8% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 24.3% | 35.7% | 41.9% | 46.5% |
+| **Corpus Coverage %** | 28.3% | 40.0% | 46.4% | 51.0% |
 
 ### Language: Dutch
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 84 | 154 | 204 | 254 |
-| **N-grams Found %** | 16.8% | 30.8% | 40.8% | 50.8% |
+| **Found N-grams (of 500)** | 89 | 159 | 210 | 261 |
+| **N-grams Found %** | 17.8% | 31.8% | 42.0% | 52.2% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 25.9% | 37.1% | 43.6% | 49.5% |
+| **Corpus Coverage %** | 27.5% | 39.1% | 45.8% | 52.1% |
 
 ### Language: English
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 75 | 132 | 172 | 216 |
-| **N-grams Found %** | 15.0% | 26.4% | 34.4% | 43.2% |
+| **Found N-grams (of 500)** | 92 | 149 | 189 | 233 |
+| **N-grams Found %** | 18.4% | 29.8% | 37.8% | 46.6% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 23.9% | 33.6% | 38.6% | 44.0% |
+| **Corpus Coverage %** | 27.6% | 37.8% | 42.9% | 48.5% |
 
 ### Language: Finnish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 61 | 121 | 164 | 211 |
-| **N-grams Found %** | 12.2% | 24.2% | 32.8% | 42.2% |
-| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
-| **Corpus Coverage %** | 14.2% | 24.2% | 29.5% | 36.0% |
+| **Found N-grams (of 500)** | 73 | 133 | 177 | 224 |
+| **N-grams Found %** | 14.6% | 26.6% | 35.4% | 44.8% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 16.7% | 27.0% | 32.7% | 39.2% |
 
 ### Language: French
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 77 | 137 | 171 | 227 |
-| **N-grams Found %** | 15.4% | 27.4% | 34.2% | 45.4% |
+| **Found N-grams (of 500)** | 90 | 155 | 190 | 247 |
+| **N-grams Found %** | 18.0% | 31.0% | 38.0% | 49.4% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 17.8% | 29.7% | 34.3% | 42.7% |
+| **Corpus Coverage %** | 20.3% | 33.2% | 38.2% | 46.8% |
 
 ### Language: German
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 80 | 148 | 185 | 239 |
-| **N-grams Found %** | 16.0% | 29.6% | 37.0% | 47.8% |
-| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
-| **Corpus Coverage %** | 25.5% | 35.9% | 41.0% | 47.8% |
+| **Found N-grams (of 500)** | 103 | 175 | 212 | 267 |
+| **N-grams Found %** | 20.6% | 35.0% | 42.4% | 53.4% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 30.3% | 41.6% | 46.7% | 53.5% |
 
 ### Language: Italian
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 62 | 130 | 177 | 225 |
-| **N-grams Found %** | 12.4% | 26.0% | 35.4% | 45.0% |
-| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 99.0% |
-| **Corpus Coverage %** | 18.5% | 30.7% | 37.4% | 43.3% |
+| **Found N-grams (of 500)** | 66 | 136 | 185 | 234 |
+| **N-grams Found %** | 13.2% | 27.2% | 37.0% | 46.8% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 20.3% | 33.7% | 41.0% | 46.9% |
 
 ### Language: Polish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 60 | 137 | 184 | 228 |
-| **N-grams Found %** | 12.0% | 27.4% | 36.8% | 45.6% |
-| **Words Exercised %** | 96.0% | 98.0% | 98.7% | 99.0% |
-| **Corpus Coverage %** | 14.1% | 25.9% | 30.3% | 35.3% |
+| **Found N-grams (of 500)** | 75 | 155 | 203 | 247 |
+| **N-grams Found %** | 15.0% | 31.0% | 40.6% | 49.4% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 16.7% | 29.0% | 33.5% | 38.6% |
 
 ### Language: Spanish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 77 | 142 | 175 | 223 |
-| **N-grams Found %** | 15.4% | 28.4% | 35.0% | 44.6% |
+| **Found N-grams (of 500)** | 87 | 152 | 186 | 234 |
+| **N-grams Found %** | 17.4% | 30.4% | 37.2% | 46.8% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 28.7% | 37.6% | 42.1% | 48.9% |
+| **Corpus Coverage %** | 31.6% | 40.7% | 45.3% | 52.3% |
 
 ### Language: Swedish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 63 | 151 | 207 | 257 |
-| **N-grams Found %** | 12.6% | 30.2% | 41.4% | 51.4% |
+| **Found N-grams (of 500)** | 80 | 170 | 226 | 276 |
+| **N-grams Found %** | 16.0% | 34.0% | 45.2% | 55.2% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 24.4% | 35.4% | 42.1% | 47.8% |
+| **Corpus Coverage %** | 26.8% | 38.2% | 45.1% | 50.8% |
 
 ### Language: Turkish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 500)** | 58 | 126 | 171 | 225 |
-| **N-grams Found %** | 11.6% | 25.2% | 34.2% | 45.0% |
-| **Words Exercised %** | 96.0% | 98.0% | 96.0% | 97.0% |
-| **Corpus Coverage %** | 15.0% | 24.3% | 28.9% | 35.0% |
+| **Found N-grams (of 500)** | 72 | 143 | 190 | 241 |
+| **N-grams Found %** | 14.4% | 28.6% | 38.0% | 48.2% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 17.2% | 27.0% | 32.0% | 38.1% |
+
+
+
 
 ## Language 2000 N-gram Analysis (Subset Comparison)
 
+
 ### Language: Danish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 68 | 154 | 225 | 304 |
-| **N-grams Found %** | 3.4% | 7.7% | 11.2% | 15.2% |
+| **Found N-grams (of 2000)** | 89 | 177 | 249 | 330 |
+| **N-grams Found %** | 4.5% | 8.8% | 12.4% | 16.5% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 24.6% | 36.2% | 42.8% | 48.0% |
+| **Corpus Coverage %** | 28.7% | 40.6% | 47.4% | 52.7% |
 
 ### Language: Dutch
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 92 | 190 | 261 | 341 |
-| **N-grams Found %** | 4.6% | 9.5% | 13.1% | 17.1% |
+| **Found N-grams (of 2000)** | 112 | 211 | 282 | 363 |
+| **N-grams Found %** | 5.6% | 10.5% | 14.1% | 18.1% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 26.1% | 38.1% | 45.0% | 51.8% |
+| **Corpus Coverage %** | 28.1% | 40.4% | 47.5% | 54.6% |
 
 ### Language: English
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 107 | 182 | 239 | 322 |
-| **N-grams Found %** | 5.3% | 9.1% | 11.9% | 16.1% |
+| **Found N-grams (of 2000)** | 128 | 203 | 260 | 345 |
+| **N-grams Found %** | 6.4% | 10.2% | 13.0% | 17.2% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 24.6% | 34.8% | 40.3% | 46.8% |
+| **Corpus Coverage %** | 28.4% | 39.2% | 44.7% | 51.3% |
 
 ### Language: Finnish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 81 | 192 | 271 | 359 |
-| **N-grams Found %** | 4.0% | 9.6% | 13.6% | 17.9% |
+| **Found N-grams (of 2000)** | 97 | 212 | 292 | 382 |
+| **N-grams Found %** | 4.9% | 10.6% | 14.6% | 19.1% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 14.7% | 26.2% | 32.6% | 40.1% |
+| **Corpus Coverage %** | 17.4% | 29.3% | 36.0% | 43.6% |
 
 ### Language: French
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 87 | 177 | 234 | 323 |
-| **N-grams Found %** | 4.3% | 8.8% | 11.7% | 16.2% |
+| **Found N-grams (of 2000)** | 104 | 196 | 254 | 347 |
+| **N-grams Found %** | 5.2% | 9.8% | 12.7% | 17.3% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 18.1% | 30.7% | 35.9% | 45.1% |
+| **Corpus Coverage %** | 20.6% | 34.2% | 39.8% | 49.1% |
 
 ### Language: German
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 90 | 183 | 241 | 320 |
-| **N-grams Found %** | 4.5% | 9.2% | 12.0% | 16.0% |
+| **Found N-grams (of 2000)** | 116 | 217 | 276 | 357 |
+| **N-grams Found %** | 5.8% | 10.8% | 13.8% | 17.8% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 25.8% | 36.5% | 42.1% | 49.6% |
+| **Corpus Coverage %** | 30.6% | 42.4% | 48.0% | 55.4% |
 
 ### Language: Italian
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 72 | 186 | 262 | 350 |
-| **N-grams Found %** | 3.6% | 9.3% | 13.1% | 17.5% |
+| **Found N-grams (of 2000)** | 86 | 205 | 284 | 373 |
+| **N-grams Found %** | 4.3% | 10.2% | 14.2% | 18.6% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 18.7% | 32.0% | 39.3% | 46.2% |
+| **Corpus Coverage %** | 20.8% | 35.2% | 43.1% | 50.1% |
 
 ### Language: Polish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 72 | 197 | 285 | 390 |
-| **N-grams Found %** | 3.6% | 9.8% | 14.2% | 19.5% |
+| **Found N-grams (of 2000)** | 88 | 216 | 305 | 416 |
+| **N-grams Found %** | 4.4% | 10.8% | 15.2% | 20.8% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 14.4% | 27.3% | 32.7% | 39.1% |
+| **Corpus Coverage %** | 17.0% | 30.4% | 36.0% | 42.6% |
 
 ### Language: Spanish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 85 | 188 | 260 | 346 |
-| **N-grams Found %** | 4.2% | 9.4% | 13.0% | 17.3% |
+| **Found N-grams (of 2000)** | 101 | 208 | 283 | 371 |
+| **N-grams Found %** | 5.1% | 10.4% | 14.1% | 18.6% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 28.9% | 38.7% | 43.8% | 51.4% |
+| **Corpus Coverage %** | 32.0% | 42.0% | 47.3% | 55.1% |
 
 ### Language: Swedish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 71 | 197 | 271 | 353 |
-| **N-grams Found %** | 3.5% | 9.8% | 13.6% | 17.6% |
+| **Found N-grams (of 2000)** | 93 | 219 | 296 | 379 |
+| **N-grams Found %** | 4.7% | 10.9% | 14.8% | 18.9% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 24.5% | 36.4% | 43.6% | 49.8% |
+| **Corpus Coverage %** | 27.0% | 39.2% | 46.7% | 53.0% |
 
 ### Language: Turkish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
-| **Found N-grams (of 2000)** | 79 | 199 | 293 | 407 |
-| **N-grams Found %** | 4.0% | 10.0% | 14.6% | 20.3% |
+| **Found N-grams (of 2000)** | 98 | 226 | 320 | 434 |
+| **N-grams Found %** | 4.9% | 11.3% | 16.0% | 21.7% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
-| **Corpus Coverage %** | 15.6% | 26.1% | 32.0% | 39.4% |
-
+| **Corpus Coverage %** | 18.0% | 29.1% | 35.3% | 42.9% |
 
 
 
