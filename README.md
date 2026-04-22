@@ -461,7 +461,7 @@ subset size against the top N n-grams of the language. The following example sho
 The results confirm 
 that the 25-word subset already exercises the majority of high-frequency 
 patterns — providing a meaningful early signal — while the full 100 words 
-add the remaining coverage needed for a reliable final score. But even using 50 words improves the Corpus Coverage by more than 11%, while the next 25 words (75 total) just improve the Corpus Coverage by about 5%. With the full set of 100 words improving about 7%, covering already more than the half complete corpus.
+add the remaining coverage needed for a reliable final score. But even using 50 words improves the Corpus Coverage by more than 11%, while the next 25 words (75 total) just improve the Corpus Coverage by about 5%. With the full set of 100 words improving about 7%, covering more than the half corpus.
 
 This diminishing return is expected: language corpora follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf's_law), where the most frequent patterns are dramatically more common than the rest, so the first 25 words capture a disproportionately large share.
 
