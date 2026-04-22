@@ -436,7 +436,7 @@ The results demonstrate the "concentrated power" of the 100-word list:
 * **List Efficiency:** The ratio of Corpus Coverage to the 
   theoretical maximum (Potential Core Weight) quantifies how well the 100 words 
   were selected. A high efficiency means the words collectively cover the 
-  available patterns well, not just the most obvious ones.
+  available patterns well.
 
 See the Annex A for the full analysis list of all tested languages.
 > **Conclusion:** The validation confirms that the KeyDuel word list is an extremely high-density proxy for the language. By typing these 100 words, you are effectively "stress-testing" the ergonomic core of the layout. The results confirm that even a small, manageable word list can provide a statistically representative impression of a layout's comfort in daily use.
