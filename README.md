@@ -141,7 +141,7 @@ In practice, this leads to a tiered structure (introduced here and defined in de
 - Tier B (mid frequency): medium-length words; introduces mixed patterns and moderate movement
 - Tier C and Tier D (pattern stress): longer or structurally complex words; exposes more SFBs, redirects, and lateral reach
 
-Each tier serves a distinct role in increasing overall pattern coverage, similar to how unit, integration, and stress tests target different failure modes in software. The result is a test set that not only reflects real-world usage, but also systematically exposes the strengths and weaknesses of a layout across the full range of typing behaviors.
+Each tier serves a distinct role in increasing overall pattern coverage. The result is a test set that not only reflects real-world usage, but also systematically exposes the strengths and weaknesses of a layout across the full range of typing behaviors.
 
 ## 5. The Four-Tier Word Pool
 
