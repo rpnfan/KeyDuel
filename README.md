@@ -390,7 +390,7 @@ The validity of KeyDuel rests on the assumption that typing 100 specific words c
 
 #### 2. Filtering of the 3-grams list
 
-The 3-grams list (```language.3```) for each language contains the absolute frequency of unigrams, bigrams and trigrams for a massive language corpus (University of Leipzig). 
+The 3-grams list (```language.3```) for each language contains the absolute frequency of unigrams, bigrams and trigrams for a massive [language corpus (University of Leipzig)](https://wortschatz.uni-leipzig.de/en/download/). 
 
 **"Internal Flow" Methodology -**
 The trigrams frequency lists also contain word-boundary trigrams, such as "n d". For our purpose to test isolated word comfort these are not relevant. Therefore all mid-space trigrams were excluded out of the n-gram list.
