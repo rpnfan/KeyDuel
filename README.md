@@ -2,7 +2,7 @@
 
 **Test two layouts. Compare comfort. Pick your winner.**
 
-KeyDuel is a systematic approach to compare two layouts in terms of subjective typing comfort. The basic idea is to "translate" an alternative layout you consider to learn into the key positions of the layout you are currently using for touch-typing. A list of carefully selected test words allows you to get a much more meaningful and representative impression about how a layout will feel in real-world use, than typing random sentences.
+KeyDuel is a systematic approach to compare two layouts in terms of subjective typing comfort. The basic idea is to "translate" an alternative layout you consider to learn into the key positions of the layout you are fluently touch-typing. A list of carefully selected test words allows you to get a much more meaningful and representative impression about how a layout will feel in real-world use, than typing random sentences.
 
 <img width="2404" height="1009" alt="image" src="https://github.com/user-attachments/assets/08b95e2e-d4e6-4d16-8276-e378f0f35fc9" />
 
