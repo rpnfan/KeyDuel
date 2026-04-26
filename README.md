@@ -2,7 +2,7 @@
 
 **Test two layouts. Compare comfort. Pick your winner.**
 
-KeyDuel is a systematic approach to compare two layouts in terms of subjective typing comfort. The basic idea is to "translate" an alternative layout you consider to learn into the key positions of the layout you are fluently touch-typing. A list of carefully selected test words allows you to get a much more meaningful and representative impression about how a layout will feel in real-world use, than typing random sentences.
+KeyDuel is a systematic approach to compare two keyboard layouts in terms of subjective typing comfort. The basic idea is to "translate" an alternative layout you are considering into the key positions of the layout you are fluently touch-typing. A list of carefully selected test words allows you to form a much more meaningful and representative impression of how a layout will feel in real-world use than typing random sentences would.
 
 <img width="2404" height="1009" alt="image" src="https://github.com/user-attachments/assets/08b95e2e-d4e6-4d16-8276-e378f0f35fc9" />
 
@@ -14,7 +14,7 @@ The goal is to **compare perceived typing comfort between two keyboard layouts**
 The method combines three principles drawn from existing layout evaluation practice:
 
 - **Linguistic frequency** — words that appear most often in real text should dominate the score, because that is where a layout spends most of its effort
-- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and therefore are vital to exhibit typical finger patterns (same-finger bigrams, scissors, lateral reach and redirects). But longer content words must also be included to better exhibit alternation and roll patterns.
+- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and are therefore vital for exhibiting typical typing patterns (same-finger bigrams, scissors, lateral reach, and redirects), and longer content words, which better expose alternation and roll patterns
 - **Practical test ergonomics** — sessions must be short enough to complete without fatigue, yet representative enough to give a meaningful result
 
 Two test modes are provided:
@@ -22,19 +22,19 @@ Two test modes are provided:
 | Mode | Words | Purpose |
 |---|---|---|
 | **Quick check** | 25 | Plausibility check — decide whether to proceed to the full test |
-| **Full evaluation** | 100  (25 + 75) | Complete comparative assessment |
+| **Full evaluation** | 100 (25 + 75) | Complete comparative assessment |
 
 
 
 ## 2. Scope and Limitations
 
-KeyDuel measures **perceived typing comfort**, the subjective feeling of typing each word, not speed or accuracy. Speed tests on typing trainers measure how well you have learned a layout, not how comfortable it is. After a few weeks on any layout you will reach acceptable speed; comfort is the more durable and more personal variable. Used honestly, KeyDuel gives you a very good idea about overall comfort differences between two layouts.
+KeyDuel measures **perceived typing comfort** — the subjective feeling of typing each word — not speed or accuracy. Speed tests on typing trainers measure how well you have learned a layout, not how comfortable it is. After a few weeks on any layout you will reach acceptable speed; comfort is the more durable and more personal variable. Used honestly, KeyDuel gives you a very good idea about overall comfort differences between two layouts.
 
 Further limitations to be aware of:
 
-- **Adaptation is not controlled.** A layout you have used for years will feel more natural regardless of its ergonomic properties. For a meaningful comparison, it is important to try to separate the ergonomic feel of a layout from how familiar you are with it. The How-To section will give guidance how to achieve that.
-- **Individual anatomy is relevant.** Hand size, finger proportions, keyboard type, keycaps, your typing posture and more all affect comfort. Results from a single tester should not be generalised. But for yourself the results are fully valid and even better than a generalized approach can achieve.
-- **Language mix is not tested.** The lists are single-language. If you regularly type in multiple languages, no single list fully represents your typing. 
+- **Adaptation is not controlled.** A layout you have used for years will feel more natural regardless of its ergonomic properties. For a meaningful comparison, it is important to try to separate the ergonomic feel of a layout from how familiar you are with it. The How-To section provides guidance on how to achieve that.
+- **Individual anatomy is relevant.** Hand size, finger proportions, keyboard type, keycaps, typing posture, and more all affect comfort. Results from a single tester should not be generalized. But for yourself the results are fully valid and even better than a generalized approach can achieve.
+- **Language mix is not tested.** The lists are single-language. If you regularly type in multiple languages, no single list fully represents your typing.
 
 
 
@@ -56,9 +56,9 @@ Delete the example ratings and enter the names of the two layouts you are compar
 
 ### 3. Run the quick check (25 words)
 
-Start with the first 25 words. For each word, type it several times on layout A, then several times on layout B. Focus entirely on the finger movements. Forget the word itself and concentrate on how the motion feels. Practice each word until you have the finger-pattern engrained.
+Start with the first 25 words. For each word, type it several times on layout A, then several times on layout B. Focus entirely on the finger movements. Forget the word itself and concentrate on how the motion feels. Practice each word until you have the typing pattern ingrained.
 
-Especially for longer words it can happen that the first few characters type better in layout A, but another part of the finger-pattern is better on layout B. If that is the case you have to count how many partial finger-patterns are better in each layout. Use the same rating (see below) for the partial word evaluation and finally sum the total rating for the word:
+Especially for longer words it can happen that the first few characters type better in layout A, but another part of the typing pattern is better on layout B. If that is the case, count how many partial typing patterns are better in each layout. Use the same rating (see below) for the partial word evaluation and sum the total rating for the word:
 
 | Rating | Meaning |
 |:---:|---|
@@ -68,154 +68,140 @@ Especially for longer words it can happen that the first few characters type bet
 | −1 | Layout B slightly more comfortable |
 | −2 | Layout B clearly more comfortable |
 
-The spreadsheet is configured so that layout A (displayed in blue) is the layout you are evaluating. Layout B (displayed in red) is the layout you are fluent in. 
+The spreadsheet is configured so that layout A (displayed in blue) is the layout you are evaluating. Layout B (displayed in red) is the layout you are fluent in.
 
-Continue word for word till you completed the short test with 25 words. If the result after 25 words is already very clear, you can stop here. If the difference is small or ambiguous, continue with the remaining 75 words for the full evaluation.
+Continue word for word until you complete the short test with 25 words. If the result after 25 words is already very clear, you can stop here. If the difference is small or ambiguous, continue with the remaining 75 words for the full evaluation.
 
 ### 4. Interpret your score
 
-The spreadsheet calculates a normalized score between −1 and +1, displayed in percentages -100 % to 100 %. A score close to zero means no meaningful difference was detected. When you evaluate more than one layout you will get a feeling how the normalized score, displayed in percent in the spreadsheet translates to larger or smaller perceived differences between the layouts.
+The spreadsheet calculates a normalized score between −1 and +1, displayed as a percentage from −100% to 100%. A score close to zero means no meaningful difference was detected. When you evaluate more than one layout, you will develop a feel for how the normalized score translates to larger or smaller perceived differences between layouts.
 
-The spreadsheet provides two distinct metrics to help you make your decision. Both scores are relevant, but have a different practical meaning:
+The spreadsheet provides two distinct metrics to help you make your decision. Both scores are relevant but have a different practical meaning:
 
 - **Raw List Preference (Unweighted):** This tells you which layout felt better across the list of 100 words.
 
     ⇒ Best for: Assessing pure ergonomic variety and how the layout handles different "word shapes".
-- **Frequency Weighted Score (Normalized %):** This score takes into account how often a test word occurs roughly in a real world text. This tells you if you typed a 10,000-word essay today, which layout would leave your hands feeling more relaxed.
+- **Frequency Weighted Score (normalized %):** This score takes into account how often a test word occurs roughly in real-world text. This tells you which layout would leave your hands feeling more relaxed after typing a 10,000-word essay.
 
-     ⇒ Best for: Making the final "Pick your winner" decision. This score gives you an indication how often the layout differences will play out in day-to-day typing.
+     ⇒ Best for: Making the final "Pick your winner" decision. This score gives you an indication of how often the layout differences will play out in day-to-day typing.
 
 
 > **Note:** A more detailed walkthrough with screenshots is planned. The current spreadsheet already contains a worked example — a comparison of anymak:END and Graphite — which illustrates how to fill it in.
 
 ## 4. Why Word Selection Matters
 
-A keyboard layout is essentially a map of finger-travel pathways. Whether one layout is more comfortable than another depends on how efficiently it supports common finger patterns and how it handles specific ergonomic "pain points." However, these pain points don't appear equally in all types of text.
+A keyboard layout is essentially a map of finger-travel pathways. Whether one layout is more comfortable than another depends on how efficiently it supports common typing patterns and how it handles specific ergonomic "pain points." However, these pain points do not appear equally in all types of text.
 
 Keyboard layout differences do not apply uniformly across words. They emerge through **specific typing patterns**, which are shaped by:
 
-- **Finger assignment** (strong vs weak fingers)  
-- **Hand alternation vs same-hand sequences**  
-- **Same-finger bigrams (SFBs)**  
-- **Row changes and lateral reach**  
-- **Hand load distribution**  
+- **Finger assignment** (strong vs. weak fingers)
+- **Hand alternation vs. same-hand sequences**
+- **Same-finger bigrams (SFBs)**
+- **Row changes and lateral reach**
+- **Hand load distribution**
 - **Higher-order motions** (rolls, redirects, scissors, etc.)
 
-These factors are not properties of individual keys, but of **letter sequences**.  As a result, evaluating a layout is fundamentally a coverage problem: a test is only meaningful if it exercises a representative set of these patterns.
+These factors are not properties of individual keys, but of **letter sequences** — which is why they are measured through n-grams (bigrams, trigrams, and longer sequences). As a result, evaluating a layout is fundamentally a coverage problem: a test is only meaningful if it exercises a representative set of these patterns.
 
-### From factors to patterns
+### From Factors to Patterns
 
-Each ergonomic factor manifests as a pattern that must be exercised:
+Each ergonomic factor manifests as a typing pattern that must be exercised:
 
-- Same-finger usage → words containing common SFBs  
-- Hand alternation → alternating bigram chains  
-- Finger strength → letters mapped to weaker fingers appearing in realistic contexts  
-- Row and reach → vertical and lateral movement within words  
+- Same-finger usage → words containing common SFBs
+- Hand alternation → alternating bigram chains
+- Finger strength → letters mapped to weaker fingers appearing in realistic contexts
+- Row and reach → vertical and lateral movement within words
 - Hand balance → both left- and right-heavy sequences
 
 A word list that does not include these patterns cannot reveal how a layout behaves under them.
 
 ### From Frequency to Coverage
 
-A frequency list answers: “What do users type most often?”\
-An ergonomic test must answer: “What movement patterns does this layout need to handle?”
+A frequency list answers: "What do users type most often?"
+An ergonomic test must answer: "What typing patterns does this layout need to handle?"
 
-These are not the same.
+These are not the same question.
 
 A word list must therefore be constructed to **cover the space of typing patterns**, not just reflect raw frequency. In almost every language, the 100 most frequent words are overwhelmingly short function words.
 
-**The problem:** If you only type the Top 100 words, you are only testing a narrow slice of the possible finger patterns. You are essentially testing the layout in "easy mode".  A purely frequency-based list captures *what is common*, but not *what is ergonomically diverse*.
+**The problem:** If you only type the top 100 words, you are testing only a narrow slice of the possible typing patterns. You are essentially evaluating the layout in "easy mode". A purely frequency-based list captures *what is common*, but not *what is ergonomically diverse*.
 
-**The solution: Designing for pattern coverage** 
+**The solution: Designing for pattern coverage**
 
-A well-constructed test list should be treated like a test suite, where the goal is to cover the full space of relevant typing behaviors.
-
-This implies:
+A well-constructed test list should be treated like a test suite, where the goal is to cover the full space of relevant typing behaviors. This implies:
 
 - Coverage over raw frequency — include patterns even if they are less common
 - Deliberate inclusion — ensure each major pattern type is exercised
 - Balanced sampling — avoid dominance of any single pattern class
 
 In practice, this leads to a tiered structure (introduced here and defined in detail in the next section):
+
 - Tier A (high frequency): short, common words; captures rhythm and alternation
 - Tier B (mid frequency): medium-length words; introduces mixed patterns and moderate movement
 - Tier C and Tier D (pattern stress): longer or structurally complex words; exposes more SFBs, redirects, and lateral reach
 
 Each tier serves a distinct role in increasing overall pattern coverage. The result is a test set that not only reflects real-world usage, but also systematically exposes the strengths and weaknesses of a layout across the full range of typing behaviors.
 
+### Why Not Just Use a Frequency List or an N-gram-Maximizing List?
+
+To confirm that the tiered approach finds a good balance between different criteria, the KeyDuel English word list was compared against two alternative types of word lists. The comparison highlights three key advantages of the tiered design, demonstrating that a diagnostic word list should simultaneously be:
+
+- **Diverse:** Capturing a wide range of n-gram patterns.
+- **Representative:** Reflecting natural language usage and typing rhythms.
+- **Practical:** Remaining short enough for quick, repeatable testing.
+
+| List | Description | n=100 Corpus Coverage | n=500 Corpus Coverage | n=100 N-grams Found % |
+|---|---|:---:|:---:|:---:|
+| **English-200-top** | The 200 most frequent English words (pure frequency) | 37.9% | 58.4% | 94.0% |
+| **English-200-breadth** | 200 words selected to maximise n-gram breadth (Paul Morris, [optimized-word-lists](https://gitlab.com/paulmorris/optimized-word-lists)) | 37.3% | 66.6% | 97.0% |
+| **English** (KeyDuel) | 100-word tiered list | 38.9% | 52.7% | 99.0% |
+
+**What this shows:**
+
+- **English-200-top** (pure frequency) achieves reasonable n-gram hit rate at the top 100 but Corpus Coverage degrades quickly: by n=500 it covers only 58.4%. This is the "easy mode" failure mode — too many redundant short function words, not enough diversity.
+- **English-200-breadth** (n-gram maximisation) achieves excellent corpus coverage (66.6% at n=500 with 200 words) but at a cost: This list only covers 22.5% of the most common 200 words. The algorithm selects words purely for statistical n-gram coverage without regard for real typing experience where some words are way more frequent than others. Second, a human tester rates whole words as typed units, not letter sequences in isolation. An algorithmically-optimized list may cluster unusual combinations that are statistically present but rare in natural prose, distorting the comfort impression. Furthermore, the test requires twice as many words than the KeyDuel word list (200 vs. 100). The high amount of words makes it not really practical to test all words in a focused manner. A more realistic and practical approach is to start with only 25 words for a quicker first impression and then potentially extending the test to 50 or 100 words.
+- **English KeyDuel** achieves the highest n-gram hit rate at n=100 (99%) with only 100 words, and a Corpus Coverage of 38.9% at n=100 that exceeds both 200-word lists. At n=500 the coverage (52.7%) is lower than the breadth-maximising list, which is expected given the halved word count, but the tiered design ensures the coverage is weighted towards the patterns that matter most in real use.
+
+The tiered approach therefore achieves the design goal: it is more ergonomically diverse than a pure frequency list, more representative of natural word-level typing experience than a purely algorithmic n-gram list, and half the length of either 200-word alternative.
+
+
 ## 5. The Four-Tier Word Pool
 
-Every 100-word list is organised into four tiers. The tiers serve both a
-*linguistic classification* purpose and a *scoring weight* purpose. The
-primary design goal is that the words collectively cover the most important letter bigrams and trigrams of the language, as proxies for the underlying typing patterns, weighted by how often those patterns occur in real-world text.
+Every 100-word list is organized into four tiers. The tiers serve both a *linguistic classification* purpose and a *scoring weight* purpose. The primary design goal is that the words collectively cover the most important letter bigrams and trigrams of the language — as proxies for the underlying typing patterns — weighted by how often those patterns occur in real-world text.
+
+The word lists were constructed with AI assistance and subsequently reviewed and refined manually. For the languages the author speaks (English, German, and Dutch), the lists have been validated both statistically and by manual inspection. For all other languages, statistical validation was performed; see Section 11 and Annex A for details.
 
 ### Tier A — Very high-frequency function words (weight 1.0)
 
-Articles, prepositions, conjunctions, pronouns, and auxiliary verbs. Examples:
-*the, and, in, to, of, with, have, is* (English); *der, und, in, ich, ist, mit*
-(German); *de, en, in, het, is, zijn* (Dutch).
+Articles, prepositions, conjunctions, pronouns, and auxiliary verbs. Examples: *the, and, in, to, of, with, have, is* (English); *der, und, in, ich, ist, mit* (German); *de, en, in, het, is, zijn* (Dutch).
 
-**Why include them:** These words constitute the statistical backbone of any
-language. In typical prose they account for a disproportionately large share of
-all keystrokes. Their short length means they are typed rapidly in tight
-succession.
+**Why include them:** These words constitute the statistical backbone of any language. In typical prose they account for a disproportionately large share of all keystrokes. Their short length means they are typed rapidly in tight succession.
 
-**Why weight 1.0:** Their dominance in real text means a layout's handling of
-them has the greatest impact on everyday comfort.
+**Why weight 1.0:** Their dominance in real text means a layout's handling of them has the greatest impact on everyday comfort.
 
 ### Tier B — Common content words and frequent short forms (weight 0.6)
 
-High-frequency nouns, adjectives, adverbs, and short derived forms that appear
-across many topics and text types: *people, time, world, life, good, right, new*
-(English); *Zeit, Leben, Welt, Arbeit, Leute* (German); *mensen, tijd, wereld,
-werk* (Dutch).
+High-frequency nouns, adjectives, adverbs, and short derived forms that appear across many topics and text types: *people, time, world, life, good, right, new* (English); *Zeit, Leben, Welt, Arbeit, Leute* (German); *mensen, tijd, wereld, werk* (Dutch).
 
-**Why include them:** These words carry meaning and appear across virtually any
-text a person writes. At 4–8 letters they exercise a broader range of finger
-movements and bigram patterns than the very short Tier A words. They reflect
-realistic typing without being domain-specific.
+**Why include them:** These words carry meaning and appear across virtually any text a person writes. At 4–8 letters they exercise a broader range of finger movements and bigram patterns than the very short Tier A words. They reflect realistic typing without being domain-specific.
 
-**Why weight 0.6:** Frequent and important, but less dominant than function
-words on a per-keystroke basis.
+**Why weight 0.6:** Frequent and important, but less dominant than function words on a per-keystroke basis.
 
-### Tier C — Morphologically complex and lower frequency words (weight 0.3)
+### Tier C — Morphologically complex and lower-frequency words (weight 0.3)
 
-Verb forms, inflected nouns, derived words, and other longer forms whose letter
-sequences introduce finger patterns not well represented by Tier A/B vocabulary:
-*tell, keep, early, needed* (English); *machen, kommen, finden,
-brauchen* (German); *maken, werken, denken, gaan* (Dutch). In agglutinative
-languages (Finnish, Turkish, Polish, Russian) this tier also includes inflected
-noun and verb forms that carry the highly frequent grammatical suffixes of those
-languages — for example Turkish case endings (*-lerde, -lara*) and present
-tense forms (*-iyor*), or Finnish verb infinitives and conjugations.
+Verb forms, inflected nouns, derived words, and other longer forms whose letter sequences introduce typing patterns not well represented by Tier A/B vocabulary: *tell, keep, early, needed* (English); *machen, kommen, finden, brauchen* (German); *maken, werken, denken, gaan* (Dutch). In agglutinative languages (Finnish, Turkish, Polish, Russian) this tier also includes inflected noun and verb forms that carry the highly frequent grammatical suffixes of those languages — for example Turkish case endings (*-lerde, -lara*) and present tense forms (*-iyor*), or Finnish verb infinitives and conjugations.
 
-**Why include them:** Longer and morphologically complex words generate letter
-combinations and same-finger sequences that short words cannot expose. A layout
-may handle *work* comfortably but create a collision on *working*. Including
-inflected and derived forms exposes these differences. The selection is guided
-by trigram frequency data: words are chosen to cover letter patterns that are
-common in real text but absent from the shorter Tier A/B vocabulary.
+**Why include them:** Longer and morphologically complex words generate letter combinations and same-finger sequences that short words cannot expose. A layout may handle *work* comfortably but create a collision on *working*. Including inflected and derived forms exposes these differences. The selection is guided by trigram frequency data: words are chosen to cover n-gram patterns that are common in real text but absent from the shorter Tier A/B vocabulary.
 
-**Why weight 0.3:** These words are less frequent than Tier A/B in isolation,
-and subjective rating variance at this level is comparable to the underlying frequency differences.
+**Why weight 0.3:** These words are less frequent than Tier A/B in isolation, and subjective rating variance at this level is comparable to the underlying frequency differences.
 
 ### Tier D — Long structurally diagnostic words (weight 0.1)
 
-Longer nouns and abstract terms of 7 letters or more, for example for English: *different, important,
-information, government, question, example* and if appropriate their equivalents in each
-language.
+Longer nouns and abstract terms of 7 letters or more, for example in English: *different, important, information, government, question, example*, and their equivalents in each language.
 
-**Why include them:** Long words stress finger travel, lateral reach, and
-same-finger avoidance in ways that shorter words cannot. A layout that
-optimises the home row for common letters may do so at the cost of uncomfortable
-reach sequences in longer words. A small number of long words guards against
-this blind spot and adds length variety to the test. The specific words chosen
-are not necessarily the most frequent in the language; they are selected to
-introduce letter combinations not already covered by Tiers A–C.
+**Why include them:** Long words stress finger travel, lateral reach, and same-finger avoidance in ways that shorter words cannot. A layout that optimizes the home row for common letters may do so at the cost of uncomfortable reach sequences in longer words. A small number of long words guards against this blind spot and adds length variety to the test. The specific words chosen are not necessarily the most frequent in the language; they are selected to introduce letter combinations not already covered by Tiers A–C.
 
-**Why weight 0.1:** These words are infrequent in everyday text. They are
-present for diagnostic purposes — to catch layout weaknesses that would
-otherwise be invisible — but must not dominate the score.
+**Why weight 0.1:** These words are infrequent in everyday text. They are present for diagnostic purposes — to catch layout weaknesses that would otherwise be invisible — but must not dominate the score.
 
 
 
@@ -244,7 +230,7 @@ The table below shows an excerpt of the English 100-word list with tier assignme
 | 17 | when | 0.6 | |
 | 18 | some | 0.6 | |
 | 19 | just | 0.6 | |
-| 20 | life | 0.6 | |
+| 20 | should | 1.0 | |
 | 21 | making | 0.6 | |
 | 22 | new | 0.6 | |
 | 23 | right | 0.6 | |
@@ -266,28 +252,19 @@ The table below shows an excerpt of the English 100-word list with tier assignme
 | 99 | question | 0.1 | |
 | 100 | example | 0.1 | |
 
-*Rows 1–25: fixed quick-check subset Tier A/B. Rows 26–94: Tier A/B/C words interleaved. Rows 95–100: Tier D diagnostic words.*
+*Rows 1–25: fixed quick-check subset (Tier A/B). Rows 26–94: Tier A/B/C words interleaved. Rows 95–100: Tier D diagnostic words.*
 
 
 
 ## 7. Tier Composition Across All 14 Languages
 
-The number of words per tier varies by language because linguistic structures 
-differ. Languages with rich morphology (Finnish, Turkish, Polish, Russian) carry 
-more Tier C words because inflected forms are more numerous and their suffixes 
-contribute heavily to the trigram frequency profile of those languages. Languages 
-with heavy function-word usage (French, German, English) carry more Tier A words. 
-The lists were validated against trigram frequency data for 12 of the 14 languages 
-(Russian and Norwegian excluded due to data availability). The word lists 
-cover between 73% and 91% of the top-100 most frequent internal n-grams per 
-language; confirming that virtually 
-every word in the list exercises a statistically significant letter pattern. Full 
-results are in the Annex.
+The number of words per tier varies by language because linguistic structures differ. Languages with rich morphology (Finnish, Turkish, Polish, Russian) carry more Tier C words because inflected forms are more numerous and their suffixes contribute heavily to the trigram frequency profile of those languages. Languages with heavy function-word usage (French, German, English) carry more Tier A words.
 
+The lists were validated against trigram frequency data for 12 of the 14 languages; Russian and Norwegian are excluded from the statistical annex due to corpus data availability constraints at the time of writing. The word lists cover between 73% and 91% of the top-100 most frequent internal n-grams per validated language, confirming that virtually every word in the list exercises a statistically significant letter pattern. Full results are in Annex A.
 
 | Language | Tier A (1.0) | Tier B (0.6) | Tier C (0.3) | Tier D (0.1) |
 |---|:---:|:---:|:---:|:---:|
-| English | 28 | 56 | 10 | 6 |
+| English | 29 | 56 | 9 | 6 |
 | German | 40 | 39 | 16 | 5 |
 | Dutch | 27 | 54 | 13 | 6 |
 | French | 35 | 42 | 17 | 6 |
@@ -302,9 +279,8 @@ results are in the Annex.
 | Finnish | 17 | 53 | 24 | 6 |
 | Turkish | 17 | 48 | 31 | 4 |
 
-The variation is intentional and linguistically sound. A fixed tier distribution
-imposed on all languages would either distort word selection or produce lists
-that do not reflect actual usage patterns in those languages.
+The variation is intentional and linguistically sound. A fixed tier distribution imposed on all languages would either distort word selection or produce lists that do not reflect actual usage patterns in those languages.
+
 
 
 ## 8. The 25-Word Quick-Check Subset
@@ -320,16 +296,17 @@ The first 25 rows of every list form the quick-check subset. They are deliberate
 ## 9. Ordering of the Full 100-Word List
 
 ```
-Rows  1–25    Rows 1–25: Quick-check subset (mixed Tier A/B/C)
+Rows  1–25    Quick-check subset (mixed Tier A/B/C)
 Rows 26–94    Tier A/B/C words interleaved
 Rows 95–100   Tier D diagnostic words (long words, placed at end)
 ```
 
-Rows 26–94 are interleaved so that the tester experiences a consistent mix of short function words and longer content words throughout the session, rather than a block of one type followed by another. Tiers are interleaved under a mathematically computed constraint: no single tier repeats more than its optimal maximum, typically 3 consecutive words for most languages, 4 for languages where Tier B is very dominant (Italian, Polish). Within each tier, words are placed in a randomised order, ensuring variety of specific words even though the tier pattern is regular.
+Rows 26–94 are interleaved so that the tester experiences a consistent mix of short function words and longer content words throughout the session, rather than a block of one type followed by another. Tiers are interleaved under a mathematically computed constraint: no single tier repeats more than its optimal maximum, typically 3 consecutive words for most languages, 4 for languages where Tier B is very dominant (Italian, Polish). Within each tier, words are placed in a randomized order, ensuring variety of specific words even though the tier pattern is regular.
 
 Tier D words are placed at the end because the long diagnostic words would create a disproportionately strong first impression if placed early.
 
-Different test instances for the same language always present the same word sequence, which is a deliberate design choice for this instrument: the test is always run in the same fixed order, so results across testers and sessions are directly comparable without needing to record or transmit the randomised sequence.
+Different test instances for the same language always present the same word sequence. This is a deliberate design choice: the test is always run in the same fixed order, so results across testers and sessions are directly comparable without needing to record or transmit the sequence.
+
 
 
 ## 10. Scoring Formula
@@ -346,7 +323,7 @@ Each word receives a rating from the tester on a five-point scale:
 
 The normalized score is:
 
-$$\text{Normalized score} = \frac{\displaystyle\sum_{i=1}^{100} \left(\text{rating}_i \times \text{weight}_i\right)}{2 \times \displaystyle\sum_{i=1}^{100} \text{weight}_i}$$
+$$\text{normalized score} = \frac{\displaystyle\sum_{i=1}^{100} \left(\text{rating}_i \times \text{weight}_i\right)}{2 \times \displaystyle\sum_{i=1}^{100} \text{weight}_i}$$
 
 Result range **[−1, +1]**:
 
@@ -358,96 +335,82 @@ The denominator normalises by twice the total weight because the maximum absolut
 
 **Why grouped weights are sufficient:** The dominant source of variance in subjective comfort ratings is the tester's own perception from trial to trial. Four tiers capture the signal that matters — function words dominate real typing, rare words do not — while keeping the method robust, transparent, and reproducible.
 
-> The evaluation spreadsheet shows both an unweighted and a frequency-weighted score, the latter is the more meaningful for day-to-day typing.
+> The evaluation spreadsheet shows both an unweighted and a frequency-weighted score; the latter is the more meaningful for day-to-day typing.
 
 
 
 ## 11. Methodology Discussion
 
-
 ### Why This Approach Rather Than Alternatives
 
 The goal of the curated word list is to provide a meaningful representation of the language. This approach was chosen instead of simpler options:
 
-**Versus raw corpus frequency lists:** Top-100 frequency lists are dominated by very short function words, testing only one narrow slice of the ergonomic space. The tiered approach rebalances the list to be ergonomically representative.
+**Versus raw corpus frequency lists:** Top-100 frequency lists are dominated by very short function words, testing only one narrow slice of the ergonomic space. This is a primary example of the coverage problem introduced in Section 4: high frequency does not guarantee high pattern diversity. The tiered approach rebalances the list to be ergonomically representative by ensuring  coverage across a broader range of finger patterns (n-grams).
 
-**Versus N-gram frequency optimisation:** Selecting words to reproduce the letter bigram and trigram distribution of a corpus maximises statistical representativeness of letter sequences but does not reflect word-level or rhythm-level typing experience. The tiered approach was preferred because a human tester rates whole words as typed units, not letter sequences in isolation.
+**Versus n-gram frequency optimization:** Selecting words to reproduce the bigram and trigram distribution of a corpus maximises statistical representativeness of letter sequences but does not reflect word-level or rhythm-level typing experience. The tiered approach was preferred because a human tester rates whole words as typed units, not letter sequences in isolation.
 
 **Versus sentence-based or synthetic text tests:** Full sentences introduce syntactic parsing and reading comprehension workload, which can obscure pure motor comfort assessments. Isolated words keep cognitive load minimal and the typing signal cleaner.
 
 
 ### N-gram Coverage Analysis
 
-To ensure the KeyDuel word list is a high-fidelity proxy for real-world typing, each language list was validated using a custom n-gram analysis. This process measures how many of the language's most frequent "finger motions" are exercised by the 100 test words.
-
-
+To ensure the KeyDuel word list is a high-fidelity proxy for real-world typing, each language list was validated using a custom n-gram analysis. This process measures how many of the language's most frequent typing patterns are exercised by the 100 test words. The Python scripts used for this analysis are available in the repository's `validation/` folder.
 
 #### 1. Why this analysis was done
-The validity of KeyDuel rests on the assumption that typing 100 specific words can simulate the "feel" of typing an entire language. We needed to verify:
-* **Density:** Do the most frequent letter combinations (bigrams/trigrams) actually appear in our 100 words?
-* **Efficiency:** Does the list "cover" enough of the language's statistical weight to be a valid diagnostic tool?
+
+The validity of KeyDuel rests on the assumption that typing 100 specific words can simulate the "feel" of typing an entire language. Two things needed to be verified:
+
+- **Density:** Do the most frequent letter combinations (n-grams) actually appear in the 100 words?
+- **Efficiency:** Does the list "cover" enough of the language's statistical weight to be a valid diagnostic tool?
 
 
-#### 2. Filtering of the 3-grams list
+#### 2. Filtering of the n-gram list
 
-The 3-grams list (```language.3```) for each language contains the absolute frequency of unigrams, bigrams and trigrams for a massive [language corpus (University of Leipzig)](https://wortschatz.uni-leipzig.de/en/download/). 
+The trigram frequency lists (`language.3`) for each language contain the absolute frequency of unigrams, bigrams, and trigrams from a large [language corpus (University of Leipzig)](https://wortschatz.uni-leipzig.de/en/download/).
 
-**"Internal Flow" Methodology -**
-The trigrams frequency lists also contain word-boundary trigrams, such as "n d". For our purpose to test isolated word comfort these are not relevant. Therefore all mid-space trigrams were excluded out of the n-gram list.
+**Internal Flow Methodology:** The trigram frequency lists also contain word-boundary trigrams such as "n d". For the purpose of testing isolated word comfort, these are not relevant. All mid-space trigrams were therefore excluded from the n-gram list.
 
-**Aggregating Boundary Patterns -**
-Similarly, n-grams with a leading or trailing space are not relevant for our word based testing (e.g., Danish " og" and "og "). Our script merges these into a single unit (og), summing their frequencies to find the true cumulative weight of that finger motion.
+**Aggregating Boundary Patterns:** Similarly, n-grams with a leading or trailing space are not relevant for word-based testing (e.g., Danish " og" and "og "). The analysis script merges these into a single unit (*og*), summing their frequencies to find the true cumulative weight of that typing pattern.
 
-> Core-Internal Focus: We only validate against n-grams that occur inside or at the boundaries of words, as these define the "word shape" comfort that KeyDuel measures.
+> Core-Internal Focus: Validation is performed only against n-grams that occur inside or at the boundaries of words, as these define the "word shape" comfort that KeyDuel measures.
 
-#### 3. What was calculated
+#### 3. Metrics calculated
 
-The script analysed the top **500 n-grams** and measured four metrics for 
-each threshold (n=100, 200, 300, 400, 500):
+The script analyses the top **500 n-grams** and measures five metrics at each threshold (n=100, 200, 300, 400, 500):
 
-* **N-grams Found:** The number of top-N patterns that appear in at least 
-  one word of the 100-word list.
-* **N-grams Found %:** N-grams Found as a percentage of N (how much of the 
-  top-N set is represented).
-* **Words Exercised %:** The percentage of the 100 words that contain at 
-  least one top-N pattern. Near 100% means almost no "dead weight" words.
-* **Corpus Coverage %:** The fraction of *all* language pattern occurrences
-  accounted for by the n-grams actually found in the word list. This differs from Potential Core Weight, which represents the theoretical maximum if all top-N patterns were present. The Corpus Coverage is the most meaningful metric: it answers "if someone typed real text in this language all day, what share of their finger motions would be exercised by the KeyDuel list?"
+- **N-grams Found:** The number of top-N patterns that appear in at least one word of the 100-word list.
+- **N-grams Found %:** N-grams Found as a percentage of N (how much of the top-N set is represented).
+- **Words Exercised %:** The percentage of the 100 words that contain at least one top-N pattern. Near 100% means almost no "dead weight" words.
+- **Potential Core Weight:** The theoretical maximum Corpus Coverage if all top-N patterns were found in the list.
+- **Corpus Coverage %:** The fraction of *all* language pattern occurrences accounted for by the n-grams actually found in the word list. This is the most meaningful metric: it answers "if someone typed real text in this language all day, what share of their typing patterns would be exercised by the KeyDuel list?"
+- **List Efficiency:** The ratio of Corpus Coverage to Potential Core Weight. A high efficiency means the words collectively cover the available patterns well.
 
 #### 4. Key Findings (German Example)
 
 The results demonstrate the "concentrated power" of the 100-word list:
 
-| Top N-grams | Found Count | N-grams Found % | Words Exercised % | Corpus Coverage % |Potential Core Weight | List Efficiency |
-| :--- | :---: | :---: | :---: | :---: |:---: | :---: |
+| Top N-grams | N-grams Found | N-grams Found % | Words Exercised % | Corpus Coverage % | Potential Core Weight | List Efficiency |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Top 100** | 91 | 91.0% | 99.0% | 38.2% | 40.9% | 93.3% |
 | **Top 200** | 155 | 77.5% | 100.0% | 46.3% | 53.5% | 86.4% |
 | **Top 500** | 267 | 53.4% | 100.0% | 53.5% | 71.2% | 75.1% |
 
 #### 5. Interpretation
 
-* **High Pattern Match:** The list captures **91% of the top 100 most frequent 
-  letter patterns** in German, meaning the words were chosen to cover the 
-  statistically dominant finger motions.
-* **Real-World Relevance:** The Corpus Coverage of 53.5% at n=500 means that by typing these 100 words, you exercise patterns accounting for more than half of all pattern occurrences in real German text — confirming the list is a representative proxy for everyday typing.
-* **Diagnostic Depth:** Words Exercised reaching **100%** at n=500 means  
-  every word in the list exercises a high-frequency pattern. There is essentially 
-  no dead weight in the test.
-* **List Efficiency:** The ratio of Corpus Coverage to the 
-  theoretical maximum (Potential Core Weight) quantifies how well the 100 words 
-  were selected. A high efficiency means the words collectively cover the 
-  available patterns well.
+- **High Pattern Match:** The list captures **91% of the top 100 most frequent n-grams** in German, meaning the words were chosen to cover the statistically dominant typing patterns.
+- **Real-World Relevance:** The Corpus Coverage of 53.5% at n=500 means that by typing these 100 words, you exercise patterns accounting for more than half of all pattern occurrences in real German text — confirming the list is a representative proxy for everyday typing.
+- **No Dead Weight:** Words Exercised reaching **100%** at n=500 means every word in the list exercises a high-frequency pattern. There is essentially no dead weight in the test.
+- **List Efficiency:** The ratio of Corpus Coverage to the theoretical maximum quantifies how well the 100 words were selected.
 
-See the Annex A for the full analysis list of all tested languages.
-> **Conclusion:** The validation confirms that the KeyDuel word list is an extremely high-density proxy for the language. By typing these 100 words, you are effectively "stress-testing" the ergonomic core of the layout. The results confirm that even a small, manageable word list can provide a statistically representative impression of a layout's comfort in daily use.
+See Annex A for the full results for all validated languages.
 
-### Quick-Check Subset Validation (25, 50, 75 compared to 100 words)
+> **Conclusion:** The validation confirms that the KeyDuel word list is an extremely high-density proxy for the language. By typing these 100 words, you are effectively stress-testing the ergonomic core of the layout. The results confirm that even a small, manageable word list can provide a statistically representative impression of a layout's comfort in daily use.
 
-A second analysis validated that the 25-word quick-check subset is a genuine 
-predictor of the full 100-word result, not just an arbitrary first slice.
+### Quick-Check Subset Validation (25, 50, 75 words compared to 100)
 
-Using the same n-gram methodology, the script measured coverage at each 
-subset size against the top N n-grams of the language. The following example shows the results for the top 500 n-grams for German.
+A second analysis validated that the 25-word quick-check subset is a genuine predictor of the full 100-word result, not just an arbitrary first slice.
+
+Using the same n-gram methodology, the script measured coverage at each subset size against the top N n-grams of the language. The following example shows the results for the top 500 n-grams for German.
 
 #### German
 
@@ -458,40 +421,79 @@ subset size against the top N n-grams of the language. The following example sho
 | **Words Exercised %** | 100% | 100% | 100% | 100% |
 | **Corpus Coverage %** | 30.3% | 41.6% | 46.7% | 53.5% |
 
-The results confirm 
-that the 25-word subset already exercises the majority of high-frequency 
-patterns — providing a meaningful early signal — while the full 100 words 
-add the remaining coverage needed for a reliable final score. But even using 50 words improves the Corpus Coverage by more than 11%, while the next 25 words (75 total) just improve the Corpus Coverage by about 5%. With the full set of 100 words improving about 7%, covering more than the half corpus.
+The 25-word subset already exercises the majority of high-frequency patterns, providing a meaningful early signal. Each additional 25-word block adds further coverage, but with diminishing returns: going from 25 to 50 words adds 11.3 percentage points of Corpus Coverage; from 50 to 75 adds about 5 points; from 75 to 100 adds about 7 points, crossing the halfway mark of the full German corpus. The diminishing return is expected: language corpora follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf's_law), where the most frequent patterns are dramatically more common than the rest, so the first 25 words capture a disproportionately large share.
 
-This diminishing return is expected: language corpora follow a [Zipfian distribution](https://en.wikipedia.org/wiki/Zipf's_law), where the most frequent patterns are dramatically more common than the rest, so the first 25 words capture a disproportionately large share.
-
-Full results for each language at n=100, n=500 and n=2000 are in Annex B.
+Full results for each language at n=100, n=500, and n=2000 are in Annex B.
 
 
-## 12. Future developments: Psychophysical data base
+### Word List Quality Across Languages
 
-The current implementation with a spreadsheet is sufficient for a single user. To draw general conclusions it would be needed to collect data from a larger population. With that valuable user data, representing the overall "comfort factor" of different keyboard layouts could be fitted to metrics of an analyzer, which could bring us closer to the holy grail of describing a layout's comfort in a single number.
+The English, German, and Dutch word lists have been reviewed both statistically and through direct manual inspection by a fluent speaker of each language. These three lists can be treated as close to the design optimum.
 
-I encourage anyone interested to pick up from here, for example by building a test website. 
+For the remaining languages, the lists were assembled with AI assistance, guided by the tier design criteria and the n-gram frequency data, but have not been manually verified by a native speaker with layout expertise.
 
-For any test session the following should be recorded at minimum:
+Looking at the Corpus Coverage figures in Annex A, most languages perform well. The n=100 Corpus Coverage for the best-performing languages (German 38.2%, Spanish 39.3%, English 38.9%, Dutch 37.0%, Danish 37.0%, Swedish 35.1%) is broadly consistent. However, several languages show noticeably lower coverage:
+
+| Language | n=100 Corpus Coverage | List Efficiency (n=100) |
+|---|:---:|:---:|
+| German | 38.2% | 93.3% |
+| English | 38.9% | 99.6%* |
+| Spanish | 39.3% | 90.7% |
+| Dutch | 37.0% | 93.5% |
+| Danish | 37.0% | 92.0% |
+| Swedish | 35.1% | 92.3% |
+| French | 32.0% | 80.5% |
+| Italian | 32.5% | 84.5% |
+| Polish | 25.2% | 85.5% |
+| Finnish | 24.8% | 79.5% |
+| Turkish | 23.1% | 78.3% |
+
+Polish, Finnish, and Turkish show the lowest Corpus Coverage. Two explanations are possible — and likely both contribute in different proportions per language:
+
+1. **Structural linguistic constraints.** Highly agglutinative languages (Turkish, Finnish) and inflection-heavy Slavic languages (Polish) distribute n-gram frequency across a much larger number of distinct patterns than analytic languages like English. The same 100-word budget therefore covers a smaller fraction of the total pattern space, and this ceiling cannot be closed by word selection alone.
+2. **Room for improvement in word selection.** The lists were not manually reviewed by native speakers. A fluent speaker familiar with layout analysis may be able to identify replacements that improve n-gram coverage without sacrificing the tier balance.
+
+If you are a native speaker of one of these languages — particularly Polish, Finnish, Turkish, Italian, French, or Swedish — and have an interest in keyboard layout optimization, your contribution would be welcome. The word files are plain text and straightforward to edit. If you identify improvements that raise Corpus Coverage while maintaining the tier structure, please open a pull request.
+
+### The English List: An Iterative Improvement
+
+The current English list is a refinement of an earlier version ("English-highfrequency"). Eleven words were replaced, sacrificing some common words in exchange for better n-gram coverage. The improvement is visible in the metrics:
+
+| List | n=100 N-grams Found % | n=100 Corpus Coverage | n=500 Corpus Coverage |
+|---|:---:|:---:|:---:|
+| English-highfrequency (earlier) | 85.0% | 35.6% | 48.5% |
+| English (current) | 99.0% | 38.9% | 52.7% |
+
+The current list achieves near-perfect coverage of the top 100 n-grams (99%) while also improving Corpus Coverage at all thresholds. The 25-word quick-check subset benefited from the revision as well, as the n-gram gains are distributed across the full list.
+
+This revision illustrates the core trade-off in list design: a purely frequency-guided selection will always leave n-gram patterns on the table, while a targeted replacement of a small number of words, guided by the n-gram gap analysis, can close much of that gap with minimal impact on the layout's frequency-weighted score.
+
+
+
+## 12. Future Developments: Psychophysical Database
+
+The current implementation with a spreadsheet is sufficient for a single user. To draw general conclusions it would be necessary to collect data from a larger population. With that data, the overall "comfort factor" of different keyboard layouts could be fitted to the metrics produced by an analyzer, which could bring us closer to the goal of describing a layout's comfort in a single number.
+
+Contributions in this direction — for example building a test website — would be very welcome.
+
+For any test session, the following should be recorded at minimum:
 
 - Both layout names and versions
 - Language tested
-- Date and anonymised tester identifier
-- Per-word ratings in row order (word order could be randomized in the first 25 words group and the second 75 word group)
+- Date and anonymized tester identifier
+- Per-word ratings in row order (word order could be randomised within the first 25-word group and the second 75-word group)
 - Total weighted score, total weight, max possible score, normalized score
 - Session type: quick check (rows 1–25) or full evaluation (rows 1–100)
 - Adaptation state: first session, or repeated trial session
 
 This information is sufficient to aggregate results across testers, compute confidence intervals over the normalized score, and assess whether learning effects are visible across sessions.
 
-For even better understanding the following information would be worthwhile to collect:
+For even better understanding, the following information would be worthwhile to collect:
 
-- Typing experience level, roughly how long the tester has been touch typing, and how long they have used each layout being tested.
-- Hand size (glove size as approximation or male/ female small, middle, large)
+- Typing experience level: roughly how long the tester has been touch-typing, and how long they have used each layout being tested
+- Hand size (glove size as approximation, or male/female small/medium/large)
 - Finger length
-- Keyboard type (row-stagger ANSI/ISO) or columnar stagger
+- Keyboard type (row-stagger ANSI/ISO, or columnar stagger)
 - Keyboard split
 - Keycaps
 - Key spacing if not standard
@@ -500,7 +502,7 @@ For even better understanding the following information would be worthwhile to c
 
 # Star History
 
-Please star this project if it helped you! Your feedback shows me how many people benefit from these resources, which motivates me making keyboard layout optimization accessible to everyone. :-)
+Please star this project if it helped you! Your feedback shows me how many people benefit from these resources, which motivates me to make keyboard layout optimization accessible to everyone. :-)
 
 <a href="https://www.star-history.com/?repos=rpnfan%2FKeyDuel&type=date&legend=top-left">
  <picture>
@@ -510,7 +512,14 @@ Please star this project if it helped you! Your feedback shows me how many peopl
  </picture>
 </a>
 
+
 # Annex A: Language N-gram Analysis Results
+
+Detailed statistical results for all validated languages are provided in the following annexes.
+
+The tables present data for all languages, including comparative results for an English top-200 word lists, 200 n-gram breadth optimized word list (see section 4), and a legacy version of the English 100-word list that prioritized word frequency.
+
+Results are shown for n=100 through n=500. Russian and Norwegian are excluded due to corpus data availability.
 
 
 ### Language: Danish
@@ -533,7 +542,27 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 | **Corpus Coverage** | 37.0% | 44.9% | 48.8% | 50.6% | 52.1% |
 | **List Efficiency** | 93.5% | 86.2% | 81.2% | 76.7% | 73.7% |
 
-### Language: English
+### Language: English-200-breadth
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **N-grams Found** | 97 | 196 | 292 | 385 | 468 |
+| **N-grams Found %** | 97.0% | 98.0% | 97.3% | 96.2% | 93.6% |
+| **Words Exercised %** | 99.5% | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 39.1% | 51.0% | 59.0% | 65.1% | 70.0% |
+| **Corpus Coverage** | 37.3% | 49.2% | 56.8% | 62.5% | 66.6% |
+| **List Efficiency** | 95.6% | 96.4% | 96.4% | 96.1% | 95.2% |
+
+### Language: English-200-top
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **N-grams Found** | 94 | 174 | 240 | 298 | 340 |
+| **N-grams Found %** | 94.0% | 87.0% | 80.0% | 74.5% | 68.0% |
+| **Words Exercised %** | 98.0% | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 39.1% | 51.0% | 59.0% | 65.1% | 70.0% |
+| **Corpus Coverage** | 37.9% | 47.5% | 52.8% | 56.4% | 58.4% |
+| **List Efficiency** | 97.1% | 93.2% | 89.5% | 86.6% | 83.5% |
+
+### Language: English-highfrequency
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **N-grams Found** | 85 | 141 | 179 | 209 | 233 |
@@ -542,6 +571,16 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 | **Potential Core Weight** | 39.1% | 51.0% | 59.0% | 65.1% | 70.0% |
 | **Corpus Coverage** | 35.6% | 42.4% | 45.4% | 47.3% | 48.5% |
 | **List Efficiency** | 91.1% | 83.1% | 77.0% | 72.6% | 69.3% |
+
+### Language: English
+| Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **N-grams Found** | 99 | 161 | 200 | 230 | 253 |
+| **N-grams Found %** | 99.0% | 80.5% | 66.7% | 57.5% | 50.6% |
+| **Words Exercised %** | 98.0% | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Potential Core Weight** | 39.1% | 51.0% | 59.0% | 65.1% | 70.0% |
+| **Corpus Coverage** | 38.9% | 46.6% | 49.7% | 51.6% | 52.7% |
+| **List Efficiency** | 99.6% | 91.3% | 84.2% | 79.2% | 75.3% |
 
 ### Language: Finnish
 | Metric | n=100 | n=200 | n=300 | n=400 | n=500 |
@@ -625,7 +664,10 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 
 
 
-# Annex B: 25, 50 and 75 Word Subset Analysis
+
+# Annex B: 25, 50, and 75 Word Subset Analysis
+
+The tables present data for all languages, including comparative results for an English top-200 word lists, 200 n-gram breadth optimized word list (see section 4), and a legacy version of the English 100-word list that prioritized word frequency.
 
 ## Language 100 N-gram Analysis (Subset Comparison)
 
@@ -646,13 +688,37 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 | **Words Exercised %** | 92.0% | 88.0% | 85.3% | 89.0% |
 | **Corpus Coverage %** | 24.0% | 30.9% | 34.1% | 37.0% |
 
-### Language: English
+### Language: English-200-breadth
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 72 | 88 | 94 | 94 |
+| **N-grams Found %** | 72.0% | 88.0% | 94.0% | 94.0% |
+| **Words Exercised %** | 100.0% | 100.0% | 98.7% | 99.0% |
+| **Corpus Coverage %** | 30.7% | 35.4% | 36.6% | 36.6% |
+
+### Language: English-200-top
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 42 | 63 | 75 | 80 |
+| **N-grams Found %** | 42.0% | 63.0% | 75.0% | 80.0% |
+| **Words Exercised %** | 96.0% | 94.0% | 96.0% | 96.0% |
+| **Corpus Coverage %** | 21.9% | 27.9% | 31.6% | 33.3% |
+
+### Language: English-highfrequency
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
 | **Found N-grams (of 100)** | 44 | 65 | 74 | 85 |
 | **N-grams Found %** | 44.0% | 65.0% | 74.0% | 85.0% |
 | **Words Exercised %** | 96.0% | 96.0% | 97.3% | 98.0% |
 | **Corpus Coverage %** | 23.1% | 30.1% | 32.5% | 35.6% |
+
+### Language: English
+| Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 100)** | 50 | 80 | 89 | 99 |
+| **N-grams Found %** | 50.0% | 80.0% | 89.0% | 99.0% |
+| **Words Exercised %** | 96.0% | 96.0% | 97.3% | 98.0% |
+| **Corpus Coverage %** | 24.7% | 33.9% | 36.3% | 38.9% |
 
 ### Language: Finnish
 | Metric (tested against Top 100 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
@@ -723,7 +789,6 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 ## Language 500 N-gram Analysis (Subset Comparison)
 
 
-
 ### Language: Danish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
@@ -740,13 +805,37 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
 | **Corpus Coverage %** | 27.5% | 39.1% | 45.8% | 52.1% |
 
-### Language: English
+### Language: English-200-breadth
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 160 | 250 | 323 | 377 |
+| **N-grams Found %** | 32.0% | 50.0% | 64.6% | 75.4% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 38.9% | 50.1% | 56.5% | 60.1% |
+
+### Language: English-200-top
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 57 | 119 | 166 | 210 |
+| **N-grams Found %** | 11.4% | 23.8% | 33.2% | 42.0% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 23.6% | 33.5% | 40.3% | 44.8% |
+
+### Language: English-highfrequency
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
 | **Found N-grams (of 500)** | 92 | 149 | 189 | 233 |
 | **N-grams Found %** | 18.4% | 29.8% | 37.8% | 46.6% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
 | **Corpus Coverage %** | 27.6% | 37.8% | 42.9% | 48.5% |
+
+### Language: English
+| Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 500)** | 99 | 162 | 206 | 253 |
+| **N-grams Found %** | 19.8% | 32.4% | 41.2% | 50.6% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 29.4% | 41.7% | 47.2% | 52.7% |
 
 ### Language: Finnish
 | Metric (tested against Top 500 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
@@ -815,6 +904,7 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 
 
 
+
 ## Language 2000 N-gram Analysis (Subset Comparison)
 
 
@@ -834,13 +924,37 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
 | **Corpus Coverage %** | 28.1% | 40.4% | 47.5% | 54.6% |
 
-### Language: English
+### Language: English-200-breadth
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 188 | 312 | 432 | 531 |
+| **N-grams Found %** | 9.4% | 15.6% | 21.6% | 26.6% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 39.6% | 51.7% | 59.3% | 64.2% |
+
+### Language: English-200-top
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 60 | 129 | 195 | 270 |
+| **N-grams Found %** | 3.0% | 6.5% | 9.8% | 13.5% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 23.6% | 33.8% | 41.2% | 46.6% |
+
+### Language: English-highfrequency
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
 | **Found N-grams (of 2000)** | 128 | 203 | 260 | 345 |
 | **N-grams Found %** | 6.4% | 10.2% | 13.0% | 17.2% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
 | **Corpus Coverage %** | 28.4% | 39.2% | 44.7% | 51.3% |
+
+### Language: English
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 129 | 210 | 277 | 364 |
+| **N-grams Found %** | 6.5% | 10.5% | 13.9% | 18.2% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 30.2% | 42.9% | 49.0% | 55.5% |
 
 ### Language: Finnish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
@@ -907,5 +1021,38 @@ Please star this project if it helped you! Your feedback shows me how many peopl
 | **Corpus Coverage %** | 18.0% | 29.1% | 35.3% | 42.9% |
 
 
+# Annex C: Top 200 Word Frequency Coverage
 
+This table shows the percentage of a language's top-200 most frequent words that are actually present in the KeyDuel 100-word list. 
 
+The table also includes comparative results for an English top-200 word lists, 200 n-gram breadth optimized word list (see section 4), and a legacy version of the English 100-word list that prioritized word frequency.
+
+| Language | List Word Count | Top 200 Words Count* | Top 200 Match % |
+| :--- | :---: | :---: | :---: |
+| Danish | 100 | 196 | 60.0% |
+| Dutch | 100 | 199 | 59.0% |
+| English-200-breadth | 200 | 200 | 22.5% |
+| English-200-top | 200 | 200 | 100.0% |
+| English-highfrequency | 100 | 200 | 73.0% |
+| English (current) | 100 | 200 | 69.0% |
+| Finnish | 100 | 204 | 10.0% |
+| French | 101 | 176 | 59.4% |
+| German | 100 | 202 | 60.0% |
+| Italian | 100 | 199 | 33.0% |
+| Norwegian | 100 | 200 | 55.0% |
+| Polish | 100 | 183 | 50.0% |
+| Portuguese | 100 | 201 | 74.0% |
+| Russian | 100 | 200 | 61.0% |
+| Spanish | 100 | 197 | 59.0% |
+| Swedish | 100 | 198 | 53.0% |
+| Turkish | 100 | 300 | 69.0% |
+
+Notable observations:
+
+- **English-200-breadth** (the n-gram-breadth-maximising list) covers only 22.5% of the top 200 most frequent English words, confirming that algorithmic n-gram optimization cannot be reprenentative for real-world typing. While its n-gram coverage metrics are strong, the word set deviates substantially from natural usage frequency.
+- **Finnish** (10.0%) and **Italian** (33.0%) show that the KeyDuel lists for these languages already diverge substantially from a pure frequency list, driven by the requirement to include morphologically complex forms that introduce the necessary n-gram patterns.
+- The **English** list (69.0%) sits comfortably between the extremes, reflecting the tiered design's intent: anchor the list in common usage while systematically adding pattern coverage.
+
+>  The table illustrates why word frequency rank alone is not a sufficient criterion for word list selection. Covering the most frequent words and covering the most important typing patterns are not equivalent goals.
+
+*Remark: The top-200 word lists were taken from [Monkeytype](https://github.com/monkeytypegame/monkeytype/tree/master/frontend/static/languages) (April 2026). Some lists have more or less than exact 200 words. Regardless, the percentage was calculated against the full list for each language. See the actual word count in the table.
