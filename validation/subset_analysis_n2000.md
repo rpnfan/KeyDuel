@@ -16,13 +16,37 @@
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
 | **Corpus Coverage %** | 28.1% | 40.4% | 47.5% | 54.6% |
 
-### Language: English
+### Language: English-200-breadth
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 188 | 312 | 432 | 531 |
+| **N-grams Found %** | 9.4% | 15.6% | 21.6% | 26.6% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 39.6% | 51.7% | 59.3% | 64.2% |
+
+### Language: English-200-top
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 60 | 129 | 195 | 270 |
+| **N-grams Found %** | 3.0% | 6.5% | 9.8% | 13.5% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 23.6% | 33.8% | 41.2% | 46.6% |
+
+### Language: English-highfrequency
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
 | :--- | :---: | :---: | :---: | :---: |
 | **Found N-grams (of 2000)** | 128 | 203 | 260 | 345 |
 | **N-grams Found %** | 6.4% | 10.2% | 13.0% | 17.2% |
 | **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
 | **Corpus Coverage %** | 28.4% | 39.2% | 44.7% | 51.3% |
+
+### Language: English
+| Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |
+| :--- | :---: | :---: | :---: | :---: |
+| **Found N-grams (of 2000)** | 129 | 210 | 277 | 364 |
+| **N-grams Found %** | 6.5% | 10.5% | 13.9% | 18.2% |
+| **Words Exercised %** | 100.0% | 100.0% | 100.0% | 100.0% |
+| **Corpus Coverage %** | 30.2% | 42.9% | 49.0% | 55.5% |
 
 ### Language: Finnish
 | Metric (tested against Top 2000 N-grams) | 25 Words | 50 Words | 75 Words | 100 Words |

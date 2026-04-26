@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # --- CONFIGURATION ---
 # Change this variable to run the analysis against any number of Top N-grams
-TARGET_NGRAM_LIMIT = 2000
+TARGET_NGRAM_LIMIT = 500
 # ---------------------
 
 def clean_ngram(raw_text):
