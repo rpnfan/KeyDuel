@@ -147,20 +147,20 @@ Each tier serves a distinct role in increasing overall pattern coverage. The res
 To confirm that the tiered approach finds a good balance between different criteria, the KeyDuel English word list was compared against two alternative types of word lists. The comparison highlights three key advantages of the tiered design, demonstrating that a diagnostic word list should simultaneously be:
 
 - **Diverse:** Capturing a wide range of n-gram patterns.
-- **Representative:** Reflecting natural language usage and typing rhythms.
+- **Representative:** Reflecting natural language usage and word frequency.
 - **Practical:** Remaining short enough for quick, repeatable testing.
 
 | List | Description | n=100 Corpus Coverage | n=500 Corpus Coverage | n=100 N-grams Found % |
 |---|---|:---:|:---:|:---:|
 | **English-200-top** | The 200 most frequent English words (pure frequency) | 37.9% | 58.4% | 94.0% |
-| **English-200-breadth** | 200 words selected to maximise n-gram breadth (Paul Morris, [optimized-word-lists](https://gitlab.com/paulmorris/optimized-word-lists)) | 37.3% | 66.6% | 97.0% |
+| **English-200-breadth** | 200 words selected to maximize n-gram breadth (Paul Morris, [optimized-word-lists](https://gitlab.com/paulmorris/optimized-word-lists)) | 37.3% | 66.6% | 97.0% |
 | **English** (KeyDuel) | 100-word tiered list | 38.9% | 52.7% | 99.0% |
 
 **What this shows:**
 
-- **English-200-top** (pure frequency) achieves reasonable n-gram hit rate at the top 100 but Corpus Coverage degrades quickly: by n=500 it covers only 58.4%. This is the "easy mode" failure mode — too many redundant short function words, not enough diversity.
-- **English-200-breadth** (n-gram maximisation) achieves excellent corpus coverage (66.6% at n=500 with 200 words) but at a cost: This list only covers 22.5% of the most common 200 words. The algorithm selects words purely for statistical n-gram coverage without regard for real typing experience where some words are way more frequent than others. Second, a human tester rates whole words as typed units, not letter sequences in isolation. An algorithmically-optimized list may cluster unusual combinations that are statistically present but rare in natural prose, distorting the comfort impression. Furthermore, the test requires twice as many words than the KeyDuel word list (200 vs. 100). The high amount of words makes it not really practical to test all words in a focused manner. A more realistic and practical approach is to start with only 25 words for a quicker first impression and then potentially extending the test to 50 or 100 words.
-- **English KeyDuel** achieves the highest n-gram hit rate at n=100 (99%) with only 100 words, and a Corpus Coverage of 38.9% at n=100 that exceeds both 200-word lists. At n=500 the coverage (52.7%) is lower than the breadth-maximising list, which is expected given the halved word count, but the tiered design ensures the coverage is weighted towards the patterns that matter most in real use.
+- **English-200-top** (pure frequency) achieves reasonable n-gram hit rate at the top 100 but Corpus Coverage degrades quickly: by n=500 it covers only 58.4%. Here too many redundant short function words do not allow for enough diversity.
+- **English-200-breadth** (n-gram maximization) achieves excellent corpus coverage (66.6% at n=500 with 200 words) but at a cost: This list only covers 22.5% of the most common 200 words (see Annex C). The algorithm selects words purely for statistical n-gram coverage without regard for real typing experience where some words are way more frequent than others. Second, a human tester rates whole words as typed units, not letter sequences in isolation. An algorithmically-optimized list may cluster unusual combinations that are statistically present but rare in natural prose. Furthermore, the test requires twice as many words than the KeyDuel word list (200 vs. 100). The high amount of words makes it not really practical to test all words in a focused manner. A more realistic and practical approach is to start with only 25 words for a quicker first impression and then potentially extending the test to 50 or 100 words.
+- **English KeyDuel** achieves the highest n-gram hit rate at n=100 (99%) with only 100 words, and a Corpus Coverage of 38.9% at n=100 that exceeds both 200-word lists. At n=500 the coverage (52.7%) is lower than the breadth-maximizing list, which is expected given the halved word count, but the tiered design ensures the coverage is weighted towards the patterns that matter most in real use.
 
 The tiered approach therefore achieves the design goal: it is more ergonomically diverse than a pure frequency list, more representative of natural word-level typing experience than a purely algorithmic n-gram list, and half the length of either 200-word alternative.
 
@@ -347,7 +347,7 @@ The goal of the curated word list is to provide a meaningful representation of t
 
 **Versus raw corpus frequency lists:** Top-100 frequency lists are dominated by very short function words, testing only one narrow slice of the ergonomic space. This is a primary example of the coverage problem introduced in Section 4: high frequency does not guarantee high pattern diversity. The tiered approach rebalances the list to be ergonomically representative by ensuring  coverage across a broader range of finger patterns (n-grams).
 
-**Versus n-gram frequency optimization:** Selecting words to reproduce the bigram and trigram distribution of a corpus maximises statistical representativeness of letter sequences but does not reflect word-level or rhythm-level typing experience. The tiered approach was preferred because a human tester rates whole words as typed units, not letter sequences in isolation.
+**Versus n-gram frequency optimization:** Selecting words to reproduce the bigram and trigram distribution of a corpus maximizes statistical representativeness of letter sequences but does not reflect word-level or rhythm-level typing experience. The tiered approach was preferred because a human tester rates whole words as typed units, not letter sequences in isolation.
 
 **Versus sentence-based or synthetic text tests:** Full sentences introduce syntactic parsing and reading comprehension workload, which can obscure pure motor comfort assessments. Isolated words keep cognitive load minimal and the typing signal cleaner.
 
