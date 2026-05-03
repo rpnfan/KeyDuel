@@ -4,7 +4,7 @@
 
 KeyDuel is a systematic approach to compare two keyboard layouts in terms of subjective typing comfort. The basic idea is to "translate" an alternative layout you are considering into the key positions of the layout you are fluently touch-typing. A list of carefully selected test words allows you to form a much more meaningful and representative impression of how a layout will feel in real-world use than typing random sentences would.
 
-<img width="2404" height="1009" alt="image" src="https://github.com/user-attachments/assets/08b95e2e-d4e6-4d16-8276-e378f0f35fc9" />
+<img  alt="image" src="https://github.com/user-attachments/assets/08b95e2e-d4e6-4d16-8276-e378f0f35fc9" />
 
 
 ## 1. Purpose and High-Level Approach
@@ -13,9 +13,13 @@ The goal is to **compare perceived typing comfort between two keyboard layouts**
 
 The method combines three principles drawn from existing layout evaluation practice:
 
-- **Linguistic frequency** — words that appear most often in real text should dominate the score, because that is where a layout spends most of its effort
-- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and are therefore vital for exhibiting typical typing patterns (same-finger bigrams, scissors, lateral reach, and redirects), and longer content words, which better expose alternation and roll patterns
-- **Practical test ergonomics** — sessions must be short enough to complete without fatigue, yet representative enough to give a meaningful result
+- **Linguistic frequency** — words that appear most often in real text should dominate the score, because that is where a layout spends most of its effort.
+
+- **Typing-relevant word shapes** — the word set must cover both short function words, which include the most frequent words and are therefore vital for exhibiting typical typing patterns (same-finger bigrams, scissors, lateral reach, and redirects), and longer content words, which better expose alternation and roll patterns.
+
+  Words are used rather than sentences or continuous text because full sentences introduce reading comprehension workload that can make it harder to judge what typing patterns feels better. Isolated words keep the cognitive load minimal and the typing judgment more focused.
+
+- **Practical test ergonomics** — sessions must be short enough to complete without fatigue, yet representative enough to give a meaningful result.
 
 Two test modes are provided:
 
@@ -56,7 +60,7 @@ Delete the example ratings and enter the names of the two layouts you are compar
 
 ### 3. Run the quick check (25 words)
 
-Start with the first 25 words. For each word, type it several times on layout A, then several times on layout B. Focus entirely on the finger movements. Forget the word itself and concentrate on how the motion feels. Practice each word until you have the typing pattern ingrained.
+Start with the first 25 words. For each word, type it several times on layout A, then several times on layout B. Focus entirely on the finger movements. Forget the word itself and concentrate on how the motion feels. Practice each word until you have the typing pattern ingrained, so that the movement feels automatic and you can form a clear judgment. This typically takes fewer repetitions for short words than for longer ones.
 
 Especially for longer words it can happen that the first few characters type better in layout A, but another part of the typing pattern is better on layout B. If that is the case, count how many partial typing patterns are better in each layout. Use the same rating (see below) for the partial word evaluation and sum the total rating for the word:
 
@@ -96,12 +100,12 @@ Keyboard layout differences do not apply uniformly across words. They emerge thr
 
 - **Finger assignment** (strong vs. weak fingers)
 - **Hand alternation vs. same-hand sequences**
-- **Same-finger bigrams (SFBs)**
+- **Same-finger bigrams (SFB s)**
 - **Row changes and lateral reach**
 - **Hand load distribution**
 - **Higher-order motions** (rolls, redirects, scissors, etc.)
 
-These factors are not properties of individual keys, but of **letter sequences** — which is why they are measured through n-grams (bigrams, trigrams, and longer sequences). As a result, evaluating a layout is fundamentally a coverage problem: a test is only meaningful if it exercises a representative set of these patterns.
+These factors are not properties of individual keys, but of *letter sequences*, which is why they are measured through *n-grams*: : fixed-length sequences of adjacent characters (bigrams = 2 characters, trigrams = 3 characters, and so on). As a result, evaluating a layout is fundamentally a coverage problem: a test is only meaningful if it exercises a representative set of these patterns.
 
 ### From Factors to Patterns
 
@@ -140,29 +144,7 @@ In practice, this leads to a tiered structure (introduced here and defined in de
 - Tier B (mid frequency): medium-length words; introduces mixed patterns and moderate movement
 - Tier C and Tier D (pattern stress): longer or structurally complex words; exposes more SFBs, redirects, and lateral reach
 
-Each tier serves a distinct role in increasing overall pattern coverage. The result is a test set that not only reflects real-world usage, but also systematically exposes the strengths and weaknesses of a layout across the full range of typing behaviors.
-
-### Why Not Just Use a Frequency List or an N-gram-Maximizing List?
-
-To confirm that the tiered approach finds a good balance between different criteria, the KeyDuel English word list was compared against two alternative types of word lists. The comparison highlights three key advantages of the tiered design, demonstrating that a diagnostic word list should simultaneously be:
-
-- **Diverse:** Capturing a wide range of n-gram patterns.
-- **Representative:** Reflecting natural language usage and word frequency.
-- **Practical:** Remaining short enough for quick, repeatable testing.
-
-| List | Description | n=100 Corpus Coverage | n=500 Corpus Coverage | n=100 N-grams Found % |
-|---|---|:---:|:---:|:---:|
-| **English-200-top** | The 200 most frequent English words (pure frequency) | 37.9% | 58.4% | 94.0% |
-| **English-200-breadth** | 200 words selected to maximize n-gram breadth (Paul Morris, [optimized-word-lists](https://gitlab.com/paulmorris/optimized-word-lists)) | 37.3% | 66.6% | 97.0% |
-| **English** (KeyDuel) | 100-word tiered list | 38.9% | 52.7% | 99.0% |
-
-**What this shows:**
-
-- **English-200-top** (pure frequency) achieves reasonable n-gram hit rate at the top 100 but Corpus Coverage degrades quickly: by n=500 it covers only 58.4%. Here too many redundant short function words do not allow for enough diversity.
-- **English-200-breadth** (n-gram maximization) achieves excellent corpus coverage (66.6% at n=500 with 200 words) but at a cost: This list only covers 22.5% of the most common 200 words (see Annex C). The algorithm selects words purely for statistical n-gram coverage without regard for real typing experience where some words are way more frequent than others. Second, a human tester rates whole words as typed units, not letter sequences in isolation. An algorithmically-optimized list may cluster unusual combinations that are statistically present but rare in natural prose. Furthermore, the test requires twice as many words than the KeyDuel word list (200 vs. 100). The high amount of words makes it not really practical to test all words in a focused manner. A more realistic and practical approach is to start with only 25 words for a quicker first impression and then potentially extending the test to 50 or 100 words.
-- **English KeyDuel** achieves the highest n-gram hit rate at n=100 (99%) with only 100 words, and a Corpus Coverage of 38.9% at n=100 that exceeds both 200-word lists. At n=500 the coverage (52.7%) is lower than the breadth-maximizing list, which is expected given the halved word count, but the tiered design ensures the coverage is weighted towards the patterns that matter most in real use.
-
-The tiered approach therefore achieves the design goal: it is more ergonomically diverse than a pure frequency list, more representative of natural word-level typing experience than a purely algorithmic n-gram list, and half the length of either 200-word alternative.
+Each tier serves a distinct role in increasing overall pattern coverage, resulting in a test set that reflects real-world usage while systematically exposing layout strengths and weaknesses across the full range of typing behaviors. How this approach compares against two common alternatives, a pure frequency list and an n-gram-breadth-optimized list, is described in Section 11.
 
 
 ## 5. The Four-Tier Word Pool
@@ -343,13 +325,25 @@ The denominator normalises by twice the total weight because the maximum absolut
 
 ### Why This Approach Rather Than Alternatives
 
-The goal of the curated word list is to provide a meaningful representation of the language. This approach was chosen instead of simpler options:
+Section 4 introduced the coverage problem and the tiered word list as the best overall solution. To confirm that this approach finds the right balance, the KeyDuel English word list was compared against two common alternatives: a pure word frequency list and an n-gram-maximizing list. An effective diagnostic word list must simultaneously be:
 
-**Versus raw corpus frequency lists:** Top-100 frequency lists are dominated by very short function words, testing only one narrow slice of the ergonomic space. This is a primary example of the coverage problem introduced in Section 4: high frequency does not guarantee high pattern diversity. The tiered approach rebalances the list to be ergonomically representative by ensuring  coverage across a broader range of finger patterns (n-grams).
+- **Diverse:** Capturing a wide range of n-gram patterns.
+- **Representative:** Reflecting natural language usage and word frequency.
+- **Practical:** Remaining short enough for quick, repeatable testing.
 
-**Versus n-gram frequency optimization:** Selecting words to reproduce the bigram and trigram distribution of a corpus maximizes statistical representativeness of letter sequences but does not reflect word-level or rhythm-level typing experience. The tiered approach was preferred because a human tester rates whole words as typed units, not letter sequences in isolation.
+| List                    | Description                                                  | n=100 Corpus Coverage | n=500 Corpus Coverage | n=100 N-grams Found % |
+| ----------------------- | ------------------------------------------------------------ | :-------------------: | :-------------------: | :-------------------: |
+| **English-200-top**     | The 200 most frequent English words (pure frequency)         |         37.9%         |         58.4%         |         94.0%         |
+| **English-200-breadth** | 200 words selected to maximize n-gram breadth (Paul Morris, [optimized-word-lists](https://gitlab.com/paulmorris/optimized-word-lists)) |         37.3%         |         66.6%         |         97.0%         |
+| **English** (KeyDuel)   | 100-word tiered list                                         |         38.9%         |         52.7%         |         99.0%         |
 
-**Versus sentence-based or synthetic text tests:** Full sentences introduce syntactic parsing and reading comprehension workload, which can obscure pure motor comfort assessments. Isolated words keep cognitive load minimal and the typing signal cleaner.
+**What this shows:**
+
+- **English-200-top** (pure frequency) achieves reasonable n-gram hit rate at the top 100 but Corpus Coverage degrades quickly: by n=500 it covers only 58.4%. Here too many redundant short function words do not allow for enough diversity.
+- **English-200-breadth** (n-gram maximization) achieves excellent corpus coverage (66.6% at n=500 with 200 words) but at a cost: This list only covers 22.5% of the most common 200 words (see Annex C). The algorithm selects words purely for statistical n-gram coverage without regard for real typing experience where some words are way more frequent than others. Second, a human tester rates whole words as typed units, not letter sequences in isolation. An algorithmically-optimized list may cluster unusual combinations that are statistically present but rare in natural prose. Furthermore, the test requires twice as many words than the KeyDuel word list (200 vs. 100). The high amount of words makes it not really practical to test all words in a focused manner. A more realistic and practical approach is to start with only 25 words for a quicker first impression and then potentially extending the test to 50 or 100 words.
+- **English KeyDuel** achieves the highest n-gram hit rate at n=100 (99%) with only 100 words, and a Corpus Coverage of 38.9% at n=100 that exceeds both 200-word lists. At n=500 the coverage (52.7%) is lower than the breadth-maximizing list, which is expected given the halved word count, but the tiered design ensures the coverage is weighted towards the patterns that matter most in real use.
+
+The tiered approach therefore achieves the design goal: it is more ergonomically diverse than a pure frequency list, more representative of natural word-level typing experience than a purely algorithmic n-gram list, and half the length of either 200-word alternative.
 
 
 ### N-gram Coverage Analysis
@@ -426,7 +420,7 @@ The 25-word subset already exercises the majority of high-frequency patterns, pr
 Full results for each language at n=100, n=500, and n=2000 are in Annex B.
 
 
-### Word List Quality Across Languages
+## 12. Word List Quality Across Languages
 
 The English, German, and Dutch word lists have been reviewed both statistically and through direct manual inspection by a fluent speaker of each language. These three lists can be treated as close to the design optimum.
 
@@ -470,7 +464,7 @@ This revision illustrates the core trade-off in list design: a purely frequency-
 
 
 
-## 12. Future Developments: Psychophysical Database
+## 13. Future Developments: Psychophysical Database
 
 The current implementation with a spreadsheet is sufficient for a single user. To draw general conclusions it would be necessary to collect data from a larger population. With that data, the overall "comfort factor" of different keyboard layouts could be fitted to the metrics produced by an analyzer, which could bring us closer to the goal of describing a layout's comfort in a single number.
 
@@ -481,7 +475,7 @@ For any test session, the following should be recorded at minimum:
 - Both layout names and versions
 - Language tested
 - Date and anonymized tester identifier
-- Per-word ratings in row order (word order could be randomised within the first 25-word group and the second 75-word group)
+- Per-word ratings in row order (for a multi-tester database, word order within groups could be randomized per session to control for ordering effects, unlike the current fixed-order design.)
 - Total weighted score, total weight, max possible score, normalized score
 - Session type: quick check (rows 1–25) or full evaluation (rows 1–100)
 - Adaptation state: first session, or repeated trial session
@@ -1049,10 +1043,10 @@ The table also includes comparative results for an English top-200 word lists, 2
 
 Notable observations:
 
-- **English-200-breadth** (the n-gram-breadth-maximising list) covers only 22.5% of the top 200 most frequent English words, confirming that algorithmic n-gram optimization cannot be reprenentative for real-world typing. While its n-gram coverage metrics are strong, the word set deviates substantially from natural usage frequency.
+- **English-200-breadth** (the n-gram-breadth-maximising list) covers only 22.5% of the top 200 most frequent English words, confirming that algorithmic n-gram optimization cannot be representative for real-world typing. While its n-gram coverage metrics are strong, the word set deviates substantially from natural usage frequency.
 - **Finnish** (10.0%) and **Italian** (33.0%) show that the KeyDuel lists for these languages already diverge substantially from a pure frequency list, driven by the requirement to include morphologically complex forms that introduce the necessary n-gram patterns.
 - The **English** list (69.0%) sits comfortably between the extremes, reflecting the tiered design's intent: anchor the list in common usage while systematically adding pattern coverage.
 
 >  The table illustrates why word frequency rank alone is not a sufficient criterion for word list selection. Covering the most frequent words and covering the most important typing patterns are not equivalent goals.
 
-*Remark: The top-200 word lists were taken from [Monkeytype](https://github.com/monkeytypegame/monkeytype/tree/master/frontend/static/languages) (April 2026). Some lists have more or less than exact 200 words. Regardless, the percentage was calculated against the full list for each language. See the actual word count in the table.
+*Remark: The top-200 word lists were taken from [Monkeytype](https://github.com/monkeytypegame/monkeytype/tree/master/frontend/static/languages) (April 2026). Some lists have more or fewer than exactly 200 words. Regardless, the percentage was calculated against the full list for each language. See the actual word count in the table.
