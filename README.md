@@ -424,7 +424,7 @@ Full results for each language at n=100, n=500, and n=2000 are in Annex B.
 
 The English, German, and Dutch word lists have been reviewed both statistically and through direct manual inspection by a fluent speaker of each language. These three lists can be treated as close to the design optimum.
 
-For the remaining languages, the lists were assembled with AI assistance, guided by the tier design criteria and the n-gram frequency data, but have not been manually verified by a native speaker with layout expertise.
+For the remaining languages, the lists were assembled with AI assistance, guided by the tier design criteria and the n-gram frequency data, but have not been manually verified by a native speaker.
 
 Looking at the Corpus Coverage figures in Annex A, most languages perform well. The n=100 Corpus Coverage for the best-performing languages (German 38.2%, Spanish 39.3%, English 38.9%, Dutch 37.0%, Danish 37.0%, Swedish 35.1%) is broadly consistent. However, several languages show noticeably lower coverage:
 
@@ -1044,7 +1044,7 @@ The table also includes comparative results for an English top-200 word lists, 2
 Notable observations:
 
 - **English-200-breadth** (the n-gram-breadth-maximising list) covers only 22.5% of the top 200 most frequent English words, confirming that algorithmic n-gram optimization cannot be representative for real-world typing. While its n-gram coverage metrics are strong, the word set deviates substantially from natural usage frequency.
-- **Finnish** (10.0%) and **Italian** (33.0%) show that the KeyDuel lists for these languages already diverge substantially from a pure frequency list, driven by the requirement to include morphologically complex forms that introduce the necessary n-gram patterns.
+- **Finnish** (10.0%) and **Italian** (33.0%) show that the KeyDuel lists for these languages already diverge substantially from a pure frequency list, see section 12 for possible explanations.
 - The **English** list (69.0%) sits comfortably between the extremes, reflecting the tiered design's intent: anchor the list in common usage while systematically adding pattern coverage.
 
 >  The table illustrates why word frequency rank alone is not a sufficient criterion for word list selection. Covering the most frequent words and covering the most important typing patterns are not equivalent goals.
